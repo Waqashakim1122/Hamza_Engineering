@@ -1,0 +1,238 @@
+/* ====================================
+   CONTACT INFO – Updated to match website colors
+   ==================================== */
+
+.contact-info {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* Dark gradient from your website */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  border: 1px solid #334155;
+  color: #ffffff;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info__header {
+  margin-bottom: 40px;
+}
+
+.contact-info__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.contact-info__description {
+  color: #94a3b8;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-detail {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.contact-detail:hover {
+  transform: translateX(5px);
+}
+
+.contact-detail__icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1));
+  border-radius: 12px;
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-detail:hover .contact-detail__icon {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.2));
+  transform: scale(1.05);
+}
+
+.contact-detail__content {
+  flex: 1;
+}
+
+.contact-detail__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.contact-detail__link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: color 0.3s ease;
+}
+
+.contact-detail__link:hover {
+  color: #ffffff;
+}
+
+.contact-detail__link:hover .contact-detail__line {
+  text-decoration: underline;
+}
+
+.contact-detail__line {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-detail__text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 4px;
+}
+
+.contact-detail__text:last-child {
+  margin-bottom: 0;
+}
+
+.contact-map {
+  margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+  border: 1px solid #475569;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.map-content {
+  max-width: 400px;
+}
+
+.map-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.map-description {
+  color: #94a3b8;
+  margin-bottom: 24px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.map-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.map-button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.map-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 30px 24px;
+  }
+  
+  .contact-info__title {
+    font-size: 1.75rem;
+  }
+  
+  .contact-info__description {
+    font-size: 1rem;
+  }
+  
+  .contact-detail {
+    gap: 16px;
+  }
+  
+  .contact-detail__icon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .contact-map {
+    height: 250px;
+  }
+  
+  .map-overlay {
+    padding: 24px;
+  }
+  
+  .map-title {
+    font-size: 1.25rem;
+  }
+}

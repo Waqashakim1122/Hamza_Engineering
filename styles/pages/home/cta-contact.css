@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ====================================
+   CTA CONTACT SECTION – Matched with Industries Section
+   ==================================== */
+
+.cta-contact {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #111827;
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.cta-contact__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Eyebrow text - EXACTLY like Industries section */
+.cta-contact__eyebrow {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3b82f6;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Main title - EXACTLY like Industries section - NO BAR/LINE */
+.cta-contact__title {
+  font-size: 3rem;
+  color: #0f172a;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0 0 20px 0;
+}
+
+/* REMOVED: Blue accent bar/line under title */
+.cta-contact__title::after,
+.cta-contact__title::before {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  border: none !important;
+}
+
+/* Subtitle - matches Industries section */
+.cta-contact__subtitle {
+  font-size: 1.125rem;
+  color: #475569;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 20px auto 60px;
+  padding: 0;
+}
+
+/* Action buttons container */
+.cta-contact__actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Button base styles */
+.cta-contact__btn {
+  padding: 18px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-width: 220px;
+}
+
+/* Primary button */
+.cta-contact__btn--primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #ffffff;
+  border: 1.5px solid transparent;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+.cta-contact__btn--primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+/* Secondary button - matches Industries card border style */
+.cta-contact__btn--secondary {
+  background: transparent;
+  border: 1.5px solid #e2e8f0;
+  color: #374151;
+  backdrop-filter: blur(8px);
+}
+
+.cta-contact__btn--secondary:hover {
+  background: rgba(59, 130, 246, 0.05);
+  border-color: #3b82f6;
+  color: #3b82f6;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+}
+
+/* Optional: Simple contact note - matches Industries style */
+.cta-contact__note {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 40px;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* Responsive Breakpoints - matches Industries section */
+@media (max-width: 992px) {
+  .cta-contact__title {
+    font-size: 2.5rem;
+  }
+  
+  .cta-contact__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-contact {
+    padding: 80px 20px;
+  }
+  
+  .cta-contact__title {
+    font-size: 2.2rem;
+  }
+  
+  .cta-contact__subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .cta-contact__actions {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .cta-contact__btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-contact {
+    padding: 60px 20px;
+  }
+  
+  .cta-contact__title {
+    font-size: 1.9rem;
+  }
+  
+  .cta-contact__subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-contact__btn {
+    padding: 16px 30px;
+    font-size: 13px;
+  }
+  
+  .cta-contact__eyebrow {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-contact {
+    padding: 50px 15px;
+  }
+  
+  .cta-contact__title {
+    font-size: 1.75rem;
+  }
+  
+  .cta-contact__subtitle {
+    font-size: 0.875rem;
+  }
+}

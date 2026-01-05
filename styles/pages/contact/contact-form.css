@@ -1,0 +1,195 @@
+/* ====================================
+   CONTACT FORM – Updated to match website colors
+   ==================================== */
+
+.contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  border-color: #3b82f6;
+}
+
+.contact-form__header {
+  margin-bottom: 40px;
+}
+
+.contact-form__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a; /* Dark blue/black from your website */
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.contact-form__subtitle {
+  color: #64748b; /* Muted gray from your website */
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+/* Side-by-side row for Phone & Company */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #334155; /* Dark gray from your website */
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.required {
+  color: #ef4444; /* Red for required */
+  margin-left: 4px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0; /* Light border from your website */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* Blue accent from your website */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* Light blue shadow */
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #94a3b8; /* Lighter gray for placeholder */
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.6;
+}
+
+.contact-submit {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); /* Blue gradient from your website */
+  color: #ffffff;
+  padding: 18px 45px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-submit:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%); /* Darker blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.contact-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contact-submit svg {
+  transition: transform 0.3s ease;
+}
+
+.contact-submit:hover:not(:disabled) svg {
+  transform: translateX(5px);
+}
+
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Status Message */
+.form-status {
+  margin-top: 25px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.form-status--success {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.form-status--success svg {
+  color: #22c55e;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 30px 24px;
+  }
+  
+  .contact-form__title {
+    font-size: 1.75rem;
+  }
+  
+  .contact-form__subtitle {
+    font-size: 1rem;
+  }
+}

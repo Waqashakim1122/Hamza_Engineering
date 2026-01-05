@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+/* --- Section Container --- */
+.core-products {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.core-products__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Header & Typography --- */
+.core-products__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.core-products__eyebrow {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3b82f6;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.core-products__title {
+  font-size: 3rem;
+  color: #0f172a;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* --- Grid Layout --- */
+.core-products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.product-item__link {
+  text-decoration: none;
+  display: block;
+}
+
+/* --- The Product Card (Base State) --- */
+.product-image-card {
+  background-color: #ffffff;
+  border: 1.5px solid #e2e8f0; /* Crisp, defined border */
+  border-radius: 12px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth interaction */
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+/* --- The Product Card (Hover State) --- */
+.product-item:hover .product-image-card {
+  border-color: #3b82f6;      /* Active Blue Border */
+  background-color: #f8faff;  /* Subtle background tint from screenshot */
+  transform: translateY(-8px); /* Structural lift effect */
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.12); /* Soft professional depth */
+}
+
+.product-item:hover .product-image {
+  transform: scale(1.05); /* Gentle zoom on the machinery */
+}
+
+/* --- Product Info & Text --- */
+.product-info {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.product-name-label {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* The Blue Accent Bar Under Text */
+.product-name-label::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 35px;
+  height: 2px;
+  background: #3b82f6;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform-origin: center;
+  border-radius: 2px;
+}
+
+.product-item:hover .product-name-label {
+  color: #3b82f6;
+}
+
+.product-item:hover .product-name-label::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+  .core-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .core-products__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .core-products {
+    padding: 60px 20px;
+  }
+  .core-products__grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .core-products__title {
+    font-size: 2.2rem;
+  }
+}

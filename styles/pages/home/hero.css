@@ -1,0 +1,296 @@
+/* =============================================================================
+   HERO SECTION - Engineering Excellence Design
+   ============================================================================= */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 0;
+  overflow: hidden;
+  background-color: #050b14;
+}
+
+/* =============================================================================
+   CONTENT PANEL
+   ============================================================================= */
+
+.hero__content {
+  position: relative;
+  z-index: 10;
+  flex: 0 0 42%;
+  display: flex;
+  align-items: center;
+  padding: 0 max(5vw, 2rem);
+  background: linear-gradient(135deg, #050b14 0%, #0a1628 100%);
+  
+  /* Diagonal edge */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  box-shadow: 20px 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero__content-inner {
+  max-width: 500px;
+  animation: heroFadeIn 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+/* Typography & CTA remain unchanged */
+.hero__eyebrow {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #3b82f6;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
+  border-left: 3px solid #3b82f6;
+  backdrop-filter: blur(10px);
+}
+
+.hero__heading {
+  margin-bottom: 1.25rem;
+}
+
+.hero__heading-line {
+  display: block;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero__subheading {
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3b82f6;
+}
+
+.hero__description {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+.hero__description::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #3b82f6 0%, #1e40af 50%, transparent 100%);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.hero__description-text {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.125rem 2.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.2);
+}
+
+.hero__cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero__cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.4);
+}
+
+.hero__cta:hover::before {
+  opacity: 1;
+}
+
+.hero__cta > span,
+.hero__cta-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__cta-icon {
+  transition: transform 0.3s ease;
+}
+
+.hero__cta:hover .hero__cta-icon {
+  transform: translateX(4px);
+}
+
+/* =============================================================================
+   MEDIA PANEL - Updated for full video visibility
+   ============================================================================= */
+
+.hero__media {
+  position: relative;
+  flex: 1;
+  margin-left: -5%; /* Keeps the overlap with content panel */
+  background-color: #000000;
+  z-index: 1;
+  overflow: hidden;
+  /* Diagonal shape to match the content panel's cut */
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  /* Removed clip-path → video now shows completely without cropping */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero__media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 11, 20, 0.9) 0%,
+    rgba(5, 11, 20, 0.5) 12%,
+    rgba(5, 11, 20, 0.2) 25%,
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* =============================================================================
+   ANIMATIONS & RESPONSIVE (unchanged except minor mobile tweaks)
+   ============================================================================= */
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero__content {
+    flex: 1;
+    clip-path: none;
+    padding: 4rem max(5vw, 2rem);
+    min-height: 60vh;
+  }
+
+  .hero__content-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero__media {
+    height: 50vh;
+    min-height: 400px;
+    margin-left: 0;
+    clip-path: none; /* Full rectangle on mobile */
+  }
+
+  .hero__video {
+    object-position: center center;
+  }
+
+  .hero__media-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 11, 20, 0.7) 0%,
+      transparent 100%
+    );
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero__content {
+    padding: 3rem 1.5rem;
+    min-height: 55vh;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .hero__description {
+    padding-left: 1rem;
+  }
+
+  .hero__cta {
+    width: 100%;
+    justify-content: center;
+    padding: 0.875rem 1.5rem;
+  }
+
+  .hero__media {
+    height: 45vh;
+    min-height: 300px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__content-inner {
+    animation: none;
+  }
+
+  .hero__cta,
+  .hero__cta-icon {
+    transition: none;
+  }
+}
+
+.hero__cta:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 4px;
+}

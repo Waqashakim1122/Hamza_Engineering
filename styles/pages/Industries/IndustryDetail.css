@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Blog Style Industry Detail Page
+   ========================================================================== */
+
+.blog-industry-page {
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+  max-width: 800px; /* Container width */
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Page Navigation */
+.page-nav {
+  margin-bottom: 40px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #2563eb;
+  background: #f8fafc;
+}
+
+/* Blog Header */
+.blog-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.blog-excerpt {
+  font-size: 1.25rem;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Featured Image */
+.featured-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.blog-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.featured-image:hover .blog-main-image {
+  transform: scale(1.03);
+}
+
+/* Blog Content */
+.blog-content {
+  margin-bottom: 60px;
+}
+
+.content-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.content-section {
+  margin-bottom: 40px;
+}
+
+.blog-text {
+  font-size: 1.125rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Categories Section */
+.categories-section {
+  margin: 30px 0;
+  padding-left: 20px;
+}
+
+.category-item {
+  margin-bottom: 25px;
+}
+
+.category-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  position: relative;
+  padding: 8px 0;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  padding-left: 24px;
+}
+
+.list-item::before {
+  content: "•";
+  color: #3b82f6;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Equipment Section */
+.equipment-section {
+  margin: 30px 0;
+}
+
+.equipment-item {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  border-left: 3px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.equipment-item:hover {
+  border-left-color: #3b82f6;
+}
+
+.equipment-description {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.equipment-name {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+/* ==========================================================================
+   Related Industries - FORCED SAME LINE (NO WRAPPING)
+   ========================================================================== */
+
+.blog-related {
+  padding: 60px 0 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.related-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.related-grid {
+  display: flex;
+  flex-wrap: nowrap;     /* Forces all items to stay in one line */
+  gap: 16px;             /* Space between cards */
+  width: 100%;
+  overflow: hidden;      /* Ensures no scrollbar appears */
+}
+
+.related-post {
+  flex: 1;               /* Makes all cards equal width to fit the row */
+  min-width: 0;          /* Essential for flex children to shrink properly */
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.related-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.12);
+  border-color: #3b82f6;
+}
+
+.related-image {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.related-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.related-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.related-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+  line-height: 1.2;
+
+  /* Compatibility & Standard line-clamp */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; 
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .blog-industry-page {
+    padding: 30px 15px;
+  }
+  
+  .related-grid {
+    flex-wrap: wrap; /* On mobile, it's better to wrap for readability */
+    justify-content: center;
+  }
+  
+  .related-post {
+    flex: 0 1 45%; /* Show 2 cards per row on mobile */
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .related-post {
+    flex: 0 1 100%; /* Full width cards on small phones */
+  }
+}

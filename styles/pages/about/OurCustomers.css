@@ -1,0 +1,263 @@
+
+/* ====================================
+   OUR CUSTOMERS – SEAMLESS INFINITE SCROLL
+   ==================================== */
+
+.our-customers-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.our-customers__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   Header
+   =============================== */
+
+.our-customers__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.our-customers__eyebrow {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.our-customers__title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.our-customers__subtitle {
+  font-size: 1.15rem;
+  color: #475569;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===============================
+   SEAMLESS INFINITE MARQUEE
+   The key: duplicate items and animate exactly -50%
+   =============================== */
+
+.customers-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  /* Webkit prefix for older browsers */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  /* Standard property */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.customers-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+/* Pause on hover */
+.customers-marquee:hover .customers-track {
+  animation-play-state: paused;
+}
+
+/* ===============================
+   THE MAGIC: Move exactly -50%
+   When first set disappears left,
+   second set is perfectly in position
+   =============================== */
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move exactly half the width (one complete set) */
+    transform: translateX(-50%);
+  }
+}
+
+/* ===============================
+   Customer Cards (Clean White Style)
+   =============================== */
+
+.customer-card {
+  min-width: 320px;
+  height: 180px;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 2px solid #f1f5f9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+/* Colored accent border on hover */
+.customer-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--brand-color), transparent);
+  /* Webkit prefix */
+  -webkit-mask-composite: xor;
+  /* Standard property */
+  mask-composite: exclude;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.customer-card:hover::before {
+  opacity: 1;
+}
+
+.customer-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--brand-color);
+}
+
+/* ===============================
+   Customer Logos
+   =============================== */
+
+.customer-logo {
+  max-height: 85px;
+  max-width: 220px;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.customer-card:hover .customer-logo {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   Divider Section
+   =============================== */
+
+.customers-divider {
+  text-align: center;
+  margin: 80px auto 0;
+  position: relative;
+  max-width: 600px;
+}
+
+.customers-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #e2e8f0;
+  transform: translateY(-50%);
+}
+
+.divider-text {
+  background: #ffffff;
+  padding: 0 20px;
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   Responsive Design
+   =============================== */
+
+@media (max-width: 768px) {
+  .our-customers-section {
+    padding: 80px 20px;
+  }
+
+  .customer-card {
+    min-width: 260px;
+    height: 150px;
+  }
+
+  .customer-logo {
+    max-height: 70px;
+    max-width: 180px;
+  }
+
+  .our-customers__title {
+    font-size: 2.4rem;
+  }
+
+  .customers-track {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-customers-section {
+    padding: 60px 15px;
+  }
+
+  .our-customers__title {
+    font-size: 2rem;
+  }
+
+  .our-customers__subtitle {
+    font-size: 1rem;
+  }
+
+  .customer-card {
+    min-width: 240px;
+    height: 140px;
+  }
+
+  .customers-track {
+    gap: 25px;
+  }
+
+  .customers-divider {
+    margin-top: 60px;
+  }
+}

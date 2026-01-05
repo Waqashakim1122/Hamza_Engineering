@@ -1,0 +1,112 @@
+/* ====================================
+   CERTIFICATIONS SECTION – Trust-Building Badges
+   ==================================== */
+
+.certifications {
+  padding: 100px 20px;
+  background-color: #ffffff; /* Clean white for authority */
+  text-align: center;
+}
+
+.certifications__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #001f3f;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #ffd700;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.certifications__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certifications__text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 60px;
+  max-width: 700px;
+}
+
+.certifications__badges {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.cert-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.cert-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border: 2px solid #ffd700;
+}
+
+.cert-badge__img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: grayscale(0);
+  transition: filter 0.3s ease;
+}
+
+.cert-badge:hover .cert-badge__img {
+  filter: brightness(1.1);
+}
+
+.cert-badge__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #001f3f;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certifications {
+    padding: 80px 20px;
+  }
+
+  .certifications__badges {
+    gap: 30px;
+  }
+
+  .cert-badge {
+    min-width: 120px;
+    padding: 15px;
+  }
+
+  .cert-badge__img {
+    width: 60px;
+    height: 60px;
+  }
+}

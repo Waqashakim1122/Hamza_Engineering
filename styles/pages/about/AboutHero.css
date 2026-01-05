@@ -1,0 +1,225 @@
+/* ====================================
+   ABOUT HERO - Matches Home Page Design
+   ==================================== */
+
+.about-hero {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  margin-top: 0;
+  padding-top: 0;
+  overflow: hidden;
+  background-color: #050b14;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Content Panel - Left side with text */
+.about-hero__content {
+  position: relative;
+  z-index: 10;
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 max(5vw, 2rem);
+  background: linear-gradient(135deg, #050b14 0%, #0a1628 100%);
+  
+  /* Diagonal edge - same as home hero */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  box-shadow: 20px 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.about-hero__content-inner {
+  max-width: 500px;
+  animation: heroFadeIn 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+/* Eyebrow - matches Home Hero */
+.about-hero__eyebrow {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #3b82f6;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
+  border-left: 3px solid #3b82f6;
+  backdrop-filter: blur(10px);
+}
+
+/* Main heading - matches Home Hero style */
+.about-hero__heading {
+  margin-bottom: 1.25rem;
+}
+
+.about-hero__heading-line {
+  display: block;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Subheading - matches Home Hero */
+.about-hero__subheading {
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3b82f6;
+}
+
+/* Description - matches Home Hero */
+.about-hero__description {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+.about-hero__description::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #3b82f6 0%, #1e40af 50%, transparent 100%);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.about-hero__description-text {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+/* Media Panel - Right side with image */
+.about-hero__media {
+  position: relative;
+  flex: 1;
+  margin-left: -5%;
+  background-color: #000000;
+  z-index: 1;
+  overflow: hidden;
+  /* Diagonal shape to match the content panel's cut */
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease;
+}
+
+.about-hero:hover .about-hero__image {
+  transform: scale(1.05);
+}
+
+.about-hero__media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 11, 20, 0.9) 0%,
+    rgba(5, 11, 20, 0.5) 12%,
+    rgba(5, 11, 20, 0.2) 25%,
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Animation */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-hero {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .about-hero__content {
+    flex: 1;
+    clip-path: none;
+    padding: 4rem max(5vw, 2rem);
+    min-height: 60vh;
+  }
+
+  .about-hero__content-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about-hero__media {
+    height: 50vh;
+    min-height: 400px;
+    margin-left: 0;
+    clip-path: none;
+  }
+
+  .about-hero__media-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 11, 20, 0.7) 0%,
+      transparent 100%
+    );
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    min-height: 100vh;
+  }
+
+  .about-hero__content {
+    padding: 3rem 1.5rem;
+    min-height: 55vh;
+  }
+
+  .about-hero__eyebrow {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .about-hero__description {
+    padding-left: 1rem;
+  }
+
+  .about-hero__media {
+    height: 45vh;
+    min-height: 300px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-hero__content-inner {
+    animation: none;
+  }
+}
