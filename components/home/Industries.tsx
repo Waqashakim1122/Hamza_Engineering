@@ -3,9 +3,22 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { industriesData } from '@/data/industriesData';
+import { industriesData, IndustryType } from '@/data/industriesData';
 
 export default function Industries() {
+  // Filter to show only these 4 industries (excluding 'paints-and-coatings')
+  const selectedIndustries = [
+    'paint-manufacturing',
+    'powder-coating',
+    'chemical-resins',
+    'polymers'
+  ];
+
+  // Get industries in the specified order, with proper type handling
+  const filteredIndustries = selectedIndustries
+    .map(slug => industriesData.find(ind => ind.slug === slug))
+    .filter((industry): industry is IndustryType => industry !== undefined);
+
   return (
     <section className="industries">
       <div className="industries__container">
@@ -19,7 +32,7 @@ export default function Industries() {
         </div>
         
         <div className="industries__grid">
-          {industriesData.map((industry) => (
+          {filteredIndustries.map((industry) => (
             <Link
               href={`/industries/${industry.slug}`}
               key={industry.id}
