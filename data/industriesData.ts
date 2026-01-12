@@ -22,62 +22,85 @@ export interface IndustryType {
 export const industriesData: IndustryType[] = [
   {
     id: 1,
-    name: "Paints & Coatings",
-    slug: "paints-and-coatings",
-    image: "/images/Industries/Paints & Coatings.webp",
-    description: "Complete paint manufacturing solutions for various applications",
+    name: "Paint Manufacturing",
+    slug: "paint-manufacturing",
+    image: "/images/Industries/Paint Manufacturing.webp",
+    description: "Complete paint manufacturing equipment and production lines",
     categories: [
       {
-        title: "According to position",
+        title: "Production Methods",
         items: [
-          "Wall paint (exterior wall paint, interior wall paint, top paint)",
-          "Wood coatings (nitro-lacquer paint, polyurethane paint)",
-          "Metallic paint (mainly enamel)"
+          "Batch processing",
+          "Continuous processing",
+          "Semi-continuous processing"
         ]
       },
       {
-        title: "According to state",
+        title: "Quality Control",
         items: [
-          "Water-based paint (emulsion paint)",
-          "Oil-based paint (nitro-lacquer paint, polyurethane paint)"
-        ]
-      },
-      {
-        title: "According to function",
-        items: [
-          "Waterproof paint",
-          "Fire-proof paint",
-          "Mildew resistant paint",
-          "Anti-mosquito paint",
-          "Multi-functional paint"
+          "Viscosity control",
+          "Color matching",
+          "Particle size analysis",
+          "Drying time testing"
         ]
       }
     ],
     content: {
-      introduction: "Paint is a generic term of materials applied on the object surface and forming a tough protective film. It exists in the form of liquid. After drying, it forms continuous paint film which decorates and protects the covered subject.",
-      expertise: "SIEHE Group has a long history of providing coating production equipment, and has supplied equipment and turnkey project for a number of well-known printing ink companies. We have rich experience in coating production and mastered the technology of powder and liquid automatic feeding system, color paste tinting system, automatic filling system and automatic control system.",
+      introduction: "Paint manufacturing involves precise formulation and processing to achieve desired properties including color, viscosity, drying time, and durability.",
+      expertise: "We provide complete turnkey solutions for paint manufacturing including raw material handling, dispersion, grinding, mixing, tinting, and packaging systems.",
       equipment: [
         {
-          title: "Disperser",
-          description: "For pre-dispersing paint and making paste for the emulsion paint. Various kinds and specification are optional including Disperser with scraper, Vacuum type Disperser, Dual-shaft Disperser with Butterfly agitator, Platform type Disperser etc. to meet various dispersing, mixing requirements."
+          title: "High-Speed Disperser",
+          description: "For efficient pigment dispersion with variable speed control and multiple blade configurations for different viscosity ranges."
         },
         {
-          title: "Basket Mill",
-          description: "A kind of wet milling equipment, it integrates dispersing and grinding two processes into one machine. It reduces production process and also without pump nor valve, so it improves production efficiency and reduces material waste."
-        },
-        {
-          title: "Horizontal Beads Mill",
-          description: "A wet milling machine used for grinding materials with higher final fineness requirements. It is with excellent grinding result and high efficiency."
-        },
-        {
-          title: "Paint Production Line",
-          description: "Ranging from 500T/year to 50000T/year, it can be customized based on the paint category and production requirements. The whole line can be the combination of all single machines or automatic product line with advanced production technology."
+          title: "Automated Tinting System",
+          description: "Computer-controlled color dispensing systems for precise color matching and batch-to-batch consistency."
         }
       ]
     }
   },
   {
     id: 2,
+    name: "Powder Coating",
+    slug: "powder-coating",
+    image: "/images/Industries/Powder Coating.webp",
+    description: "Powder coating formulation and application equipment",
+    categories: [
+      {
+        title: "Powder Types",
+        items: [
+          "Thermoplastic powders",
+          "Thermosetting powders",
+          "Hybrid powders"
+        ]
+      },
+      {
+        title: "Application Methods",
+        items: [
+          "Electrostatic spray",
+          "Fluidized bed",
+          "Electrostatic fluidized bed"
+        ]
+      }
+    ],
+    content: {
+      introduction: "Powder coating is a dry finishing process where finely ground particles of pigment and resin are electrostatically charged and sprayed onto electrically grounded parts.",
+      expertise: "We provide complete powder coating production lines including premixing, extrusion, grinding, classification, and packaging systems for various powder types.",
+      equipment: [
+        {
+          title: "Powder Coating Extruder",
+          description: "Specialized extruders for powder coating formulation with precise temperature control and mixing efficiency."
+        },
+        {
+          title: "Powder Grinding System",
+          description: "Jet mills and classifiers for producing fine powder with controlled particle size distribution for optimal application properties."
+        }
+      ]
+    }
+  },
+  {
+    id: 3,
     name: "Chemical Resins",
     slug: "chemical-resins",
     image: "/images/Industries/Chemical Resins.webp",
@@ -122,7 +145,7 @@ export const industriesData: IndustryType[] = [
     }
   },
   {
-    id: 3,
+    id: 4,
     name: "Polymers",
     slug: "polymers",
     image: "/images/Industries/Polymers.webp",
@@ -157,85 +180,6 @@ export const industriesData: IndustryType[] = [
         {
           title: "Twin Screw Extruder",
           description: "For polymer compounding, devolatilization, and reactive extrusion with precise temperature control and modular screw configurations."
-        }
-      ]
-    }
-  },
-  {
-    id: 4,
-    name: "Paint Manufacturing",
-    slug: "paint-manufacturing",
-    image: "/images/Industries/Paint Manufacturing.webp",
-    description: "Complete paint manufacturing equipment and production lines",
-    categories: [
-      {
-        title: "Production Methods",
-        items: [
-          "Batch processing",
-          "Continuous processing",
-          "Semi-continuous processing"
-        ]
-      },
-      {
-        title: "Quality Control",
-        items: [
-          "Viscosity control",
-          "Color matching",
-          "Particle size analysis",
-          "Drying time testing"
-        ]
-      }
-    ],
-    content: {
-      introduction: "Paint manufacturing involves precise formulation and processing to achieve desired properties including color, viscosity, drying time, and durability.",
-      expertise: "We provide complete turnkey solutions for paint manufacturing including raw material handling, dispersion, grinding, mixing, tinting, and packaging systems.",
-      equipment: [
-        {
-          title: "High-Speed Disperser",
-          description: "For efficient pigment dispersion with variable speed control and multiple blade configurations for different viscosity ranges."
-        },
-        {
-          title: "Automated Tinting System",
-          description: "Computer-controlled color dispensing systems for precise color matching and batch-to-batch consistency."
-        }
-      ]
-    }
-  },
-  {
-    id: 5,
-    name: "Powder Coating",
-    slug: "powder-coating",
-    image: "/images/Industries/Powder Coating.webp",
-    description: "Powder coating formulation and application equipment",
-    categories: [
-      {
-        title: "Powder Types",
-        items: [
-          "Thermoplastic powders",
-          "Thermosetting powders",
-          "Hybrid powders"
-        ]
-      },
-      {
-        title: "Application Methods",
-        items: [
-          "Electrostatic spray",
-          "Fluidized bed",
-          "Electrostatic fluidized bed"
-        ]
-      }
-    ],
-    content: {
-      introduction: "Powder coating is a dry finishing process where finely ground particles of pigment and resin are electrostatically charged and sprayed onto electrically grounded parts.",
-      expertise: "We provide complete powder coating production lines including premixing, extrusion, grinding, classification, and packaging systems for various powder types.",
-      equipment: [
-        {
-          title: "Powder Coating Extruder",
-          description: "Specialized extruders for powder coating formulation with precise temperature control and mixing efficiency."
-        },
-        {
-          title: "Powder Grinding System",
-          description: "Jet mills and classifiers for producing fine powder with controlled particle size distribution for optimal application properties."
         }
       ]
     }
