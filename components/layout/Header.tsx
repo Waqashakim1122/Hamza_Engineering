@@ -137,16 +137,7 @@ export default function Header() {
           </ul>
 
           {/* Mobile CTA */}
-          <div className="header__mobile-cta">
-            <Link 
-              href="/contact" 
-              className="header__mobile-cta-btn"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <Mail size={20} />
-              <span>Request Quote</span>
-            </Link>
-          </div>
+          
         </nav>
       </div>
     </>
