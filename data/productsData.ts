@@ -1,5 +1,5 @@
 // web/data/productsData.ts
-// Complete and final product catalog with real images you have saved
+// Complete product catalog with Attritor as main category
 
 export interface Product {
   id: string;
@@ -45,6 +45,13 @@ export const productCategories: ProductCategory[] = [
     slug: 'bead-mills',
     description: 'High-efficiency grinding and dispersion equipment',
     icon: '⚙️'
+  },
+  {
+    id: 'attritor-mill',
+    name: 'Attritor Stirred Ball Mill',
+    slug: 'attritor-mill',
+    description: 'Versatile stirred ball mill for fine grinding and dispersion',
+    icon: '🔬'
   },
   {
     id: 'dispersers',
@@ -197,11 +204,11 @@ export const products: Product[] = [
     ]
   },
 
-  // 5. Attritor Stirred Ball Mill
+  // 5. Attritor Stirred Ball Mill - NOW A MAIN CATEGORY
   {
     id: 'attritor-ball-mill',
     name: 'Attritor Stirred Ball Mill',
-    category: 'bead-mills',
+    category: 'attritor-mill',
     slug: 'attritor-stirred-ball-mill',
     shortDescription: 'Versatile stirred ball mill for fine grinding and dispersion',
     fullDescription: 'Simple and effective method of grinding and dispersing fine and homogenous material. Ideal for pilot plant and scale up with repeatable results.',
@@ -384,8 +391,6 @@ export function getAllCategories(): ProductCategory[] {
 export function getCategoryBySlug(slug: string): ProductCategory | undefined {
   return productCategories.find(cat => cat.slug === slug);
 }
-// web/data/productsData.ts
-// ADD THESE HELPER FUNCTIONS AT THE END
 
 // Get main product categories with their products count
 export function getMainCategoriesWithCount() {
