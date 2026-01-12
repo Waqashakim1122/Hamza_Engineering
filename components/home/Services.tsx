@@ -11,31 +11,37 @@ const coreProducts = [
     id: 1, 
     name: 'Resin Plants', 
     img: '/images/core products/Resin Plants.png', 
-    categorySlug: 'resin-plant' // Category slug
+    categorySlug: 'resin-plant'
   },
   { 
     id: 2, 
     name: 'Polymer Processing Plants', 
     img: '/images/core products/Polymer Processing Plants.png', 
-    categorySlug: 'polymer-plant' // Category slug
+    categorySlug: 'polymer-plant'
   },
   { 
     id: 3, 
     name: 'Bead Mills', 
     img: '/images/core products/bead-mills.webp', 
-    categorySlug: 'bead-mills' // Category slug
+    categorySlug: 'bead-mills'
   },
   { 
     id: 4, 
-    name: 'Dispersers', 
-    img: '/images/core products/high-speed-disperser.webp', 
-    categorySlug: 'dispersers' // Category slug
+    name: 'Attritor Stirred Ball Mill', 
+    img: '/images/products/attritor-mill.jpg', 
+    categorySlug: 'attritor-mill'
   },
   { 
     id: 5, 
-    name: 'Storage Tanks', 
+    name: 'Dispersers', 
+    img: '/images/core products/high-speed-disperser.webp', 
+    categorySlug: 'dispersers'
+  },
+  { 
+    id: 6, 
+    name: 'Vessels & Mixing Tanks', 
     img: '/images/core products/movable-tank.webp', 
-    categorySlug: 'vessels-tanks' // Category slug
+    categorySlug: 'vessels-tanks'
   },
 ];
 
