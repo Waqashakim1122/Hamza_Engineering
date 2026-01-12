@@ -40,7 +40,7 @@ export default function OurCustomers() {
           <span className="our-customers__eyebrow">Trusted Partners</span>
           <h2 className="our-customers__title">Our Customers</h2>
           <p className="our-customers__subtitle">
-            We proudly work with leading paint and coatings manufacturers.
+            We proudly Services with leading paint and coatings manufacturers.
           </p>
         </div>
 
