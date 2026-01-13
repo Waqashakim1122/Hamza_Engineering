@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { ArrowRight, Menu, X, Mail } from 'lucide-react';
+import { ArrowRight, Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -99,24 +99,26 @@ export default function Header() {
         />
       )}
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - REMOVED THE LOGO FROM HERE */}
       <div className={`header__mobile ${isMenuOpen ? 'header__mobile--open' : ''}`}>
-        {/* Mobile Header */}
+        
+        {/* Mobile Header - SIMPLIFIED WITHOUT LOGO */}
         <div className="header__mobile-header">
           <div className="header__mobile-brand">
-            <div className="header__mobile-logo">
-              <img
-                src="/images/logo.png"
-                alt="Hamza Engineering"
-                width={45}
-                height={45}
-              />
-            </div>
+            {/* Removed logo container */}
             <div>
               <h2 className="header__mobile-title">HAMZA ENGINEERING</h2>
-              <p className="header__mobile-subtitle">Industrial Solutions</p>
+              <p className="header__mobile-subtitle">Industrial Machinery Solutions</p>
             </div>
           </div>
+          {/* Close button at top right */}
+          <button
+            className="header__mobile-close"
+            onClick={() => setIsMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <X size={24} />
+          </button>
         </div>
 
         {/* Mobile Navigation */}
