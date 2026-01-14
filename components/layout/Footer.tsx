@@ -51,27 +51,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services/Products */}
           <div className="footer__column">
             <h3 className="footer__col-title">OUR SERVICES</h3>
             <ul className="footer__nav-list">
-              <li><Link href="/products">Paint Manufacturing</Link></li>
-              <li><Link href="/products">Resin Production</Link></li>
-              <li><Link href="/products">Industrial Machinery</Link></li>
-              <li><Link href="/products">Custom Fabrication</Link></li>
-              <li><Link href="/products">Technical Support</Link></li>
+              <li><Link href="/products/category/resin-plant">Resin Plants</Link></li>
+              <li><Link href="/products/category/polymer-plant">Polymer Plants</Link></li>
+              <li><Link href="/products/category/bead-mills">Bead Mills</Link></li>
+              <li><Link href="/products/attritor-stirred-ball-mill">Attritor Mill</Link></li>
+              <li><Link href="/products/category/dispersers">Dispersers</Link></li>
+              <li><Link href="/products/category/vessels-tanks">Vessels & Tanks</Link></li>
             </ul>
           </div>
 
-          {/* Industries */}
+          {/* Industries Served */}
           <div className="footer__column">
             <h3 className="footer__col-title">INDUSTRIES SERVED</h3>
             <ul className="footer__nav-list">
-              <li><Link href="/industries">Paints & Coatings</Link></li>
-              <li><Link href="/industries">Chemical Resins</Link></li>
-              <li><Link href="/industries">Polymers</Link></li>
-              <li><Link href="/industries">Manufacturing</Link></li>
-              <li><Link href="/industries">Powder Coating</Link></li>
+              <li><Link href="/industries/paint-manufacturing">Paint Manufacturing</Link></li>
+              <li><Link href="/industries/powder-coating">Powder Coating</Link></li>
+              <li><Link href="/industries/chemical-resins">Chemical Resins</Link></li>
+              <li><Link href="/industries/polymers">Polymers</Link></li>
+              <li><Link href="/industries">All Industries</Link></li>
             </ul>
           </div>
 
