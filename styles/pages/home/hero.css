@@ -9,7 +9,7 @@
   width: 100%;
   height: 100vh;
   margin-top: -65px; /* Reduces 110px to 45px (110 - 65 = 45) */
-  padding-top: 110;
+  padding-top: 110px;
   overflow: hidden;
   background-color: #050b14;
 }
