@@ -4,6 +4,8 @@
 
 .contact-page {
   background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ============================================
@@ -18,14 +20,28 @@
   overflow: hidden;
 }
 
+/* ✅ KEY FIX — spacing AFTER hero */
+.contact-page .contact-hero {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 991px) {
+  .contact-page .contact-hero {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-page .contact-hero {
+    margin-bottom: 3rem;
+  }
+}
+
 .contact-hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
+  inset: 0;
+  background:
     radial-gradient(circle at 20% 50%, rgba(251, 191, 36, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 80% 50%, rgba(30, 90, 142, 0.08) 0%, transparent 50%);
   z-index: 0;
@@ -42,7 +58,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   color: #0a2540;
-  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
   letter-spacing: -1px;
   line-height: 1.2;
   position: relative;
@@ -64,19 +80,17 @@
 .contact-hero__subtitle {
   font-size: 1.25rem;
   color: #666;
-  margin: 2rem 0 0 0;
+  margin-top: 2rem;
   line-height: 1.7;
-  font-weight: 400;
 }
 
 /* ============================================
-   SECTION DIVIDER - MATCHES INDUSTRIES STYLE
+   SECTION DIVIDER
    ============================================ */
 
 .contact-section-divider {
   padding: 5rem 0 3rem;
   text-align: center;
-  position: relative;
   background: #ffffff;
 }
 
@@ -94,14 +108,13 @@
   margin-bottom: 1.5rem;
   font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 700;
-  line-height: 1.2;
   color: #0a2540;
 }
 
 .contact-section-divider__description {
   max-width: 800px;
   margin: 0 auto;
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: 1.125rem;
   line-height: 1.7;
   color: #666;
 }
@@ -111,7 +124,7 @@
    ============================================ */
 
 .contact-section {
-  padding: 3rem 0 5rem;
+  padding: 4rem 0 6rem;
 }
 
 .contact-grid {
@@ -122,7 +135,7 @@
 }
 
 /* ============================================
-   CONTACT FORM - WITH HOVER EFFECTS
+   CONTACT FORM
    ============================================ */
 
 .contact-form {
@@ -130,31 +143,13 @@
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid transparent;
+  transition: all 0.4s ease;
   position: relative;
-  overflow: hidden;
-}
-
-.contact-form::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.03), transparent);
-  transition: left 0.6s ease;
-}
-
-.contact-form:hover::before {
-  left: 100%;
 }
 
 .contact-form:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-  border-color: rgba(251, 191, 36, 0.2);
   transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
 
 .contact-form__header {
@@ -167,26 +162,11 @@
   font-size: 1.875rem;
   font-weight: 700;
   color: #0a2540;
-  margin: 0 0 0.5rem 0;
 }
 
 .contact-form__subtitle {
-  font-size: 1rem;
   color: #666;
-  margin: 0;
   line-height: 1.6;
-}
-
-.contact-form__body {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-/* Form Groups */
-.form-group {
-  display: flex;
-  flex-direction: column;
 }
 
 .form-row {
@@ -195,14 +175,16 @@
   gap: 1.5rem;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-label {
-  display: block;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #333;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .required {
@@ -211,124 +193,20 @@
 
 .form-input,
 .form-textarea {
-  width: 100%;
   padding: 0.875rem 1rem;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
-  font-size: 1rem;
-  font-family: inherit;
-  color: #333;
-  background: #ffffff;
   transition: all 0.3s ease;
-}
-
-.form-input:hover,
-.form-textarea:hover {
-  border-color: #d0d0d0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .form-input:focus,
 .form-textarea:focus {
-  outline: none;
   border-color: #fbbf24;
   box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
-  transform: translateY(-2px);
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder {
-  color: #999;
-}
-
-.form-textarea {
-  resize: vertical;
-  min-height: 150px;
-  line-height: 1.6;
-}
-
-/* Submit Button */
-.contact-submit {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-  color: #0a2540;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 700;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  margin-top: 0.5rem;
-}
-
-.contact-submit:hover:not(:disabled) {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.3);
-}
-
-.contact-submit:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.contact-submit svg {
-  transition: transform 0.3s ease;
-}
-
-.contact-submit:hover:not(:disabled) svg {
-  transform: translateX(4px);
-}
-
-.spinner {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #0a2540;
-  border-top-color: transparent;
-  border-radius: 50%;
-  animation: spin 0.6s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-/* Status Message */
-.form-status {
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-weight: 600;
-  animation: slideIn 0.3s ease;
-}
-
-.form-status--success {
-  background: #d1fae5;
-  color: #065f46;
-  border: 1px solid #10b981;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ============================================
-   CONTACT INFO - WITH HOVER EFFECTS
+   CONTACT INFO
    ============================================ */
 
 .contact-info {
@@ -336,219 +214,36 @@
   padding: 2.5rem;
   border-radius: 16px;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid transparent;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-info::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.05), transparent);
-  transition: right 0.6s ease;
-}
-
-.contact-info:hover::before {
-  right: 100%;
+  transition: all 0.4s ease;
 }
 
 .contact-info:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-  border-color: rgba(251, 191, 36, 0.3);
   transform: translateY(-4px);
-}
-
-.contact-info__title {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #fbbf24;
-  margin: 0;
-}
-
-.contact-info__description {
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
-  margin: 0;
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1.75rem;
-}
-
-.contact-detail {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  padding: 1rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.contact-detail:hover {
-  background: rgba(251, 191, 36, 0.08);
-  transform: translateX(8px);
-}
-
-.contact-detail__icon {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  background: rgba(251, 191, 36, 0.15);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fbbf24;
-  transition: all 0.3s ease;
-}
-
-.contact-detail:hover .contact-detail__icon {
-  background: #fbbf24;
-  color: #0a2540;
-  transform: scale(1.1) rotate(5deg);
-}
-
-.contact-detail__content {
-  flex: 1;
-}
-
-.contact-detail__title {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #fbbf24;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0 0 0.5rem 0;
-}
-
-.contact-detail__text {
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0.25rem 0;
-  line-height: 1.6;
-}
-
-.contact-detail__link {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
-  transition: color 0.3s ease;
-}
-
-.contact-detail__link:hover {
-  color: #fbbf24;
-}
-
-/* Google Map */
-.contact-map {
-  width: 100%;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 2px solid rgba(251, 191, 36, 0.3);
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact-map:hover {
-  border-color: #fbbf24;
-  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.2);
-  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   RESPONSIVE
    ============================================ */
 
 @media (max-width: 1024px) {
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .contact-hero {
-    padding: 4rem 0 3rem;
-  }
-
   .contact-hero__title {
     font-size: 2.5rem;
   }
 
-  .contact-hero__subtitle {
-    font-size: 1.125rem;
-  }
-
-  .contact-section-divider {
-    padding: 3rem 0 1.5rem;
-  }
-
-  .contact-section {
-    padding: 2.5rem 0 4rem;
-  }
-
-  .contact-form {
-    padding: 2rem 1.5rem;
-  }
-
-  .contact-form__title {
-    font-size: 1.5rem;
-  }
-
   .form-row {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .contact-submit {
-    width: 100%;
-  }
-
-  .contact-info {
-    padding: 2rem 1.5rem;
-  }
-
-  .contact-info__title {
-    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .contact-hero__title {
     font-size: 1.875rem;
-  }
-
-  .contact-section-divider {
-    padding: 2.5rem 0 1rem;
-  }
-
-  .contact-section-divider__heading-line {
-    font-size: 1.75rem;
-  }
-
-  .contact-form {
-    padding: 1.5rem 1rem;
-  }
-
-  .contact-info {
-    padding: 1.5rem 1rem;
-  }
-
-  .contact-detail__icon {
-    width: 40px;
-    height: 40px;
   }
 }
