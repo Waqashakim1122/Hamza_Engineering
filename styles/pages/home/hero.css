@@ -8,7 +8,7 @@
   align-items: stretch;
   width: 100%;
   height: 100vh;
-  margin-top: 0;
+  margin-top: -65px; /* Reduces 110px to 45px (110 - 65 = 45) */
   padding-top: 0;
   overflow: hidden;
   background-color: #050b14;
@@ -214,6 +214,7 @@
     flex-direction: column;
     height: auto;
     min-height: 100vh;
+    margin-top: 0; /* Reset negative margin on mobile */
   }
 
   .hero__content {
@@ -251,6 +252,7 @@
 @media (max-width: 640px) {
   .hero {
     min-height: 100vh;
+    margin-top: 0; /* Reset negative margin on mobile */
   }
 
   .hero__content {
@@ -288,6 +290,11 @@
   .hero__cta-icon {
     transition: none;
   }
+}
+
+.hero__cta:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 4px;
 }
 
 .hero__cta:focus-visible {
