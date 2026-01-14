@@ -25,7 +25,7 @@ export const industriesData: IndustryType[] = [
     name: "Paint Manufacturing",
     slug: "paint-manufacturing",
     image: "/images/Industries/Paint Manufacturing.webp",
-    description: "Complete paint manufacturing equipment and production lines",
+    description: "Complete paint manufacturing equipment and turnkey production lines",
     categories: [
       {
         title: "Production Methods",
@@ -46,16 +46,16 @@ export const industriesData: IndustryType[] = [
       }
     ],
     content: {
-      introduction: "Paint manufacturing involves precise formulation and processing to achieve desired properties including color, viscosity, drying time, and durability.",
-      expertise: "We provide complete turnkey solutions for paint manufacturing including raw material handling, dispersion, grinding, mixing, tinting, and packaging systems.",
+      introduction: "Paint manufacturing requires precise formulation and processing to achieve optimal color, viscosity, drying characteristics, and long-term durability.",
+      expertise: "HAMZA ENGINEERING delivers comprehensive turnkey solutions for paint production, encompassing raw material handling, high-efficiency dispersion, fine grinding, mixing, automated tinting, and advanced packaging systems.",
       equipment: [
         {
           title: "High-Speed Disperser",
-          description: "For efficient pigment dispersion with variable speed control and multiple blade configurations for different viscosity ranges."
+          description: "Engineered for superior pigment dispersion with variable speed control and multiple blade options to accommodate a wide range of viscosities."
         },
         {
           title: "Automated Tinting System",
-          description: "Computer-controlled color dispensing systems for precise color matching and batch-to-batch consistency."
+          description: "Computer-controlled color dispensing technology ensuring exceptional accuracy, repeatability, and batch-to-batch color consistency."
         }
       ]
     }
@@ -65,7 +65,7 @@ export const industriesData: IndustryType[] = [
     name: "Powder Coating",
     slug: "powder-coating",
     image: "/images/Industries/Powder Coating.webp",
-    description: "Powder coating formulation and application equipment",
+    description: "Advanced powder coating formulation and production equipment",
     categories: [
       {
         title: "Powder Types",
@@ -85,16 +85,16 @@ export const industriesData: IndustryType[] = [
       }
     ],
     content: {
-      introduction: "Powder coating is a dry finishing process where finely ground particles of pigment and resin are electrostatically charged and sprayed onto electrically grounded parts.",
-      expertise: "We provide complete powder coating production lines including premixing, extrusion, grinding, classification, and packaging systems for various powder types.",
+      introduction: "Powder coating is an environmentally responsible dry finishing process in which finely ground pigment and resin particles are electrostatically charged and applied to grounded substrates.",
+      expertise: "HAMZA ENGINEERING offers complete powder coating production lines, including premixing, melt extrusion, ultra-fine grinding, air classification, and automated packaging systems tailored to diverse powder formulations.",
       equipment: [
         {
           title: "Powder Coating Extruder",
-          description: "Specialized extruders for powder coating formulation with precise temperature control and mixing efficiency."
+          description: "High-performance extruders designed for powder coating production, featuring precise temperature zoning and optimized mixing efficiency."
         },
         {
           title: "Powder Grinding System",
-          description: "Jet mills and classifiers for producing fine powder with controlled particle size distribution for optimal application properties."
+          description: "Advanced jet mills and high-precision classifiers delivering controlled particle size distribution for superior application performance and finish quality."
         }
       ]
     }
@@ -104,7 +104,7 @@ export const industriesData: IndustryType[] = [
     name: "Chemical Resins",
     slug: "chemical-resins",
     image: "/images/Industries/Chemical Resins.webp",
-    description: "Specialized resin production equipment and solutions",
+    description: "Specialized equipment and turnkey solutions for resin manufacturing",
     categories: [
       {
         title: "According to source",
@@ -130,16 +130,16 @@ export const industriesData: IndustryType[] = [
       }
     ],
     content: {
-      introduction: "Resin normally refers to an organic polymer (Under normal temperature, it is solid or semi-solid state, some time, also liquid state), having soften or melt range after heated. When it is softened, it with flowing tendency under the external force.",
-      expertise: "SIEHE Group provides production equipment, and turnkey project for resin factories. The products includes unsaturated polyester resin, phenolic resin, epoxy resin, ABS resin, emulsion etc. We not only provide equipment, but also the whole plant delivery, engineering design, service, factory renovation, production expansion, project management consulting services.",
+      introduction: "Resins are organic polymers that, under normal conditions, exist as solids, semi-solids, or liquids. They exhibit a defined softening or melting range and flow under external force when heated.",
+      expertise: "HAMZA ENGINEERING provides advanced production equipment and complete turnkey projects for resin manufacturing, including unsaturated polyester resin, phenolic resin, epoxy resin, ABS resin, and emulsions. Our services cover full plant delivery, detailed engineering design, factory upgrades, capacity expansion, project management, and customized consulting solutions.",
       equipment: [
         {
           title: "Reaction Kettle",
-          description: "Normal pressure or pressurized vessel for sulfuration, nitration, hydrogenation, alkylation, polymerization, condensation processes. It consists of kettle body, kettle cover, jacket, agitator, driving device, shaft sealing device, bearing and other parts."
+          description: "Pressure and atmospheric vessels engineered for critical processes including polymerization, condensation, alkylation, hydrogenation, nitration, and sulfuration. Configurable with various agitation systems, sealing technologies, and heating/cooling methods."
         },
         {
           title: "Resin Complete Production Line",
-          description: "Consists of supporting tanks, main reaction kettle, vertical distillation column, vertical condenser, horizontal condenser, water collector, spill pot, pipeline and dilution vessels etc."
+          description: "Integrated systems comprising supporting tanks, main reaction kettles, vertical distillation columns, vertical & horizontal condensers, water collectors, spill pots, interconnecting pipelines, and dilution vessels."
         }
       ]
     }
@@ -170,16 +170,16 @@ export const industriesData: IndustryType[] = [
       }
     ],
     content: {
-      introduction: "Polymers are large molecules composed of repeating structural units. They play a crucial role in modern industry with applications ranging from packaging materials to advanced composites.",
-      expertise: "We provide specialized equipment for polymer processing including polymerization reactors, extrusion lines, compounding systems, and specialized mixing equipment for various polymer types.",
+      introduction: "Polymers are high-molecular-weight compounds composed of repeating structural units, serving as foundational materials across industries from packaging to high-performance composites.",
+      expertise: "HAMZA ENGINEERING delivers specialized equipment and integrated solutions for polymer processing, including advanced polymerization reactors, high-capacity extrusion systems, precision compounding lines, and custom mixing technologies for diverse polymer applications.",
       equipment: [
         {
           title: "Polymerization Reactor",
-          description: "Specialized reactors for bulk, solution, suspension, and emulsion polymerization processes with precise temperature and pressure control."
+          description: "High-precision reactors designed for bulk, solution, suspension, and emulsion polymerization, offering accurate control of temperature, pressure, and reaction conditions."
         },
         {
           title: "Twin Screw Extruder",
-          description: "For polymer compounding, devolatilization, and reactive extrusion with precise temperature control and modular screw configurations."
+          description: "Versatile twin-screw extrusion systems optimized for polymer compounding, devolatilization, and reactive extrusion, featuring modular screw designs and precise temperature management."
         }
       ]
     }
