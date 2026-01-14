@@ -16,8 +16,7 @@ import '@/styles/layout/footer.css';
 import '@/styles/layout/floating-contact.css';
 import '@/styles/layout/loading-screen.css';
 
-
-// Page styles - Homeimport 
+// Page styles - Home
 import '@/styles/pages/home/hero.css';
 import '@/styles/pages/home/services.css';
 import '@/styles/pages/home/industries.css';
@@ -27,24 +26,23 @@ import '@/styles/pages/home/cta-contact.css';
 import '@/styles/pages/about/AboutHero.css';
 import '@/styles/pages/about/CompanyProfile.css';
 import '@/styles/pages/about/OurCustomers.css';
-
 import '@/styles/pages/about/capabilities.css';
 import '@/styles/pages/about/certifications.css';
 
-// Add this with your other imports
+// Page styles - Products
 import '@/styles/pages/products/product-detail.css';
 import '@/styles/pages/products/products-hero.css';
 import '@/styles/pages/products/main-categories.css';
 import '@/styles/pages/products/category-types.css';
 
+// Page styles - Industries
 import '@/styles/pages/Industries/IndustriesHero.css';
 import '@/styles/pages/Industries/IndustryDetail.css';
 
+// Page styles - Contact
 import '@/styles/pages/contact/contact.css';
- import '@/styles/pages/contact/contact-form.css';
+import '@/styles/pages/contact/contact-form.css';
 import '@/styles/pages/contact/contact-info.css';
-
-
 
 // Component styles
 import '@/styles/components/buttons.css';
