@@ -1,5 +1,6 @@
 /* =============================================================================
    HERO SECTION - Engineering Excellence Design
+   CLEAN SOLUTION: No negative margins, no conflicts
    ============================================================================= */
 
 .hero {
@@ -7,9 +8,9 @@
   display: flex;
   align-items: stretch;
   width: 100%;
-  height: 100vh;
-  margin-top: -65px; /* Reduces 110px to 45px (110 - 65 = 45) */
-  padding-top: 110px;
+  height: calc(100vh - 75px); /* Subtract header height */
+  margin-top: 75px; /* Push down by header height */
+  padding-top: 0;
   overflow: hidden;
   background-color: #050b14;
 }
@@ -195,7 +196,7 @@
 }
 
 /* =============================================================================
-   ANIMATIONS & RESPONSIVE (unchanged except minor mobile tweaks)
+   ANIMATIONS & RESPONSIVE - Matched with header breakpoints
    ============================================================================= */
 
 @keyframes heroFadeIn {
@@ -209,19 +210,44 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* Large Screens (1440px+) - Header is 80px */
+@media (min-width: 1440px) {
+  .hero {
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+  }
+}
+
+/* Desktop (1200px - 1439px) - Header is 75px (default) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero {
+    height: calc(100vh - 75px);
+    margin-top: 75px;
+  }
+}
+
+/* Desktop Small (992px - 1199px) - Header is 72px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero {
+    height: calc(100vh - 72px);
+    margin-top: 72px;
+  }
+}
+
+/* Tablet (768px - 991px) - Header is 68px */
+@media (min-width: 768px) and (max-width: 991px) {
   .hero {
     flex-direction: column;
     height: auto;
-    min-height: 100vh;
-    margin-top: 0; /* Reset negative margin on mobile */
+    min-height: calc(100vh - 68px);
+    margin-top: 68px;
   }
 
   .hero__content {
     flex: 1;
     clip-path: none;
     padding: 4rem max(5vw, 2rem);
-    min-height: 60vh;
+    min-height: 50vh;
   }
 
   .hero__content-inner {
@@ -233,7 +259,7 @@
     height: 50vh;
     min-height: 400px;
     margin-left: 0;
-    clip-path: none; /* Full rectangle on mobile */
+    clip-path: none;
   }
 
   .hero__video {
@@ -249,15 +275,56 @@
   }
 }
 
-@media (max-width: 640px) {
+/* Mobile Landscape (576px - 767px) - Header is 65px */
+@media (min-width: 576px) and (max-width: 767px) {
   .hero {
-    min-height: 100vh;
-    margin-top: 0; /* Reset negative margin on mobile */
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 65px);
+    margin-top: 65px;
+  }
+
+  .hero__content {
+    flex: 1;
+    clip-path: none;
+    padding: 3.5rem 2rem;
+    min-height: 50vh;
+  }
+
+  .hero__content-inner {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero__media {
+    height: 50vh;
+    min-height: 350px;
+    margin-left: 0;
+    clip-path: none;
+  }
+
+  .hero__media-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 11, 20, 0.7) 0%,
+      transparent 100%
+    );
+  }
+}
+
+/* Mobile Portrait (361px - 575px) - Header is 60px */
+@media (min-width: 361px) and (max-width: 575px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
   }
 
   .hero__content {
     padding: 3rem 1.5rem;
     min-height: 55vh;
+    clip-path: none;
   }
 
   .hero__eyebrow {
@@ -278,8 +345,58 @@
   .hero__media {
     height: 45vh;
     min-height: 300px;
+    margin-left: 0;
+    clip-path: none;
   }
 }
+
+/* Extra Small Mobile (≤360px) - Header is 58px */
+@media (max-width: 360px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 58px);
+    margin-top: 58px;
+  }
+
+  .hero__content {
+    padding: 2.5rem 1rem;
+    min-height: 55vh;
+    clip-path: none;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  .hero__heading-line {
+    font-size: 2rem;
+  }
+
+  .hero__description {
+    padding-left: 0.875rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__cta {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .hero__media {
+    height: 45vh;
+    min-height: 280px;
+    margin-left: 0;
+    clip-path: none;
+  }
+}
+
+/* =============================================================================
+   ACCESSIBILITY & PERFORMANCE
+   ============================================================================= */
 
 @media (prefers-reduced-motion: reduce) {
   .hero__content-inner {
@@ -290,11 +407,6 @@
   .hero__cta-icon {
     transition: none;
   }
-}
-
-.hero__cta:focus-visible {
-  outline: 3px solid #3b82f6;
-  outline-offset: 4px;
 }
 
 .hero__cta:focus-visible {
