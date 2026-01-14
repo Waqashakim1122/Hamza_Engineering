@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import LoadingScreen from '@/components/layout/LoadingScreen';
 import FloatingContactBar from '@/components/layout/FloatingContactBar';
 
 // Global styles
@@ -11,7 +10,6 @@ import '@/styles/base.css';
 // Layout styles
 import '@/styles/layout/layout.css';
 import '@/styles/layout/header.css';
-import '@/styles/layout/navbar.css';
 import '@/styles/layout/footer.css';
 import '@/styles/layout/floating-contact.css';
 import '@/styles/layout/loading-screen.css';
@@ -29,17 +27,17 @@ import '@/styles/pages/about/OurCustomers.css';
 import '@/styles/pages/about/capabilities.css';
 import '@/styles/pages/about/certifications.css';
 
-// Page styles - Products
+// Product styles
 import '@/styles/pages/products/product-detail.css';
 import '@/styles/pages/products/products-hero.css';
 import '@/styles/pages/products/main-categories.css';
 import '@/styles/pages/products/category-types.css';
 
-// Page styles - Industries
+// Industries styles
 import '@/styles/pages/Industries/IndustriesHero.css';
 import '@/styles/pages/Industries/IndustryDetail.css';
 
-// Page styles - Contact
+// Contact styles
 import '@/styles/pages/contact/contact.css';
 import '@/styles/pages/contact/contact-form.css';
 import '@/styles/pages/contact/contact-info.css';
@@ -70,9 +68,16 @@ export default function RootLayout({
         <meta name="theme-color" content="#1e5a8e" />
       </head>
       <body>
-        <LoadingScreen />
         <Header />
-        <main className="page-transition">{children}</main>
+        <main 
+          className="page-transition"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+          }}
+        >
+          {children}
+        </main>
         <FloatingContactBar />
         <Footer />
       </body>
