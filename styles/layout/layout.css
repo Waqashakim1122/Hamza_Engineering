@@ -1,6 +1,18 @@
 /* ============================================
-   FILE 1: web/styles/layout/layout.css
+   FILE: web/styles/layout/layout.css
    ============================================ */
+
+/* ============================================
+   CSS VARIABLES FOR HEADER HEIGHT
+   ============================================ */
+:root {
+  --header-height: 80px;
+  --header-height-desktop: 85px;
+  --header-height-tablet: 70px;
+  --header-height-mobile: 65px;
+  --header-height-small: 60px;
+  --header-height-tiny: 58px;
+}
 
 /* ============================================
    MAIN LAYOUT STRUCTURE
@@ -28,12 +40,17 @@ body {
 }
 
 /* ============================================
-   MAIN CONTENT AREA
+   MAIN CONTENT AREA - WITH HEADER OFFSET
    ============================================ */
 
 main {
   min-height: calc(100vh - 400px);
   padding: 0;
+}
+
+/* Use CSS variables for consistent header offset */
+main.main-content {
+  padding-top: var(--header-height);
 }
 
 /* ============================================
@@ -92,18 +109,32 @@ main {
 }
 
 /* ============================================
-   RESPONSIVE CONTAINERS
+   RESPONSIVE CONTAINERS & HEADER OFFSET
    ============================================ */
+
+@media (max-width: 1440px) {
+  main.main-content {
+    padding-top: var(--header-height);
+  }
+}
 
 @media (max-width: 1200px) {
   .container {
     padding: 0 2rem;
+  }
+  
+  main.main-content {
+    padding-top: 75px;
   }
 }
 
 @media (max-width: 1024px) {
   .grid--4 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  main.main-content {
+    padding-top: var(--header-height-tablet);
   }
 }
 
@@ -125,6 +156,22 @@ main {
   .grid--4 {
     grid-template-columns: 1fr;
   }
+  
+  main.main-content {
+    padding-top: var(--header-height-mobile);
+  }
+}
+
+@media (max-width: 767px) {
+  main.main-content {
+    padding-top: var(--header-height-mobile);
+  }
+}
+
+@media (max-height: 800px) and (max-width: 767px) {
+  main.main-content {
+    padding-top: var(--header-height-small);
+  }
 }
 
 @media (max-width: 480px) {
@@ -138,6 +185,23 @@ main {
 
   .section--small {
     padding: 2rem 0;
+  }
+
+  main.main-content {
+    padding-top: var(--header-height-small);
+  }
+}
+
+/* Specific fix for 334px width screens */
+@media (max-width: 360px) {
+  main.main-content {
+    padding-top: var(--header-height-tiny);
+  }
+}
+
+@media (max-height: 600px) {
+  main.main-content {
+    padding-top: var(--header-height-tiny);
   }
 }
 
@@ -167,4 +231,35 @@ main {
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
 .mt-4 { margin-top: 2rem; }
-.mt-5 { margin-top: 3rem; }import type { Metadata } from 'next';
+.mt-5 { margin-top: 3rem; }
+
+/* ============================================
+   PAGE TRANSITION
+   ============================================ */
+
+.page-transition {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .page-transition {
+    animation: none;
+  }
+}
