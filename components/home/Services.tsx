@@ -1,3 +1,4 @@
+// web/components/products/CoreProducts.tsx
 'use client';
 
 import React from 'react';
@@ -39,6 +40,12 @@ const coreProducts = [
   },
   { 
     id: 6, 
+    name: 'Industrial Mixers', 
+    img: '/images/core products/industrial-mixers.webp', 
+    categorySlug: 'mixers'
+  },
+  { 
+    id: 7, 
     name: 'Vessels & Mixing Tanks', 
     img: '/images/core products/movable-tank.webp', 
     categorySlug: 'vessels-tanks'
