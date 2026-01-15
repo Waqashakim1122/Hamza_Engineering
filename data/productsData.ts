@@ -1,5 +1,5 @@
 // web/data/productsData.ts
-// Complete product catalog with Attritor as main category
+// Complete product catalog with all industrial equipment
 
 export interface Product {
   id: string;
@@ -59,6 +59,13 @@ export const productCategories: ProductCategory[] = [
     slug: 'dispersers',
     description: 'High-speed mixing and dispersing machines',
     icon: '🔄'
+  },
+  {
+    id: 'mixers',
+    name: 'Industrial Mixers',
+    slug: 'mixers',
+    description: 'Heavy-duty mixing equipment for various industrial applications',
+    icon: '🥄'
   },
   {
     id: 'vessels-tanks',
@@ -204,7 +211,44 @@ export const products: Product[] = [
     ]
   },
 
-  // 5. Attritor Stirred Ball Mill - NOW A MAIN CATEGORY
+  // 5. Centex Full-Volume Bead Mill
+  {
+    id: 'bead-mill-centex',
+    name: 'Centex Full-Volume Bead Mill',
+    category: 'bead-mills',
+    slug: 'centex-full-volume-bead-mill',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The Centex full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/centex-bead-mill.jpg',
+    specifications: {
+      'Technology': 'EcoMizer agitator disks with reverse feeding',
+      'Bead Distribution': 'Homogenous throughout chamber',
+      'Screen Surface': 'Large surface area for efficient separation',
+      'Energy Efficiency': 'Lower specific energy requirement',
+      'Temperature Control': 'Lower pressure reduces temperature issues',
+      'Automation': 'Sophisticated control options available'
+    },
+    features: [
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Reverse-feeding design creates homogenous bead distribution',
+      'No beads near screen enabling use of smaller grinding media',
+      'Large screen surface for higher throughput',
+      'Narrow particle size distribution',
+      'No compression of grinding beads',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
+    ],
+    applications: [
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
+    ],
+    workingPrinciple: 'The unique EcoMizer agitator disks with reverse feeding create a homogenous bead distribution throughout the grinding chamber. The smart design ensures no beads are near the screen, enabling smaller bead usage for more efficient grinding. The large screen surface maintains lower pressure inside the chamber, reducing temperature issues and enabling higher throughput.'
+  },
+
+  // 6. Attritor Stirred Ball Mill
   {
     id: 'attritor-ball-mill',
     name: 'Attritor Stirred Ball Mill',
@@ -238,10 +282,10 @@ export const products: Product[] = [
     ]
   },
 
-  // 6. FDH High Speed Disperser
+  // 7. High Speed Disperser
   {
     id: 'disperser-fdh',
-    name: 'FDH High Speed Disperser',
+    name: 'High Speed Disperser',
     category: 'dispersers',
     slug: 'fdh-high-speed-disperser',
     shortDescription: 'Double shaft high-speed disperser for chemical and coating industries',
@@ -271,10 +315,10 @@ export const products: Product[] = [
     ]
   },
 
-  // 7. FDZ Vacuum Dispersing Machine
+  // 8. Vacuum Dispersing Machine
   {
     id: 'disperser-fdz',
-    name: 'FDZ Vacuum Dispersing Machine',
+    name: 'Vacuum Dispersing Machine',
     category: 'dispersers',
     slug: 'fdz-vacuum-dispersing-machine',
     shortDescription: 'Multi-functional vacuum disperser for high-viscosity materials',
@@ -305,10 +349,10 @@ export const products: Product[] = [
     ]
   },
 
-  // 8. Lab Dispersing Machine SDF400
+  // 9. Lab Dispersing Machine
   {
     id: 'lab-disperser-sdf400',
-    name: 'Lab Dispersing Machine SDF400',
+    name: 'Lab Dispersing Machine',
     category: 'dispersers',
     slug: 'lab-dispersing-machine-sdf400',
     shortDescription: 'Multi-functional laboratory disperser for R&D and testing',
@@ -337,7 +381,95 @@ export const products: Product[] = [
     ]
   },
 
-  // 9. Movable Tank
+  // 10. Wall Mounted High-Speed Mixer (NEW - MIXERS CATEGORY)
+  {
+    id: 'mixer-wall-mounted',
+    name: 'Wall Mounted High-Speed Mixer',
+    category: 'mixers',
+    slug: 'wall-mounted-high-speed-Mixer',
+    shortDescription: 'Space-saving wall-mounted Mixer for small-batch production',
+    fullDescription: 'Wall-mounted high-speed Mixer widely used in European markets. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
+    image: '/images/products/wall-mounted-mixer.jpg',
+    specifications: {
+      'Materials Viscosity': '≤100,000 cps',
+      'Production Capacity': '200-1,500L',
+      'Max Rotation Speed': 'Up to 2930rpm (Normal: 1450rpm)',
+      'Linear Velocity': 'Over 20m/s',
+      'Solid Content': 'Up to 80%',
+      'Contact Material': 'SS304 stainless steel',
+      'Models': 'SFSW-4, SFSW-7.5, SFSF-11, SFSF-15, SFSF-18.5, SFSF-22, SFSF-30'
+    },
+    features: [
+      'Wall-mounted design saves significant production space',
+      'High rotation speed up to 2930rpm for rapid dispersion',
+      'Linear velocity over 20m/s for uniform particle distribution',
+      'Strong shearing force creates good suspension effect',
+      'Manual rotation device for disc height adjustment',
+      'Compact footprint ideal for limited spaces',
+      'Quick dispersion of powder in liquid',
+      'Different motor explosion-proof classes available'
+    ],
+    applications: [
+      'Biology and pharmaceutical industry',
+      'Food processing',
+      'Paint and ink manufacturing',
+      'Adhesive production',
+      'Pigment and fertilizer processing',
+      'Small-batch multi-variety production'
+    ],
+    workingPrinciple: 'Through high-speed rotation of the Mixing disc, materials become annular flow, resulting in strong vortex flow that descends to the vortex bottom in spiral state. During this process, materials are dispersed, dissolved, mixed and emulsified efficiently due to strong shearing, crash and friction among particles.'
+  },
+
+  // 11. Floor Standing Planetary Mixer MP80 (NEW - MIXERS CATEGORY)
+  {
+    id: 'mixer-floor-standing-mp80',
+    name: 'Heavy Duty Floor Standing Mixer',
+    category: 'mixers',
+    slug: 'floor-standing-planetary-mixer',
+    shortDescription: '80L heavy-duty planetary mixer for bakeries and industrial applications',
+    fullDescription: 'Heavy-duty 80-liter floor-standing, belt-driven planetary mixer. Particularly suitable for bakeries, hotels, restaurants, canteens and industrial production. Planetary mixing action ensures perfect results every time.',
+    image: '/images/products/floor-standing-mixer.jpg',
+    specifications: {
+      'Bowl Capacity': '80 Litres',
+      'Motor Power': 'High torque motor',
+      'Speed Range': '4 fixed speeds: 110, 161, 195, 286 rpm',
+      'Operation': 'Belt driven planetary action',
+      'Frame': 'Heavy-duty cast iron',
+      'Safety Features': 'Emergency stop, interlocking bowl guard, automatic shut-off',
+      'Lift System': 'Bowl power lift with manual option',
+      'Material': 'Stainless steel bowl and attachments',
+      'Weight Support': 'Up to 660kg load capacity'
+    },
+    features: [
+      'Heavy-duty 80L capacity with planetary mixing action',
+      'High torque motor for stiff doughs and large batches',
+      '4 fixed speeds with easy speed-shifting',
+      'Dual bowl clamps for secure locking',
+      'Bowl power lift with manual handle backup',
+      'Stainless steel safety guard with automatic shut-off',
+      'Interlocking bowl guard for total user safety',
+      'Timer function up to 30 minutes',
+      'Emergency stop button',
+      'Resettable thermal overload protection',
+      'Heat-treated hardened steel transmission gears',
+      'Long-lasting abrasion-resistant transmission',
+      'Non-slip rubber feet for stability',
+      'Quiet operation',
+      'Includes: beater, whisk, dough hook, bowl trolley'
+    ],
+    applications: [
+      'Bakery production',
+      'Hotel and restaurant kitchens',
+      'Canteens and catering',
+      'Industrial food processing',
+      'Dough preparation',
+      'Cake and pastry mixing',
+      'Vegetable processing'
+    ],
+    workingPrinciple: 'Planetary mixing action rotates the mixing tool around the bowl while simultaneously spinning on its own axis, ensuring every part of the mixture is thoroughly processed. The belt-driven system provides consistent power delivery for heavy-duty mixing tasks.'
+  },
+
+  // 12. Movable Tank
   {
     id: 'movable-tank',
     name: 'Movable Tank',
