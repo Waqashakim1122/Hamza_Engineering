@@ -60,6 +60,7 @@ export default function Footer() {
               <li><Link href="/products/category/bead-mills">Bead Mills</Link></li>
               <li><Link href="/products/attritor-stirred-ball-mill">Attritor Mill</Link></li>
               <li><Link href="/products/category/dispersers">Dispersers</Link></li>
+              <li><Link href="/products/category/mixers">Industrial Mixers</Link></li>
               <li><Link href="/products/category/vessels-tanks">Vessels & Tanks</Link></li>
             </ul>
           </div>
