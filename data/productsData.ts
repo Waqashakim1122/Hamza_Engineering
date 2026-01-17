@@ -259,7 +259,7 @@ export const products: Product[] = [
     image: '/images/products/attritor-mill.jpg',
     specifications: {
       'Operation': 'Wet or dry',
-      'Speed Range': '0 to 100 RPM',
+      'Speed Range': 'o to 100 RPM',
       'Media Size': '1/8" to 3/8"',
       'Atmosphere': 'Can introduce inert atmospheres',
       'Temperature': 'Controlled temperature operation'
@@ -474,6 +474,35 @@ export const products: Product[] = [
       'Pharmaceutical materials',
       'Adhesives and resins',
       'General industrial storage'
+    ]
+  },
+
+  // 13. Storage Tank
+  {
+    id: 'storage-tank',
+    name: 'Storage Tank',
+    category: 'vessels-tanks',
+    slug: 'storage-tank',
+    shortDescription: 'Heavy-duty stationary storage tank for large-scale industrial storage',
+    fullDescription: 'Heavy-duty stationary storage tank designed for large-scale industrial storage applications. Available in stainless steel and mild steel construction.',
+    image: '/images/products/storage-tank.jpg',
+    specifications: {
+      'Capacity Range': '10,000 LTR to 50,000 LTR',
+      'Material': 'Stainless Steel 304, 316 and MS',
+      'Type': 'Stationary (Non-movable)',
+      'Construction': 'Heavy-duty industrial grade'
+    },
+    features: [
+      'Large capacity storage',
+      'Stainless Steel 304 and 316 options',
+      'Mild Steel (MS) construction available',
+      'Heavy-duty stationary design',
+      'Industrial grade construction'
+    ],
+    applications: [
+      'Large-scale chemical storage',
+      'Industrial material storage',
+      'Bulk storage applications'
     ]
   }
 ];
