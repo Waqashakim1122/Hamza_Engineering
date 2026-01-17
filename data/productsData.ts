@@ -420,7 +420,7 @@ export const products: Product[] = [
     category: 'mixers',
     slug: 'floor-standing-planetary-mixer',
     shortDescription: 'Floor Standing Planetary mixer suitable for Muiltiple industrial production ',
-    fullDescription: 'Heavy-duty 80-liter floor-standing, belt-driven planetary mixer. Particularly suitable for bakeries, hotels, restaurants, canteens and industrial production. Planetary mixing action ensures perfect results every time.',
+    fullDescription: Floor Standing Planetary mixer suitable for Muiltiple industrial production.',
     image: '/images/products/floor-standing-mixer.jpg',
     specifications: {
       'Capacity': 'as required
