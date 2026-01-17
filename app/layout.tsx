@@ -70,7 +70,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main 
-          className="page-transition"
+          className="main-content page-transition"
           style={{
             display: 'flex',
             flexDirection: 'column',
