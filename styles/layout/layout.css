@@ -17,7 +17,6 @@
 /* ============================================
    MAIN LAYOUT STRUCTURE
    ============================================ */
-
 * {
   margin: 0;
   padding: 0;
@@ -40,23 +39,21 @@ body {
 }
 
 /* ============================================
-   MAIN CONTENT AREA - WITH HEADER OFFSET
+   MAIN CONTENT AREA - NO HEADER OFFSET ANYMORE
    ============================================ */
-
 main {
   min-height: calc(100vh - 400px);
   padding: 0;
 }
 
-/* Use CSS variables for consistent header offset */
+/* ← Removed / set to 0 → */
 main.main-content {
-  padding-top: var(--header-height);
+  padding-top: 0;
 }
 
 /* ============================================
    CONTAINER SYSTEM
    ============================================ */
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -74,7 +71,6 @@ main.main-content {
 /* ============================================
    SECTION SPACING
    ============================================ */
-
 .section {
   padding: 5rem 0;
 }
@@ -90,7 +86,6 @@ main.main-content {
 /* ============================================
    GRID SYSTEM
    ============================================ */
-
 .grid {
   display: grid;
   gap: 2rem;
@@ -109,12 +104,11 @@ main.main-content {
 }
 
 /* ============================================
-   RESPONSIVE CONTAINERS & HEADER OFFSET
+   RESPONSIVE CONTAINERS → Header offset removed
    ============================================ */
-
 @media (max-width: 1440px) {
   main.main-content {
-    padding-top: var(--header-height);
+    padding-top: 0;
   }
 }
 
@@ -122,9 +116,8 @@ main.main-content {
   .container {
     padding: 0 2rem;
   }
-  
   main.main-content {
-    padding-top: 75px;
+    padding-top: 0;           /* was 75px */
   }
 }
 
@@ -132,9 +125,8 @@ main.main-content {
   .grid--4 {
     grid-template-columns: repeat(2, 1fr);
   }
-  
   main.main-content {
-    padding-top: var(--header-height-tablet);
+    padding-top: 0;           /* was tablet height */
   }
 }
 
@@ -142,35 +134,31 @@ main.main-content {
   .container {
     padding: 0 1.5rem;
   }
-
   .section {
     padding: 4rem 0;
   }
-
   .section--large {
     padding: 5rem 0;
   }
-
   .grid--2,
   .grid--3,
   .grid--4 {
     grid-template-columns: 1fr;
   }
-  
   main.main-content {
-    padding-top: var(--header-height-mobile);
+    padding-top: 0;
   }
 }
 
 @media (max-width: 767px) {
   main.main-content {
-    padding-top: var(--header-height-mobile);
+    padding-top: 0;
   }
 }
 
 @media (max-height: 800px) and (max-width: 767px) {
   main.main-content {
-    padding-top: var(--header-height-small);
+    padding-top: 0;
   }
 }
 
@@ -178,48 +166,36 @@ main.main-content {
   .container {
     padding: 0 1rem;
   }
-
   .section {
     padding: 3rem 0;
   }
-
   .section--small {
     padding: 2rem 0;
   }
-
   main.main-content {
-    padding-top: var(--header-height-small);
+    padding-top: 0;
   }
 }
 
-/* Specific fix for 334px width screens */
+/* Specific fix for very small screens — removed */
 @media (max-width: 360px) {
   main.main-content {
-    padding-top: var(--header-height-tiny);
+    padding-top: 0;
   }
 }
 
 @media (max-height: 600px) {
   main.main-content {
-    padding-top: var(--header-height-tiny);
+    padding-top: 0;
   }
 }
 
 /* ============================================
    UTILITY CLASSES
    ============================================ */
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
 
 .mb-1 { margin-bottom: 0.5rem; }
 .mb-2 { margin-bottom: 1rem; }
@@ -236,29 +212,22 @@ main.main-content {
 /* ============================================
    PAGE TRANSITION
    ============================================ */
-
 .page-transition {
   animation: fadeIn 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* ============================================
    ACCESSIBILITY
    ============================================ */
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-  
   .page-transition {
     animation: none;
   }
