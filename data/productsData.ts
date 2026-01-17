@@ -287,12 +287,12 @@ export const products: Product[] = [
     name: 'High Speed Disperser',
     category: 'dispersers',
     slug: 'fdh-high-speed-disperser',
-    shortDescription: 'Double shaft high-speed disperser for chemical and coating industries',
+    shortDescription: 'High-speed disperser for chemical and coating industries',
     fullDescription: 'Sawtooth-shaped dispersing impeller intensely stirs paste at high speed for thorough material processing.',
     image: '/images/products/fdh-disperser.jpg',
     specifications: {
-      'Motor Power': '11kW - 75kW',
-      'Speed Range': '0-1200 rpm',
+      'Motor Power': '25kW - 100kW',
+      'Speed Range': '0-1400 rpm',
       'Lift Height': '900mm - 1600mm',
       'Tank Capacity': '500L - 3000L',
       'Models': 'FDH11, FDH30, FDH45, FDH75'
@@ -319,14 +319,14 @@ export const products: Product[] = [
     id: 'disperser-fdz',
     name: 'Vacuum Dispersing Machine',
     category: 'dispersers',
-    slug: 'fdz-vacuum-dispersing-machine',
+    slug: 'vacuum-dispersing-machine',
     shortDescription: 'Multi-functional vacuum disperser for high-viscosity materials',
     fullDescription: 'Combines grinding, dispersing, emulsifying, and mixing functions for materials of different viscosities.',
     image: '/images/products/fdz-disperser.jpg',
     specifications: {
-      'Motor Power': '7.5kW - 30kW',
-      'Speed': '100-1400 rpm',
-      'Volume': '200L - 1000L',
+      'Motor Power': '25kW - 75kW',
+      'Speed': '0-1400 rpm',
+      'Volume': '200L - 1500L',
       'Vacuum': '≤-0.07 MPa',
       'Disc Diameter': '200mm - 400mm',
       'Models': 'FDZ200, FDZ400, FDZ600, FDZ1000'
@@ -342,7 +342,7 @@ export const products: Product[] = [
     applications: [
       'Coating manufacturing',
       'Ink production',
-      'Dye processing',
+      'High Viscosity Putty',
       'Pharmaceutical industry',
       'Cosmetics production'
     ]
@@ -353,7 +353,7 @@ export const products: Product[] = [
     id: 'lab-disperser-sdf400',
     name: 'Lab Dispersing Machine',
     category: 'dispersers',
-    slug: 'lab-dispersing-machine-sdf400',
+    slug: 'lab-dispersing-machine',
     shortDescription: 'Multi-functional laboratory disperser for R&D and testing',
     fullDescription: 'Integrates mixing, sanding and dispersing functions into one unit. Ideal experimental equipment for laboratory personnel.',
     image: '/images/products/lab-disperser.jpg',
