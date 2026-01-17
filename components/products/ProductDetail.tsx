@@ -101,9 +101,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               <Link href="/contact" className="btn-request-quote">
                 Request a Quote
               </Link>
-              <button className="btn-download-brochure">
-                Download Brochure
-              </button>
+              
             </div>
 
             {/* Quick Specifications Box */}
