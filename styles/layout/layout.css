@@ -39,16 +39,21 @@ body {
 }
 
 /* ============================================
-   MAIN CONTENT AREA - NO HEADER OFFSET ANYMORE
+   MAIN CONTENT AREA
    ============================================ */
 main {
   min-height: calc(100vh - 400px);
   padding: 0;
 }
 
-/* ← Removed / set to 0 → */
+/* Default: NO header offset on most pages */
 main.main-content {
   padding-top: 0;
+}
+
+/* ── ONLY Product Detail Pages get the header offset ── */
+main.main-content.product-detail {
+  padding-top: var(--header-height);
 }
 
 /* ============================================
@@ -104,11 +109,12 @@ main.main-content {
 }
 
 /* ============================================
-   RESPONSIVE CONTAINERS → Header offset removed
+   RESPONSIVE - Header offset ONLY on product detail pages
    ============================================ */
+
 @media (max-width: 1440px) {
-  main.main-content {
-    padding-top: 0;
+  main.main-content.product-detail {
+    padding-top: var(--header-height);
   }
 }
 
@@ -116,8 +122,8 @@ main.main-content {
   .container {
     padding: 0 2rem;
   }
-  main.main-content {
-    padding-top: 0;           /* was 75px */
+  main.main-content.product-detail {
+    padding-top: 75px;           /* your previous value or keep var */
   }
 }
 
@@ -125,8 +131,8 @@ main.main-content {
   .grid--4 {
     grid-template-columns: repeat(2, 1fr);
   }
-  main.main-content {
-    padding-top: 0;           /* was tablet height */
+  main.main-content.product-detail {
+    padding-top: var(--header-height-tablet);
   }
 }
 
@@ -145,20 +151,20 @@ main.main-content {
   .grid--4 {
     grid-template-columns: 1fr;
   }
-  main.main-content {
-    padding-top: 0;
+  main.main-content.product-detail {
+    padding-top: var(--header-height-mobile);
   }
 }
 
 @media (max-width: 767px) {
-  main.main-content {
-    padding-top: 0;
+  main.main-content.product-detail {
+    padding-top: var(--header-height-mobile);
   }
 }
 
 @media (max-height: 800px) and (max-width: 767px) {
-  main.main-content {
-    padding-top: 0;
+  main.main-content.product-detail {
+    padding-top: var(--header-height-small);
   }
 }
 
@@ -172,21 +178,20 @@ main.main-content {
   .section--small {
     padding: 2rem 0;
   }
-  main.main-content {
-    padding-top: 0;
+  main.main-content.product-detail {
+    padding-top: var(--header-height-small);
   }
 }
 
-/* Specific fix for very small screens — removed */
 @media (max-width: 360px) {
-  main.main-content {
-    padding-top: 0;
+  main.main-content.product-detail {
+    padding-top: var(--header-height-tiny);
   }
 }
 
 @media (max-height: 600px) {
-  main.main-content {
-    padding-top: 0;
+  main.main-content.product-detail {
+    padding-top: var(--header-height-tiny);
   }
 }
 
