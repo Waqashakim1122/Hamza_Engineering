@@ -259,7 +259,7 @@ export const products: Product[] = [
     image: '/images/products/attritor-mill.jpg',
     specifications: {
       'Operation': 'Wet or dry',
-      'Speed Range': 'o to 100 RPM',
+      'Speed Range': '0 to 100 RPM',
       'Media Size': '1/8" to 3/8"',
       'Atmosphere': 'Can introduce inert atmospheres',
       'Temperature': 'Controlled temperature operation'
