@@ -211,10 +211,10 @@ export const products: Product[] = [
     ]
   },
 
-  // 5. Centex Full-Volume Bead Mill
+  // 5.  Bead Mill
   {
     id: 'bead-mill-centex',
-    name: 'Centex Full-Volume Bead Mill',
+    name: ' Bead Mill',
     category: 'bead-mills',
     slug: 'centex-full-volume-bead-mill',
     shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
