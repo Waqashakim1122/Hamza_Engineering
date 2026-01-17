@@ -387,21 +387,18 @@ export const products: Product[] = [
     category: 'mixers',
     slug: 'wall-mounted-high-speed-Mixer',
     shortDescription: 'Space-saving wall-mounted Mixer for small-batch production',
-    fullDescription: 'Wall-mounted high-speed Mixer widely used in European markets. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
+    fullDescription: 'Wall-mounted high-speed Mixer widely used in Coating Induestry. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
     image: '/images/products/wall-mounted-mixer.jpg',
     specifications: {
       'Materials Viscosity': '≤100,000 cps',
-      'Production Capacity': '200-1,500L',
-      'Max Rotation Speed': 'Up to 2930rpm (Normal: 1450rpm)',
-      'Linear Velocity': 'Over 20m/s',
-      'Solid Content': 'Up to 80%',
+      'Production Capacity': '50L,700L',
+      'Max Rotation Speed': '0 to 2800rpm',
       'Contact Material': 'SS304 stainless steel',
       'Models': 'SFSW-4, SFSW-7.5, SFSF-11, SFSF-15, SFSF-18.5, SFSF-22, SFSF-30'
     },
     features: [
       'Wall-mounted design saves significant production space',
-      'High rotation speed up to 2930rpm for rapid dispersion',
-      'Linear velocity over 20m/s for uniform particle distribution',
+      'High rotation speed up to 2800rpm for rapid Mixing',
       'Strong shearing force creates good suspension effect',
       'Manual rotation device for disc height adjustment',
       'Compact footprint ideal for limited spaces',
@@ -409,64 +406,39 @@ export const products: Product[] = [
       'Different motor explosion-proof classes available'
     ],
     applications: [
-      'Biology and pharmaceutical industry',
-      'Food processing',
       'Paint and ink manufacturing',
       'Adhesive production',
-      'Pigment and fertilizer processing',
       'Small-batch multi-variety production'
     ],
     workingPrinciple: 'Through high-speed rotation of the Mixing disc, materials become annular flow, resulting in strong vortex flow that descends to the vortex bottom in spiral state. During this process, materials are dispersed, dissolved, mixed and emulsified efficiently due to strong shearing, crash and friction among particles.'
   },
 
-  // 11. Floor Standing Planetary Mixer MP80 (NEW - MIXERS CATEGORY)
+  // 11. Floor Standing Planetary Mixer (NEW - MIXERS CATEGORY)
   {
-    id: 'mixer-floor-standing-mp80',
+    id: 'mixer-floor-standing',
     name: 'Heavy Duty Floor Standing Mixer',
     category: 'mixers',
     slug: 'floor-standing-planetary-mixer',
-    shortDescription: '80L heavy-duty planetary mixer for bakeries and industrial applications',
+    shortDescription: 'Floor Standing Planetary mixer suitable for Muiltiple industrial production ',
     fullDescription: 'Heavy-duty 80-liter floor-standing, belt-driven planetary mixer. Particularly suitable for bakeries, hotels, restaurants, canteens and industrial production. Planetary mixing action ensures perfect results every time.',
     image: '/images/products/floor-standing-mixer.jpg',
     specifications: {
-      'Bowl Capacity': '80 Litres',
-      'Motor Power': 'High torque motor',
-      'Speed Range': '4 fixed speeds: 110, 161, 195, 286 rpm',
-      'Operation': 'Belt driven planetary action',
-      'Frame': 'Heavy-duty cast iron',
-      'Safety Features': 'Emergency stop, interlocking bowl guard, automatic shut-off',
-      'Lift System': 'Bowl power lift with manual option',
+      'Capacity': 'as required
+      'Motor Power': 'as required',
+      'Speed Range': '0 to 2800rpm',
+      'Frame': 'Heavy-duty ironsteal',
+      'Safety Features': 'Emergency stop',
+      'Lift System': 'manual lift',
       'Material': 'Stainless steel bowl and attachments',
-      'Weight Support': 'Up to 660kg load capacity'
     },
     features: [
-      'Heavy-duty 80L capacity with planetary mixing action',
-      'High torque motor for stiff doughs and large batches',
-      '4 fixed speeds with easy speed-shifting',
-      'Dual bowl clamps for secure locking',
-      'Bowl power lift with manual handle backup',
-      'Stainless steel safety guard with automatic shut-off',
-      'Interlocking bowl guard for total user safety',
-      'Timer function up to 30 minutes',
-      'Emergency stop button',
-      'Resettable thermal overload protection',
-      'Heat-treated hardened steel transmission gears',
-      'Long-lasting abrasion-resistant transmission',
-      'Non-slip rubber feet for stability',
-      'Quiet operation',
-      'Includes: beater, whisk, dough hook, bowl trolley'
+      'Heavy-duty  mixer',
+      'small to large batches',
+
     ],
     applications: [
-      'Bakery production',
-      'Hotel and restaurant kitchens',
-      'Canteens and catering',
-      'Industrial food processing',
-      'Dough preparation',
-      'Cake and pastry mixing',
-      'Vegetable processing'
+      'Large Scale Mixing',
     ],
-    workingPrinciple: 'Planetary mixing action rotates the mixing tool around the bowl while simultaneously spinning on its own axis, ensuring every part of the mixture is thoroughly processed. The belt-driven system provides consistent power delivery for heavy-duty mixing tasks.'
-  },
 
   // 12. Movable Tank
   {
@@ -478,7 +450,7 @@ export const products: Product[] = [
     fullDescription: 'High-quality movable tank designed for storage, temporary holding, and material transfer in industrial production. Features robust construction with mobility and easy cleaning.',
     image: '/images/products/single-layer-tank.jpg',
     specifications: {
-      'Capacity Range': '50-50,000L',
+      'Capacity Range': '50-1500L',
       'Material': 'SUS304 / SUS316L stainless steel',
       'Surface Finish': 'Mirror polished inside and outside',
       'Bottom Design': 'Inclined bottom for complete discharge',
