@@ -388,7 +388,7 @@ export const products: Product[] = [
     slug: 'floor-standing-planetary-mixer',
     shortDescription: 'Floor Standing Planetary mixer suitable for Multiple industrial production',
     fullDescription: 'Floor Standing Planetary mixer suitable for Multiple industrial production.',
-    image: '/images/products/floor-standing-mixer.jpg',
+    image: '/images/products/wall-mounted-mixer.jpg',
     specifications: {
       'Capacity': 'as required',
       'Motor Power': 'as required',
