@@ -211,10 +211,10 @@ export const products: Product[] = [
     ]
   },
 
-  // 5.  Bead Mill
+  // 5. Centex Bead Mill
   {
     id: 'bead-mill-centex',
-    name: ' Bead Mill',
+    name: 'Centex Bead Mill',
     category: 'bead-mills',
     slug: 'centex-full-volume-bead-mill',
     shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
@@ -277,7 +277,7 @@ export const products: Product[] = [
       'Fine grinding',
       'Pilot plant testing',
       'Fine material dispersion',
-      'For Paint Coating and Ink induestry'
+      'For Paint Coating and Ink industry'
     ]
   },
 
@@ -387,7 +387,7 @@ export const products: Product[] = [
     category: 'mixers',
     slug: 'wall-mounted-high-speed-Mixer',
     shortDescription: 'Space-saving wall-mounted Mixer for small-batch production',
-    fullDescription: 'Wall-mounted high-speed Mixer widely used in Coating Induestry. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
+    fullDescription: 'Wall-mounted high-speed Mixer widely used in Coating Industry. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
     image: '/images/products/wall-mounted-mixer.jpg',
     specifications: {
       'Materials Viscosity': '≤100,000 cps',
@@ -419,26 +419,26 @@ export const products: Product[] = [
     name: 'Heavy Duty Floor Standing Mixer',
     category: 'mixers',
     slug: 'floor-standing-planetary-mixer',
-    shortDescription: 'Floor Standing Planetary mixer suitable for Muiltiple industrial production ',
-    fullDescription: Floor Standing Planetary mixer suitable for Muiltiple industrial production.',
+    shortDescription: 'Floor Standing Planetary mixer suitable for Multiple industrial production',
+    fullDescription: 'Floor Standing Planetary mixer suitable for Multiple industrial production.',
     image: '/images/products/floor-standing-mixer.jpg',
     specifications: {
-      'Capacity': 'as required
+      'Capacity': 'as required',
       'Motor Power': 'as required',
       'Speed Range': '0 to 2800rpm',
-      'Frame': 'Heavy-duty ironsteal',
+      'Frame': 'Heavy-duty iron/steel',
       'Safety Features': 'Emergency stop',
       'Lift System': 'manual lift',
-      'Material': 'Stainless steel bowl and attachments',
+      'Material': 'Stainless steel bowl and attachments'
     },
     features: [
-      'Heavy-duty  mixer',
-      'small to large batches',
-
+      'Heavy-duty mixer',
+      'small to large batches'
     ],
     applications: [
-      'Large Scale Mixing',
-    ],
+      'Large Scale Mixing'
+    ]
+  },
 
   // 12. Movable Tank
   {
