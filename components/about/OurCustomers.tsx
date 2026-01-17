@@ -27,6 +27,14 @@ export default function OurCustomers() {
       brand: "nelson",
       color: "#6d28d9"
     },
+    {
+      id: 4,
+      name: "Corona Paints",
+      website: "https://coronapaints.com.pk/",
+      logo: "/images/Our Customers/coronapaints.png",
+      brand: "corona",
+      color: "#059669"
+    },
   ];
 
   // Double the array for seamless infinite loop
@@ -40,7 +48,7 @@ export default function OurCustomers() {
           <span className="our-customers__eyebrow">Trusted Partners</span>
           <h2 className="our-customers__title">Our Customers</h2>
           <p className="our-customers__subtitle">
-           Partnering with pioneers to transform vision into durable, brilliant finishes.
+            We proudly Services with leading paint and coatings manufacturers.
           </p>
         </div>
 
