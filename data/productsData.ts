@@ -143,37 +143,41 @@ export const products: Product[] = [
     ]
   },
 
-  // 3. Horizontal Bead Mill
+  // 3. Bead Mill
   {
-    id: 'bead-mill-horizontal',
-    name: 'Horizontal Bead Mill',
+    id: 'bead-mill-centex',
+    name: 'Bead Mill',
     category: 'bead-mills',
-    slug: 'horizontal-bead-mill',
-    shortDescription: 'Disc type horizontal bead mill for continuous wet grinding',
-    fullDescription: 'Closed continuous production machine for grinding liquid materials. Most popular wet grinding machine with excellent performance and mature structure.',
-    image: '/images/products/horizontal-bead-mill.jpg',
+    slug: 'bead-mill',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/centex-bead-mill.jpg',
     specifications: {
-      'Materials Viscosity': '≤20,000 cps',
-      'Production Capacity': '10-4000 L/h',
-      'Grinding Fineness': 'Down to 10 micron',
-      'Capacity Range': '20L to 300L',
-      'Customization': 'Explosion-proof type available'
+      'Technology': 'EcoMizer agitator disks with reverse feeding',
+      'Bead Distribution': 'Homogenous throughout chamber',
+      'Screen Surface': 'Large surface area for efficient separation',
+      'Energy Efficiency': 'Lower specific energy requirement',
+      'Temperature Control': 'Lower pressure reduces temperature issues',
+      'Automation': 'Sophisticated control options available'
     },
     features: [
-      'Low energy consumption ratio and high cost performance',
-      'Safe monitoring with stable finished products',
-      'Excellent cooling system with honeycomb design',
-      'Temperature rise less than 10°C',
-      'Real-time monitoring of temperature and pressure',
-      'Full specification customization available'
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Reverse-feeding design creates homogenous bead distribution',
+      'No beads near screen enabling use of smaller grinding media',
+      'Large screen surface for higher throughput',
+      'Narrow particle size distribution',
+      'No compression of grinding beads',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
     ],
     applications: [
-      'Coating industry',
-      'Paint manufacturing',
-      'Ink production',
-      'Pesticide processing'
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
     ],
-    workingPrinciple: 'The delivery pump circulates materials from container to grinding chamber. The main shaft drives grinding discs which drive grinding media to collide. Granules are continuously rolled by grinding medium while separating screen keeps grinding media in chamber.'
+    workingPrinciple: 'The unique EcoMizer agitator disks with reverse feeding create a homogenous bead distribution throughout the grinding chamber. The smart design ensures no beads are near the screen, enabling smaller bead usage for more efficient grinding. The large screen surface maintains lower pressure inside the chamber, reducing temperature issues and enabling higher throughput.'
   },
 
   // 4. Vertical Bead Mill
@@ -211,44 +215,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 5. Centex Bead Mill
-  {
-    id: 'bead-mill-centex',
-    name: 'Centex Bead Mill',
-    category: 'bead-mills',
-    slug: 'centex-full-volume-bead-mill',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
-    fullDescription: 'The Centex full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
-    image: '/images/products/centex-bead-mill.jpg',
-    specifications: {
-      'Technology': 'EcoMizer agitator disks with reverse feeding',
-      'Bead Distribution': 'Homogenous throughout chamber',
-      'Screen Surface': 'Large surface area for efficient separation',
-      'Energy Efficiency': 'Lower specific energy requirement',
-      'Temperature Control': 'Lower pressure reduces temperature issues',
-      'Automation': 'Sophisticated control options available'
-    },
-    features: [
-      'EcoMizer agitator disks for maximum energy efficiency',
-      'Reverse-feeding design creates homogenous bead distribution',
-      'No beads near screen enabling use of smaller grinding media',
-      'Large screen surface for higher throughput',
-      'Narrow particle size distribution',
-      'No compression of grinding beads',
-      'Lower chamber pressure reduces temperature issues',
-      'Cutting-edge technology with long service life',
-      'Higher flow capability without quality compromise',
-      'Reduced processing time and production costs'
-    ],
-    applications: [
-      'Printing inks',
-      'Paints and coatings',
-      'Wet grinding and dispersing'
-    ],
-    workingPrinciple: 'The unique EcoMizer agitator disks with reverse feeding create a homogenous bead distribution throughout the grinding chamber. The smart design ensures no beads are near the screen, enabling smaller bead usage for more efficient grinding. The large screen surface maintains lower pressure inside the chamber, reducing temperature issues and enabling higher throughput.'
-  },
-
-  // 6. Attritor Stirred Ball Mill
+  // 5. Attritor Stirred Ball Mill
   {
     id: 'attritor-ball-mill',
     name: 'Attritor Stirred Ball Mill',
@@ -281,7 +248,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 7. High Speed Disperser
+  // 6. High Speed Disperser
   {
     id: 'disperser-fdh',
     name: 'High Speed Disperser',
@@ -314,7 +281,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 8. Vacuum Dispersing Machine
+  // 7. Vacuum Dispersing Machine
   {
     id: 'disperser-fdz',
     name: 'Vacuum Dispersing Machine',
@@ -348,7 +315,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 9. Lab Dispersing Machine
+  // 8. Lab Dispersing Machine
   {
     id: 'lab-disperser-sdf400',
     name: 'Lab Dispersing Machine',
@@ -380,7 +347,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 10. Wall Mounted High-Speed Mixer (NEW - MIXERS CATEGORY)
+  // 9. Wall Mounted High-Speed Mixer
   {
     id: 'mixer-wall-mounted',
     name: 'Wall Mounted High-Speed Mixer',
@@ -413,7 +380,7 @@ export const products: Product[] = [
     workingPrinciple: 'Through high-speed rotation of the Mixing disc, materials become annular flow, resulting in strong vortex flow that descends to the vortex bottom in spiral state. During this process, materials are dispersed, dissolved, mixed and emulsified efficiently due to strong shearing, crash and friction among particles.'
   },
 
-  // 11. Floor Standing Planetary Mixer (NEW - MIXERS CATEGORY)
+  // 10. Floor Standing Mixer
   {
     id: 'mixer-floor-standing',
     name: 'Heavy Duty Floor Standing Mixer',
@@ -440,7 +407,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 12. Movable Tank
+  // 11. Movable Tank
   {
     id: 'movable-tank',
     name: 'Movable Tank',
@@ -477,7 +444,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 13. Storage Tank
+  // 12. Storage Tank
   {
     id: 'storage-tank',
     name: 'Storage Tank',
