@@ -259,7 +259,7 @@ export const products: Product[] = [
     image: '/images/products/attritor-mill.jpg',
     specifications: {
       'Operation': 'Wet or dry',
-      'Speed Range': '100 to 500 RPM',
+      'Speed Range': 'o to 100 RPM',
       'Media Size': '1/8" to 3/8"',
       'Atmosphere': 'Can introduce inert atmospheres',
       'Temperature': 'Controlled temperature operation'
@@ -271,14 +271,13 @@ export const products: Product[] = [
       'Variable grinding speed',
       'No premixing necessary',
       'Ingredients can be added during grinding',
-      'Repeatable results for scale up',
       'Stainless steel construction'
     ],
     applications: [
-      'Laboratory grinding',
+      'Fine grinding',
       'Pilot plant testing',
       'Fine material dispersion',
-      'Research and development'
+      'For Paint Coating and Ink induestry'
     ]
   },
 
