@@ -231,10 +231,7 @@
   }
 }
 
-/* Dark mode (spacing unchanged) */
-@media (prefers-color-scheme: dark) {
-  /* ... existing dark mode rules ... */
-}/* ============================================
+/* ============================================
    PRODUCT DETAIL - CLEAN PROFESSIONAL DESIGN
    ============================================ */
 .product-detail {
@@ -1026,31 +1023,53 @@
     color: white;
   }
   .main-image-wrapper {
-    background: #1e293b;
-    border-color: #334155;
+    background: #ffffff;
+    border-color: #e2e8f0;
   }
   .thumbnail-btn {
-    background: #1e293b;
+    background: #ffffff;
   }
   .quick-specs-box,
   .tab-content-area {
-    background: #1e293b;
-    border-color: #334155;
+    background: #ffffff;
+    border-color: #e2e8f0;
   }
   .specs-list-item {
-    background: #0f172a;
-    border-color: #334155;
+    background: #f8fafc;
+    border-color: #e2e8f0;
+  }
+  .specs-list-item .specs-key {
+    color: #64748b;
+  }
+  .specs-list-item .specs-val {
+    color: #0f172a;
   }
   .feature-item,
   .application-item {
-    background: #1e293b;
+    background: #f8fafc;
+    color: #1f2937;
   }
   .working-principle-box {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-    border-color: #3b82f6;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border-color: #dbeafe;
+  }
+  .principle-title {
+    color: #1e40af;
+  }
+  .principle-desc {
+    color: #374151;
   }
   .related-product-item {
-    background: #1e293b;
-    border-color: #334155;
+    background: #ffffff;
+    border-color: #e2e8f0;
+  }
+  .related-img-box {
+    background: #f8fafc;
+  }
+  .related-name {
+    color: #0f172a;
+  }
+  .related-description {
+    color: #64748b;
   }
 }
