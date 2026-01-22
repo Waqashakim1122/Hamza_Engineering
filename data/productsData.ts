@@ -30,49 +30,49 @@ export const productCategories: ProductCategory[] = [
     name: 'Resin Plant',
     slug: 'resin-plant',
     description: 'Complete resin synthesis and processing systems with oil heating',
-    icon: '🏭'
+    icon: ''
   },
   {
     id: 'polymer-plant',
     name: 'Polymer Processing Plant',
     slug: 'polymer-plant',
     description: 'Advanced polymer manufacturing systems',
-    icon: '⚗️'
+    icon: ''
   },
   {
     id: 'bead-mills',
     name: 'Bead Mills',
     slug: 'bead-mills',
     description: 'High-efficiency grinding and dispersion equipment',
-    icon: '⚙️'
+    icon: ''
   },
   {
     id: 'attritor-mill',
     name: 'Attritor Stirred Ball Mill',
     slug: 'attritor-mill',
     description: 'Versatile stirred ball mill for fine grinding and dispersion',
-    icon: '🔬'
+    icon: ''
   },
   {
     id: 'dispersers',
     name: 'Dispersers',
     slug: 'dispersers',
     description: 'High-speed mixing and dispersing machines',
-    icon: '🔄'
+    icon: ''
   },
   {
     id: 'mixers',
     name: 'Industrial Mixers',
     slug: 'mixers',
     description: 'Heavy-duty mixing equipment for various industrial applications',
-    icon: '🥄'
+    icon: ''
   },
   {
     id: 'vessels-tanks',
     name: 'Vessels & Tanks',
     slug: 'vessels-tanks',
     description: 'Storage and movable tank solutions',
-    icon: '🛢️'
+    icon: ''
   }
 ];
 
