@@ -53,10 +53,7 @@ export const industriesData: IndustryType[] = [
           title: "High-Speed Disperser",
           description: "Engineered for superior pigment dispersion with variable speed control and multiple blade options to accommodate a wide range of viscosities."
         },
-        {
-          title: "Automated Tinting System",
-          description: "Computer-controlled color dispensing technology ensuring exceptional accuracy, repeatability, and batch-to-batch color consistency."
-        }
+        
       ]
     }
   },
