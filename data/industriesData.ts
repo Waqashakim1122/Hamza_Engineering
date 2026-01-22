@@ -64,14 +64,7 @@ export const industriesData: IndustryType[] = [
     image: "/images/Industries/Powder Coating.webp",
     description: "Advanced powder coating formulation and production equipment",
     categories: [
-      {
-        title: "Powder Types",
-        items: [
-          "Thermoplastic powders",
-          "Thermosetting powders",
-          "Hybrid powders"
-        ]
-      },
+     
       {
         title: "Application Methods",
         items: [
@@ -174,10 +167,7 @@ export const industriesData: IndustryType[] = [
           title: "Polymerization Reactor",
           description: "High-precision reactors designed for bulk, solution, suspension, and emulsion polymerization, offering accurate control of temperature, pressure, and reaction conditions."
         },
-        {
-          title: "Twin Screw Extruder",
-          description: "Versatile twin-screw extrusion systems optimized for polymer compounding, devolatilization, and reactive extrusion, featuring modular screw designs and precise temperature management."
-        }
+        
       ]
     }
   }
