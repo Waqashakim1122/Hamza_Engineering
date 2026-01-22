@@ -57,7 +57,7 @@ export default function CoreProducts() {
     <section className="core-products">
       <div className="core-products__container">
         <header className="core-products__header">
-          <h2 className="core-products__title">Core Products</h2>
+          <h3 className="core-products__title">Core Products</h3>
         </header>
 
         <div className="core-products__grid">
