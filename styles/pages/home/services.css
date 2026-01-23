@@ -35,9 +35,10 @@
 .core-products__title {
   font-size: 3rem;
   color: #0f172a;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.1;
-  letter-spacing: -1px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
 /* --- Grid Layout --- */
@@ -55,7 +56,7 @@
 /* --- The Product Card (Base State) --- */
 .product-image-card {
   background-color: #ffffff;
-  border: 1.5px solid #e2e8f0; /* Crisp, defined border */
+  border: 1.5px solid #e2e8f0;
   border-radius: 12px;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -65,7 +66,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth interaction */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .product-image {
@@ -77,14 +78,14 @@
 
 /* --- The Product Card (Hover State) --- */
 .product-item:hover .product-image-card {
-  border-color: #3b82f6;      /* Active Blue Border */
-  background-color: #f8faff;  /* Subtle background tint from screenshot */
-  transform: translateY(-8px); /* Structural lift effect */
-  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.12); /* Soft professional depth */
+  border-color: #3b82f6;
+  background-color: #f8faff;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.12);
 }
 
 .product-item:hover .product-image {
-  transform: scale(1.05); /* Gentle zoom on the machinery */
+  transform: scale(1.05);
 }
 
 /* --- Product Info & Text --- */
@@ -136,6 +137,7 @@
   }
   .core-products__title {
     font-size: 2.5rem;
+    letter-spacing: 6px;
   }
 }
 
@@ -149,5 +151,6 @@
   }
   .core-products__title {
     font-size: 2.2rem;
+    letter-spacing: 4px;
   }
 }
