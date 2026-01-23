@@ -34,7 +34,7 @@ const coreProducts = [
   },
   { 
     id: 5, 
-    name: 'Dispersers', 
+    name: 'High Speed Disperser', 
     img: '/images/core products/high-speed-disperser.webp', 
     categorySlug: 'dispersers'
   },
