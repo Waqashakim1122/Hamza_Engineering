@@ -57,7 +57,7 @@ export default function CoreProducts() {
     <section className="core-products">
       <div className="core-products__container">
         <header className="core-products__header">
-          <h3 className="core-products__title">Core Products</h3>
+          <h2 className="core-products__title">CORE PRODUCTS</h2>
         </header>
 
         <div className="core-products__grid">
@@ -68,8 +68,8 @@ export default function CoreProducts() {
             // If category has multiple products, link to category page
             // If only one product, link directly to that product detail
             const productLink = categoryProducts.length > 1 
-              ? `/products/category/${product.categorySlug}`  // Multiple products → Category page
-              : `/products/${categoryProducts[0]?.slug}`;      // Single product → Detail page
+              ? `/products/category/${product.categorySlug}`
+              : `/products/${categoryProducts[0]?.slug}`;
             
             return (
               <motion.article
