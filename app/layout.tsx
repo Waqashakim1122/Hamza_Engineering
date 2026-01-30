@@ -42,6 +42,9 @@ import '@/styles/pages/contact/contact.css';
 import '@/styles/pages/contact/contact-form.css';
 import '@/styles/pages/contact/contact-info.css';
 
+///our customers styles
+import '@/styles/pages/OurCustomers/customer-detail.css'; 
+
 // Component styles
 import '@/styles/components/buttons.css';
 import '@/styles/components/cards.css';
