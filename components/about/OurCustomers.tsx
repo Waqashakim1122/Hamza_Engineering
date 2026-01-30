@@ -35,6 +35,14 @@ export default function OurCustomers() {
       brand: "corona",
       color: "#059669"
     },
+    {
+      id: 5,
+      name: "Master Paints",
+      website: "https://masterpaints.com/",
+      logo: "/images/Our Customers/theme-logo_25k1-9a.png",
+      brand: "master",
+      color: "#960583"
+    },
   ];
 
   // Double the array for seamless infinite loop
