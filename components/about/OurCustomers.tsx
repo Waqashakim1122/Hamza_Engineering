@@ -1,11 +1,14 @@
+// components/about/OurCustomers.tsx
 "use client";
 
+import Link from 'next/link';
 
 export default function OurCustomers() {
   const customers = [
     {
       id: 1,
       name: "Diamond Paints",
+      slug: "diamond-paints",  // This will be used for the internal link
       website: "https://www.diamondpaints.com/",
       logo: "/images/Our Customers/diamondpaints.avif",
       brand: "diamond",
@@ -14,6 +17,7 @@ export default function OurCustomers() {
     {
       id: 2,
       name: "Champion Paints",
+      slug: "champion-paints",
       website: "https://championpaints.com/",
       logo: "/images/Our Customers/championpaints.jpg",
       brand: "champion",
@@ -22,6 +26,7 @@ export default function OurCustomers() {
     {
       id: 3,
       name: "Nelson Paints",
+      slug: "nelson-paints",
       website: "https://nelsonpaints.com/",
       logo: "/images/Our Customers/nelsonpaints.png",
       brand: "nelson",
@@ -30,6 +35,7 @@ export default function OurCustomers() {
     {
       id: 4,
       name: "Corona Paints",
+      slug: "corona-paints",
       website: "https://coronapaints.com.pk/",
       logo: "/images/Our Customers/coronapaints.png",
       brand: "corona",
@@ -38,6 +44,7 @@ export default function OurCustomers() {
     {
       id: 5,
       name: "Master Paints",
+      slug: "master-paints",
       website: "https://masterpaints.com/",
       logo: "/images/Our Customers/theme-logo_25k1-9a.png",
       brand: "master",
@@ -49,14 +56,14 @@ export default function OurCustomers() {
   const duplicatedCustomers = [...customers, ...customers];
 
   return (
-    <section className="our-customers-section">
+    <section className="our-customers-section" id="our-customers">
       <div className="our-customers__container">
         {/* Header */}
         <div className="our-customers__header">
           <span className="our-customers__eyebrow">Trusted Partners</span>
           <h2 className="our-customers__title">Our Customers</h2>
           <p className="our-customers__subtitle">
-            We proudly Services with leading paint and coatings manufacturers.
+            We proudly service leading paint and coatings manufacturers. Click any logo to learn more about our partnership.
           </p>
         </div>
 
@@ -64,11 +71,9 @@ export default function OurCustomers() {
         <div className="customers-marquee">
           <div className="customers-track">
             {duplicatedCustomers.map((customer, index) => (
-              <a
+              <Link
                 key={`${customer.id}-${index}`}
-                href={customer.website}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/customers/${customer.slug}`}
                 className="customer-card"
                 style={{ "--brand-color": customer.color } as React.CSSProperties}
               >
@@ -77,7 +82,7 @@ export default function OurCustomers() {
                   alt={customer.name}
                   className="customer-logo"
                 />
-              </a>
+              </Link>
             ))}
           </div>
         </div>
