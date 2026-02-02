@@ -47,6 +47,13 @@ export const productCategories: ProductCategory[] = [
     icon: ''
   },
   {
+    id: 'vertical-bead-mills',
+    name: 'Vertical Bead Mills',
+    slug: 'vertical-bead-mills',
+    description: 'High-speed vertical bead mills for fine grinding applications',
+    icon: ''
+  },
+  {
     id: 'attritor-mill',
     name: 'Attritor Stirred Ball Mill',
     slug: 'attritor-mill',
@@ -77,7 +84,7 @@ export const productCategories: ProductCategory[] = [
 ];
 
 export const products: Product[] = [
-  // 1. Resin Plant
+  // ==================== RESIN PLANT ====================
   {
     id: 'resin-plant-001',
     name: 'Resin Plant Complete System',
@@ -88,16 +95,16 @@ export const products: Product[] = [
     image: '/images/products/resin-plant.jpg',
     specifications: {
       'Heating System': 'Oil heating (thermic fluid)',
-      'Product Contact Material': 'SS316',
-      'Non-Contact Material': 'SS304',
-      'Control System': 'PLC-based control panel',
+      'Product Contact Material': 'SS',
+      'Non-Contact Material': 'SS',
+      'Control System': 'Manual + Auto control panel',
       'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors'
     },
     features: [
       'Oil heating (thermic fluid) system for precise temperature control',
-      'All product-contact equipment in SS316',
-      'Non-product-contact vessels in SS304',
-      'Advanced safety systems with PLC control',
+      'All product-contact equipment in SS',
+      'Non-product-contact vessels in SS',
+      'Advanced safety systems with manual + auto control panel',
       'Condensers and distillation units for solvent recovery',
       'Complete filtration system for product quality'
     ],
@@ -110,7 +117,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 2. Polymer Plant
+  // ==================== POLYMER PLANT ====================
   {
     id: 'polymer-plant-001',
     name: 'Polymer Processing Plant',
@@ -122,9 +129,9 @@ export const products: Product[] = [
     specifications: {
       'Process Type': 'Batch-operated',
       'Heating Method': 'Steam heating system',
-      'Control': 'PLC-based with safety features',
-      'Material': 'Stainless Steel (product contact)',
-      'Safety': 'High temperature alarms, pressure relief valves, emergency shutdown'
+      'Control System': 'PLC-based with safety features',
+      'Material': 'SS (product contact)',
+      'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown'
     },
     features: [
       'Controlled polymerization process',
@@ -143,7 +150,7 @@ export const products: Product[] = [
     ]
   },
 
-  // 3. Bead Mill
+  // ==================== BEAD MILLS ====================
   {
     id: 'bead-mill-centex',
     name: 'Bead Mill',
@@ -180,22 +187,22 @@ export const products: Product[] = [
     workingPrinciple: 'The unique EcoMizer agitator disks with reverse feeding create a homogenous bead distribution throughout the grinding chamber. The smart design ensures no beads are near the screen, enabling smaller bead usage for more efficient grinding. The large screen surface maintains lower pressure inside the chamber, reducing temperature issues and enabling higher throughput.'
   },
 
-  // 4. Vertical Bead Mill
+  // ==================== VERTICAL BEAD MILLS ====================
   {
-    id: 'bead-mill-vertical',
-    name: 'Vertical Bead Mill',
-    category: 'bead-mills',
-    slug: 'vertical-bead-mill',
+    id: 'vertical-bead-mill-001',
+    name: 'Vertical Bead Mill Model 1',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-1',
     shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
     fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
     image: '/images/products/vertical-bead-mill.jpg',
     specifications: {
       'Speed Range': '0-8000 rpm (Super high speed)',
       'Grinding Media': '0.03mm - 0.1mm',
-      'Separation': 'Dynamic separation device, no screen design',
+      'Separation System': 'Dynamic separation device, no screen design',
       'Seal Type': 'Two side mechanical seal',
       'Chamber Material': 'Silicon carbide',
-      'Drive': 'Variable speed through VFD'
+      'Drive System': 'Variable speed through VFD'
     },
     features: [
       'Super high speed: 0-8000rpm',
@@ -215,7 +222,245 @@ export const products: Product[] = [
     ]
   },
 
-  // 5. Attritor Stirred Ball Mill
+  {
+    id: 'vertical-bead-mill-002',
+    name: 'Vertical Bead Mill Model 2',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-2',
+    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
+    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
+    image: '/images/products/vertical-bead-mill-2.jpg',
+    specifications: {
+      'Speed Range': '',
+      'Grinding Media': '',
+      'Separation System': '',
+      'Seal Type': '',
+      'Chamber Material': '',
+      'Drive System': ''
+    },
+    features: [
+      'Super high speed: 0-8000rpm',
+      'Dynamic separation device with no screen design',
+      'Smaller grinding medium capability (0.03-0.1mm)',
+      'Silicon carbide inner chamber for excellent cooling',
+      'Two side mechanical seal',
+      'Multiple grinding zone systems',
+      'Closed and sealed system',
+      'Precise temperature control'
+    ],
+    applications: [
+      'Coating industry',
+      'Cosmetic manufacturing',
+      'Fine chemical processing',
+      'Pharmaceutical production'
+    ]
+  },
+
+  {
+    id: 'vertical-bead-mill-003',
+    name: 'Vertical Bead Mill Model 3',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-3',
+    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
+    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
+    image: '/images/products/vertical-bead-mill-3.jpg',
+    specifications: {
+      'Speed Range': '',
+      'Grinding Media': '',
+      'Separation System': '',
+      'Seal Type': '',
+      'Chamber Material': '',
+      'Drive System': ''
+    },
+    features: [
+      'Super high speed: 0-8000rpm',
+      'Dynamic separation device with no screen design',
+      'Smaller grinding medium capability (0.03-0.1mm)',
+      'Silicon carbide inner chamber for excellent cooling',
+      'Two side mechanical seal',
+      'Multiple grinding zone systems',
+      'Closed and sealed system',
+      'Precise temperature control'
+    ],
+    applications: [
+      'Coating industry',
+      'Cosmetic manufacturing',
+      'Fine chemical processing',
+      'Pharmaceutical production'
+    ]
+  },
+
+  {
+    id: 'vertical-bead-mill-004',
+    name: 'Vertical Bead Mill Model 4',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-4',
+    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
+    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
+    image: '/images/products/vertical-bead-mill-4.jpg',
+    specifications: {
+      'Speed Range': '',
+      'Grinding Media': '',
+      'Separation System': '',
+      'Seal Type': '',
+      'Chamber Material': '',
+      'Drive System': ''
+    },
+    features: [
+      'Super high speed: 0-8000rpm',
+      'Dynamic separation device with no screen design',
+      'Smaller grinding medium capability (0.03-0.1mm)',
+      'Silicon carbide inner chamber for excellent cooling',
+      'Two side mechanical seal',
+      'Multiple grinding zone systems',
+      'Closed and sealed system',
+      'Precise temperature control'
+    ],
+    applications: [
+      'Coating industry',
+      'Cosmetic manufacturing',
+      'Fine chemical processing',
+      'Pharmaceutical production'
+    ]
+  },
+
+  {
+    id: 'vertical-bead-mill-005',
+    name: 'Vertical Bead Mill Model 5',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-5',
+    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
+    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
+    image: '/images/products/vertical-bead-mill-5.jpg',
+    specifications: {
+      'Speed Range': '',
+      'Grinding Media': '',
+      'Separation System': '',
+      'Seal Type': '',
+      'Chamber Material': '',
+      'Drive System': ''
+    },
+    features: [
+      'Super high speed: 0-8000rpm',
+      'Dynamic separation device with no screen design',
+      'Smaller grinding medium capability (0.03-0.1mm)',
+      'Silicon carbide inner chamber for excellent cooling',
+      'Two side mechanical seal',
+      'Multiple grinding zone systems',
+      'Closed and sealed system',
+      'Precise temperature control'
+    ],
+    applications: [
+      'Coating industry',
+      'Cosmetic manufacturing',
+      'Fine chemical processing',
+      'Pharmaceutical production'
+    ]
+  },
+
+  {
+    id: 'vertical-bead-mill-006',
+    name: 'Vertical Bead Mill Model 6',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-6',
+    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
+    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
+    image: '/images/products/vertical-bead-mill-6.jpg',
+    specifications: {
+      'Speed Range': '',
+      'Grinding Media': '',
+      'Separation System': '',
+      'Seal Type': '',
+      'Chamber Material': '',
+      'Drive System': ''
+    },
+    features: [
+      'Super high speed: 0-8000rpm',
+      'Dynamic separation device with no screen design',
+      'Smaller grinding medium capability (0.03-0.1mm)',
+      'Silicon carbide inner chamber for excellent cooling',
+      'Two side mechanical seal',
+      'Multiple grinding zone systems',
+      'Closed and sealed system',
+      'Precise temperature control'
+    ],
+    applications: [
+      'Coating industry',
+      'Cosmetic manufacturing',
+      'Fine chemical processing',
+      'Pharmaceutical production'
+    ]
+  },
+
+  {
+    id: 'vertical-bead-mill-007',
+    name: 'Vertical Bead Mill Model 7',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-7',
+    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
+    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
+    image: '/images/products/vertical-bead-mill-7.jpg',
+    specifications: {
+      'Speed Range': '',
+      'Grinding Media': '',
+      'Separation System': '',
+      'Seal Type': '',
+      'Chamber Material': '',
+      'Drive System': ''
+    },
+    features: [
+      'Super high speed: 0-8000rpm',
+      'Dynamic separation device with no screen design',
+      'Smaller grinding medium capability (0.03-0.1mm)',
+      'Silicon carbide inner chamber for excellent cooling',
+      'Two side mechanical seal',
+      'Multiple grinding zone systems',
+      'Closed and sealed system',
+      'Precise temperature control'
+    ],
+    applications: [
+      'Coating industry',
+      'Cosmetic manufacturing',
+      'Fine chemical processing',
+      'Pharmaceutical production'
+    ]
+  },
+
+  {
+    id: 'vertical-bead-mill-008',
+    name: 'Vertical Bead Mill Model 8',
+    category: 'vertical-bead-mills',
+    slug: 'vertical-bead-mill-model-8',
+    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
+    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
+    image: '/images/products/vertical-bead-mill-8.jpg',
+    specifications: {
+      'Speed Range': '',
+      'Grinding Media': '',
+      'Separation System': '',
+      'Seal Type': '',
+      'Chamber Material': '',
+      'Drive System': ''
+    },
+    features: [
+      'Super high speed: 0-8000rpm',
+      'Dynamic separation device with no screen design',
+      'Smaller grinding medium capability (0.03-0.1mm)',
+      'Silicon carbide inner chamber for excellent cooling',
+      'Two side mechanical seal',
+      'Multiple grinding zone systems',
+      'Closed and sealed system',
+      'Precise temperature control'
+    ],
+    applications: [
+      'Coating industry',
+      'Cosmetic manufacturing',
+      'Fine chemical processing',
+      'Pharmaceutical production'
+    ]
+  },
+
+  // ==================== ATTRITOR MILL ====================
   {
     id: 'attritor-ball-mill',
     name: 'Attritor Stirred Ball Mill',
@@ -225,11 +470,11 @@ export const products: Product[] = [
     fullDescription: 'Simple and effective method of grinding and dispersing fine and homogenous material. Ideal for pilot plant and scale up with repeatable results.',
     image: '/images/products/attritor-mill.jpg',
     specifications: {
-      'Operation': 'Wet or dry',
-      'Speed Range': 'o to 100 RPM',
+      'Operation Mode': 'Wet or dry',
+      'Speed Range': '0 to 100 RPM',
       'Media Size': '1/8" to 3/8"',
-      'Atmosphere': 'Can introduce inert atmospheres',
-      'Temperature': 'Controlled temperature operation'
+      'Atmosphere Control': 'Can introduce inert atmospheres',
+      'Temperature Control': 'Controlled temperature operation'
     },
     features: [
       'Much faster than conventional mills',
@@ -244,11 +489,11 @@ export const products: Product[] = [
       'Fine grinding',
       'Pilot plant testing',
       'Fine material dispersion',
-      'For Paint Coating and Ink industry'
+      'Paint, coating and ink industry'
     ]
   },
 
-  // 6. High Speed Disperser
+  // ==================== DISPERSERS ====================
   {
     id: 'disperser-fdh',
     name: 'High Speed Disperser',
@@ -262,7 +507,7 @@ export const products: Product[] = [
       'Speed Range': '0-1400 rpm',
       'Lift Height': '900mm - 1600mm',
       'Tank Capacity': '500L - 3000L',
-      'Models': 'FDH11, FDH30, FDH45, FDH75'
+      'Available Models': 'FDH11, FDH30, FDH45, FDH75'
     },
     features: [
       'More sufficient processing of materials',
@@ -281,7 +526,6 @@ export const products: Product[] = [
     ]
   },
 
-  // 7. Vacuum Dispersing Machine
   {
     id: 'disperser-fdz',
     name: 'Vacuum Dispersing Machine',
@@ -292,11 +536,11 @@ export const products: Product[] = [
     image: '/images/products/fdz-disperser.jpg',
     specifications: {
       'Motor Power': '25kW - 75kW',
-      'Speed': '0-1400 rpm',
-      'Volume': '200L - 1500L',
-      'Vacuum': '≤-0.07 MPa',
+      'Speed Range': '0-1400 rpm',
+      'Volume Capacity': '200L - 1500L',
+      'Vacuum Level': '≤-0.07 MPa',
       'Disc Diameter': '200mm - 400mm',
-      'Models': 'FDZ200, FDZ400, FDZ600, FDZ1000'
+      'Available Models': 'FDZ200, FDZ400, FDZ600, FDZ1000'
     },
     features: [
       'Stable and reliable hydraulic lift',
@@ -309,13 +553,12 @@ export const products: Product[] = [
     applications: [
       'Coating manufacturing',
       'Ink production',
-      'High Viscosity Putty',
+      'High viscosity putty',
       'Pharmaceutical industry',
       'Cosmetics production'
     ]
   },
 
-  // 8. Lab Dispersing Machine
   {
     id: 'lab-disperser-sdf400',
     name: 'Lab Dispersing Machine',
@@ -347,25 +590,25 @@ export const products: Product[] = [
     ]
   },
 
-  // 9. Wall Mounted High-Speed Mixer
+  // ==================== MIXERS ====================
   {
     id: 'mixer-wall-mounted',
     name: 'Wall Mounted High-Speed Mixer',
     category: 'mixers',
-    slug: 'wall-mounted-high-speed-Mixer',
-    shortDescription: 'Space-saving wall-mounted Mixer for small-batch production',
-    fullDescription: 'Wall-mounted high-speed Mixer widely used in Coating Industry. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
+    slug: 'wall-mounted-high-speed-mixer',
+    shortDescription: 'Space-saving wall-mounted mixer for small-batch production',
+    fullDescription: 'Wall-mounted high-speed mixer widely used in coating industry. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
     image: '/images/products/wall-mounted-mixer.jpg',
     specifications: {
       'Materials Viscosity': '≤100,000 cps',
-      'Production Capacity': '50L,700L',
-      'Max Rotation Speed': '0 to 2800rpm',
-      'Contact Material': 'SS304 stainless steel',
-      'Models': 'SFSW-4, SFSW-7.5, SFSF-11, SFSF-15, SFSF-18.5, SFSF-22, SFSF-30'
+      'Production Capacity': '50L - 700L',
+      'Max Rotation Speed': '0 to 2800 rpm',
+      'Contact Material': 'SS',
+      'Available Models': 'SFSW-4, SFSW-7.5, SFSF-11, SFSF-15, SFSF-18.5, SFSF-22, SFSF-30'
     },
     features: [
       'Wall-mounted design saves significant production space',
-      'High rotation speed up to 2800rpm for rapid Mixing',
+      'High rotation speed up to 2800rpm for rapid mixing',
       'Strong shearing force creates good suspension effect',
       'Manual rotation device for disc height adjustment',
       'Compact footprint ideal for limited spaces',
@@ -377,37 +620,36 @@ export const products: Product[] = [
       'Adhesive production',
       'Small-batch multi-variety production'
     ],
-    workingPrinciple: 'Through high-speed rotation of the Mixing disc, materials become annular flow, resulting in strong vortex flow that descends to the vortex bottom in spiral state. During this process, materials are dispersed, dissolved, mixed and emulsified efficiently due to strong shearing, crash and friction among particles.'
+    workingPrinciple: 'Through high-speed rotation of the mixing disc, materials become annular flow, resulting in strong vortex flow that descends to the vortex bottom in spiral state. During this process, materials are dispersed, dissolved, mixed and emulsified efficiently due to strong shearing, crash and friction among particles.'
   },
 
-  // 10. Floor Standing Mixer
   {
     id: 'mixer-floor-standing',
     name: 'Heavy Duty Floor Standing Mixer',
     category: 'mixers',
     slug: 'floor-standing-planetary-mixer',
-    shortDescription: 'Floor Standing Planetary mixer suitable for Multiple industrial production',
-    fullDescription: 'Floor Standing Planetary mixer suitable for Multiple industrial production.',
+    shortDescription: 'Floor standing planetary mixer suitable for multiple industrial production',
+    fullDescription: 'Floor standing planetary mixer suitable for multiple industrial production.',
     image: '/images/products/wall-mounted-mixer.jpg',
     specifications: {
-      'Capacity': 'as required',
-      'Motor Power': 'as required',
-      'Speed Range': '0 to 2800rpm',
-      'Frame': 'Heavy-duty iron/steel',
+      'Capacity': 'As required',
+      'Motor Power': 'As required',
+      'Speed Range': '0 to 2800 rpm',
+      'Frame Material': 'Heavy-duty iron/steel',
       'Safety Features': 'Emergency stop',
-      'Lift System': 'manual lift',
-      'Material': 'Stainless steel bowl and attachments'
+      'Lift System': 'Manual lift',
+      'Material': 'SS bowl and attachments'
     },
     features: [
       'Heavy-duty mixer',
-      'small to large batches'
+      'Small to large batches'
     ],
     applications: [
-      'Large Scale Mixing'
+      'Large scale mixing'
     ]
   },
 
-  // 11. Movable Tank
+  // ==================== VESSELS & TANKS ====================
   {
     id: 'movable-tank',
     name: 'Movable Tank',
@@ -417,12 +659,12 @@ export const products: Product[] = [
     fullDescription: 'High-quality movable tank designed for storage, temporary holding, and material transfer in industrial production. Features robust construction with mobility and easy cleaning.',
     image: '/images/products/single-layer-tank.jpg',
     specifications: {
-      'Capacity Range': '50-1500L',
-      'Material': 'SUS304 / SUS316L stainless steel',
+      'Capacity Range': '50L - 1500L',
+      'Material': 'SS',
       'Surface Finish': 'Mirror polished inside and outside',
       'Bottom Design': 'Inclined bottom for complete discharge',
       'Mobility': 'Equipped with brake wheels',
-      'Discharge': 'Bottom discharge valve'
+      'Discharge System': 'Bottom discharge valve'
     },
     features: [
       'High-quality stainless steel construction',
@@ -444,7 +686,6 @@ export const products: Product[] = [
     ]
   },
 
-  // 12. Storage Tank
   {
     id: 'storage-tank',
     name: 'Storage Tank',
@@ -454,15 +695,14 @@ export const products: Product[] = [
     fullDescription: 'Heavy-duty stationary storage tank designed for large-scale industrial storage applications. Available in stainless steel and mild steel construction.',
     image: '/images/products/storage-tank.jpg',
     specifications: {
-      'Capacity Range': '10,000 LTR to 50,000 LTR',
-      'Material': 'Stainless Steel 304, 316 and MS',
+      'Capacity Range': '10,000L to 50,000L',
+      'Material Options': 'SS and MS (Mild Steel)',
       'Type': 'Stationary (Non-movable)',
       'Construction': 'Heavy-duty industrial grade'
     },
     features: [
       'Large capacity storage',
-      'Stainless Steel 304 and 316 options',
-      'Mild Steel (MS) construction available',
+      'Stainless steel and mild steel options',
       'Heavy-duty stationary design',
       'Industrial grade construction'
     ],
