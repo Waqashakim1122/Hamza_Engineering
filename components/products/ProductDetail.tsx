@@ -25,33 +25,25 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
   return (
     <div className="product-detail">
-      {/* Breadcrumb with Back Button */}
+      {/* SIMPLE BREADCRUMB - Exactly like Category Page */}
       <nav className="product-breadcrumb">
-        <div className="breadcrumb-container">
-          <button onClick={() => router.back()} className="back-button">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M19 12H5M12 19l-7-7 7-7"/>
-            </svg>
-            <span>Back</span>
-          </button>
-          <div className="breadcrumb-links">
-            <Link href="/">Home</Link>
-            <span className="breadcrumb-separator">/</span>
-            <Link href="/products">Products</Link>
-            <span className="breadcrumb-separator">/</span>
-            <Link href={`/products#${product.category}`} className="breadcrumb-category">
-              {category?.name}
+        <Link href="/products">Products</Link>
+        <span className="breadcrumb-separator">/</span>
+        {category && (
+          <>
+            <Link href={`/products/category/${product.category}`}>
+              {category.name}
             </Link>
             <span className="breadcrumb-separator">/</span>
-            <span className="breadcrumb-current">{product.name}</span>
-          </div>
-        </div>
+          </>
+        )}
+        <span className="breadcrumb-current">{product.name}</span>
       </nav>
 
-      {/* Main Product Section - Traditional Layout */}
+      {/* Main Product Section */}
       <section className="product-main">
         <div className="product-container">
-          {/* Left Side - Image Gallery */}
+          {/* Left - Image Gallery */}
           <div className="product-gallery-section">
             <div className="main-image-wrapper">
               <Image
@@ -88,12 +80,12 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             )}
           </div>
 
-          {/* Right Side - Product Information */}
+          {/* Right - Product Information */}
           <div className="product-info-section">
             <div className="category-badge">{category?.name}</div>
-            
+
             <h1 className="product-heading">{product.name}</h1>
-            
+
             <p className="product-desc">{product.fullDescription}</p>
 
             {/* CTA Buttons */}
@@ -101,10 +93,9 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               <Link href="/contact" className="btn-request-quote">
                 Request a Quote
               </Link>
-              
             </div>
 
-            {/* Quick Specifications Box */}
+            {/* Quick Specifications */}
             <div className="quick-specs-box">
               <h3 className="specs-box-title">Key Specifications</h3>
               <ul className="specs-list">
@@ -125,7 +116,6 @@ export default function ProductDetail({ product }: ProductDetailProps) {
       {/* Detailed Information Tabs */}
       <section className="details-tabs-section">
         <div className="tabs-wrapper">
-          {/* Tab Navigation */}
           <div className="tab-navigation">
             <button
               className={`nav-tab ${activeTab === 'specs' ? 'active-tab' : ''}`}
@@ -147,7 +137,6 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             </button>
           </div>
 
-          {/* Tab Content */}
           <div className="tab-content-area">
             {activeTab === 'specs' && (
               <div className="tab-panel">
@@ -200,7 +189,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         </div>
       </section>
 
-      {/* Related Products Section */}
+      {/* Related Products */}
       {relatedProducts.length > 0 && (
         <section className="related-products">
           <div className="related-wrapper">
@@ -228,8 +217,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
           </div>
         </section>
       )}
+       {/* Back to Categories - Exactly like Category Page */}
+      <div className="category-types__back">
+        <Link href={`/products/category/${product.category}`} className="back-to-categories">
+          ← Back to {category?.name || 'Category'}
+        </Link>
+      </div>
 
-      {/* Final CTA Section */}
+      {/* Final CTA */}
       <section className="final-cta">
         <div className="cta-wrapper">
           <h2 className="cta-heading">Need This Solution for Your Project?</h2>
@@ -241,6 +236,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
           </Link>
         </div>
       </section>
+
+     
     </div>
   );
 }
