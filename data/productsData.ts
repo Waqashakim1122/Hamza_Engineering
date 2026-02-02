@@ -22,6 +22,8 @@ export interface ProductCategory {
   slug: string;
   description: string;
   icon: string;
+  parentCategory?: string; // Added for subcategories
+  isSubcategory?: boolean; // Added to identify subcategories
 }
 
 export const productCategories: ProductCategory[] = [
@@ -39,6 +41,7 @@ export const productCategories: ProductCategory[] = [
     description: 'Advanced polymer manufacturing systems',
     icon: ''
   },
+  // MAIN BEAD MILLS CATEGORY (Parent)
   {
     id: 'bead-mills',
     name: 'Bead Mills',
@@ -46,12 +49,25 @@ export const productCategories: ProductCategory[] = [
     description: 'High-efficiency grinding and dispersion equipment',
     icon: ''
   },
+  // HORIZONTAL BEAD MILLS (Subcategory under Bead Mills)
+  {
+    id: 'horizontal-bead-mills',
+    name: 'Horizontal Bead Mills',
+    slug: 'horizontal-bead-mills',
+    description: 'Maximum efficiency horizontal bead mills with EcoMizer technology',
+    icon: '',
+    parentCategory: 'bead-mills',
+    isSubcategory: true
+  },
+  // VERTICAL BEAD MILLS (Subcategory under Bead Mills)
   {
     id: 'vertical-bead-mills',
     name: 'Vertical Bead Mills',
     slug: 'vertical-bead-mills',
     description: 'High-speed vertical bead mills for fine grinding applications',
-    icon: ''
+    icon: '',
+    parentCategory: 'bead-mills',
+    isSubcategory: true
   },
   {
     id: 'attritor-mill',
@@ -150,30 +166,26 @@ export const products: Product[] = [
     ]
   },
 
-  // ==================== BEAD MILLS ====================
+  // ==================== HORIZONTAL BEAD MILLS (Subcategory) - NOW 7 MODELS ====================
   {
-    id: 'bead-mill-centex',
-    name: 'Bead Mill',
-    category: 'bead-mills',
-    slug: 'bead-mill',
+    id: 'horizontal-bead-mill-001',
+    name: 'Horizontal Bead Mill Model 1',
+    category: 'horizontal-bead-mills',
+    slug: 'horizontal-bead-mill-model-1',
     shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/centex-bead-mill.jpg',
     specifications: {
-      'Technology': 'EcoMizer agitator disks with reverse feeding',
-      'Bead Distribution': 'Homogenous throughout chamber',
-      'Screen Surface': 'Large surface area for efficient separation',
-      'Energy Efficiency': 'Lower specific energy requirement',
-      'Temperature Control': 'Lower pressure reduces temperature issues',
-      'Automation': 'Sophisticated control options available'
+      'Technology': '',
+      'Bead Distribution': '',
+      'Screen Surface': '',
+      'Energy Efficiency': '',
+      'Temperature Control': '',
+      'Automation': ''
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
-      'Reverse-feeding design creates homogenous bead distribution',
-      'No beads near screen enabling use of smaller grinding media',
-      'Large screen surface for higher throughput',
       'Narrow particle size distribution',
-      'No compression of grinding beads',
       'Lower chamber pressure reduces temperature issues',
       'Cutting-edge technology with long service life',
       'Higher flow capability without quality compromise',
@@ -187,12 +199,198 @@ export const products: Product[] = [
     workingPrinciple: 'The unique EcoMizer agitator disks with reverse feeding create a homogenous bead distribution throughout the grinding chamber. The smart design ensures no beads are near the screen, enabling smaller bead usage for more efficient grinding. The large screen surface maintains lower pressure inside the chamber, reducing temperature issues and enabling higher throughput.'
   },
 
-  // ==================== VERTICAL BEAD MILLS ====================
+  {
+    id: 'horizontal-bead-mill-002',
+    name: 'Horizontal Bead Mill Model 2',
+    category: 'horizontal-bead-mills',
+    slug: 'horizontal-bead-mill-model-2',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/horizontal-bead-mill-2.jpg',
+    specifications: {
+      'Technology': '',
+      'Bead Distribution': '',
+      'Screen Surface': '',
+      'Energy Efficiency': '',
+      'Temperature Control': '',
+      'Automation': ''
+    },
+    features: [
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Narrow particle size distribution',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
+    ],
+    applications: [
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
+    ]
+  },
+
+  {
+    id: 'horizontal-bead-mill-003',
+    name: 'Horizontal Bead Mill Model 3',
+    category: 'horizontal-bead-mills',
+    slug: 'horizontal-bead-mill-model-3',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/horizontal-bead-mill-3.jpg',
+    specifications: {
+      'Technology': '',
+      'Bead Distribution': '',
+      'Screen Surface': '',
+      'Energy Efficiency': '',
+      'Temperature Control': '',
+      'Automation': ''
+    },
+    features: [
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Narrow particle size distribution',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
+    ],
+    applications: [
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
+    ]
+  },
+
+  {
+    id: 'horizontal-bead-mill-004',
+    name: 'Horizontal Bead Mill Model 4',
+    category: 'horizontal-bead-mills',
+    slug: 'horizontal-bead-mill-model-4',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/horizontal-bead-mill-4.jpg',
+    specifications: {
+      'Technology': '',
+      'Bead Distribution': '',
+      'Screen Surface': '',
+      'Energy Efficiency': '',
+      'Temperature Control': '',
+      'Automation': ''
+    },
+    features: [
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Narrow particle size distribution',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
+    ],
+    applications: [
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
+    ]
+  },
+
+  {
+    id: 'horizontal-bead-mill-005',
+    name: 'Horizontal Bead Mill Model 5',
+    category: 'horizontal-bead-mills',
+    slug: 'horizontal-bead-mill-model-5',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/horizontal-bead-mill-5.jpg',
+    specifications: {
+      'Technology': '',
+      'Bead Distribution': '',
+      'Screen Surface': '',
+      'Energy Efficiency': '',
+      'Temperature Control': '',
+      'Automation': ''
+    },
+    features: [
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Narrow particle size distribution',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
+    ],
+    applications: [
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
+    ]
+  },
+
+  {
+    id: 'horizontal-bead-mill-006',
+    name: 'Horizontal Bead Mill Model 6',
+    category: 'horizontal-bead-mills',
+    slug: 'horizontal-bead-mill-model-6',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/horizontal-bead-mill-6.jpg',
+    specifications: {
+      'Technology': '',
+      'Bead Distribution': '',
+      'Screen Surface': '',
+      'Energy Efficiency': '',
+      'Temperature Control': '',
+      'Automation': ''
+    },
+    features: [
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Narrow particle size distribution',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
+    ],
+    applications: [
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
+    ]
+  },
+
+  {
+    id: 'horizontal-bead-mill-007',
+    name: 'Horizontal Bead Mill Model 7',
+    category: 'horizontal-bead-mills',
+    slug: 'horizontal-bead-mill-model-7',
+    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
+    image: '/images/products/horizontal-bead-mill-7.jpg',
+    specifications: {
+      'Technology': '',
+      'Bead Distribution': '',
+      'Screen Surface': '',
+      'Energy Efficiency': '',
+      'Temperature Control': '',
+      'Automation': ''
+    },
+    features: [
+      'EcoMizer agitator disks for maximum energy efficiency',
+      'Narrow particle size distribution',
+      'Lower chamber pressure reduces temperature issues',
+      'Cutting-edge technology with long service life',
+      'Higher flow capability without quality compromise',
+      'Reduced processing time and production costs'
+    ],
+    applications: [
+      'Printing inks',
+      'Paints and coatings',
+      'Wet grinding and dispersing'
+    ]
+  },
+
+  // ==================== VERTICAL BEAD MILLS (Subcategory) - NOW 1 MODEL ====================
   {
     id: 'vertical-bead-mill-001',
-    name: 'Vertical Bead Mill Model 1',
+    name: 'Vertical Bead Mill',
     category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-1',
+    slug: 'vertical-bead-mill',
     shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
     fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
     image: '/images/products/vertical-bead-mill.jpg',
@@ -203,244 +401,6 @@ export const products: Product[] = [
       'Seal Type': 'Two side mechanical seal',
       'Chamber Material': 'Silicon carbide',
       'Drive System': 'Variable speed through VFD'
-    },
-    features: [
-      'Super high speed: 0-8000rpm',
-      'Dynamic separation device with no screen design',
-      'Smaller grinding medium capability (0.03-0.1mm)',
-      'Silicon carbide inner chamber for excellent cooling',
-      'Two side mechanical seal',
-      'Multiple grinding zone systems',
-      'Closed and sealed system',
-      'Precise temperature control'
-    ],
-    applications: [
-      'Coating industry',
-      'Cosmetic manufacturing',
-      'Fine chemical processing',
-      'Pharmaceutical production'
-    ]
-  },
-
-  {
-    id: 'vertical-bead-mill-002',
-    name: 'Vertical Bead Mill Model 2',
-    category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-2',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
-    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
-    image: '/images/products/vertical-bead-mill-2.jpg',
-    specifications: {
-      'Speed Range': '',
-      'Grinding Media': '',
-      'Separation System': '',
-      'Seal Type': '',
-      'Chamber Material': '',
-      'Drive System': ''
-    },
-    features: [
-      'Super high speed: 0-8000rpm',
-      'Dynamic separation device with no screen design',
-      'Smaller grinding medium capability (0.03-0.1mm)',
-      'Silicon carbide inner chamber for excellent cooling',
-      'Two side mechanical seal',
-      'Multiple grinding zone systems',
-      'Closed and sealed system',
-      'Precise temperature control'
-    ],
-    applications: [
-      'Coating industry',
-      'Cosmetic manufacturing',
-      'Fine chemical processing',
-      'Pharmaceutical production'
-    ]
-  },
-
-  {
-    id: 'vertical-bead-mill-003',
-    name: 'Vertical Bead Mill Model 3',
-    category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-3',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
-    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
-    image: '/images/products/vertical-bead-mill-3.jpg',
-    specifications: {
-      'Speed Range': '',
-      'Grinding Media': '',
-      'Separation System': '',
-      'Seal Type': '',
-      'Chamber Material': '',
-      'Drive System': ''
-    },
-    features: [
-      'Super high speed: 0-8000rpm',
-      'Dynamic separation device with no screen design',
-      'Smaller grinding medium capability (0.03-0.1mm)',
-      'Silicon carbide inner chamber for excellent cooling',
-      'Two side mechanical seal',
-      'Multiple grinding zone systems',
-      'Closed and sealed system',
-      'Precise temperature control'
-    ],
-    applications: [
-      'Coating industry',
-      'Cosmetic manufacturing',
-      'Fine chemical processing',
-      'Pharmaceutical production'
-    ]
-  },
-
-  {
-    id: 'vertical-bead-mill-004',
-    name: 'Vertical Bead Mill Model 4',
-    category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-4',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
-    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
-    image: '/images/products/vertical-bead-mill-4.jpg',
-    specifications: {
-      'Speed Range': '',
-      'Grinding Media': '',
-      'Separation System': '',
-      'Seal Type': '',
-      'Chamber Material': '',
-      'Drive System': ''
-    },
-    features: [
-      'Super high speed: 0-8000rpm',
-      'Dynamic separation device with no screen design',
-      'Smaller grinding medium capability (0.03-0.1mm)',
-      'Silicon carbide inner chamber for excellent cooling',
-      'Two side mechanical seal',
-      'Multiple grinding zone systems',
-      'Closed and sealed system',
-      'Precise temperature control'
-    ],
-    applications: [
-      'Coating industry',
-      'Cosmetic manufacturing',
-      'Fine chemical processing',
-      'Pharmaceutical production'
-    ]
-  },
-
-  {
-    id: 'vertical-bead-mill-005',
-    name: 'Vertical Bead Mill Model 5',
-    category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-5',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
-    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
-    image: '/images/products/vertical-bead-mill-5.jpg',
-    specifications: {
-      'Speed Range': '',
-      'Grinding Media': '',
-      'Separation System': '',
-      'Seal Type': '',
-      'Chamber Material': '',
-      'Drive System': ''
-    },
-    features: [
-      'Super high speed: 0-8000rpm',
-      'Dynamic separation device with no screen design',
-      'Smaller grinding medium capability (0.03-0.1mm)',
-      'Silicon carbide inner chamber for excellent cooling',
-      'Two side mechanical seal',
-      'Multiple grinding zone systems',
-      'Closed and sealed system',
-      'Precise temperature control'
-    ],
-    applications: [
-      'Coating industry',
-      'Cosmetic manufacturing',
-      'Fine chemical processing',
-      'Pharmaceutical production'
-    ]
-  },
-
-  {
-    id: 'vertical-bead-mill-006',
-    name: 'Vertical Bead Mill Model 6',
-    category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-6',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
-    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
-    image: '/images/products/vertical-bead-mill-6.jpg',
-    specifications: {
-      'Speed Range': '',
-      'Grinding Media': '',
-      'Separation System': '',
-      'Seal Type': '',
-      'Chamber Material': '',
-      'Drive System': ''
-    },
-    features: [
-      'Super high speed: 0-8000rpm',
-      'Dynamic separation device with no screen design',
-      'Smaller grinding medium capability (0.03-0.1mm)',
-      'Silicon carbide inner chamber for excellent cooling',
-      'Two side mechanical seal',
-      'Multiple grinding zone systems',
-      'Closed and sealed system',
-      'Precise temperature control'
-    ],
-    applications: [
-      'Coating industry',
-      'Cosmetic manufacturing',
-      'Fine chemical processing',
-      'Pharmaceutical production'
-    ]
-  },
-
-  {
-    id: 'vertical-bead-mill-007',
-    name: 'Vertical Bead Mill Model 7',
-    category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-7',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
-    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
-    image: '/images/products/vertical-bead-mill-7.jpg',
-    specifications: {
-      'Speed Range': '',
-      'Grinding Media': '',
-      'Separation System': '',
-      'Seal Type': '',
-      'Chamber Material': '',
-      'Drive System': ''
-    },
-    features: [
-      'Super high speed: 0-8000rpm',
-      'Dynamic separation device with no screen design',
-      'Smaller grinding medium capability (0.03-0.1mm)',
-      'Silicon carbide inner chamber for excellent cooling',
-      'Two side mechanical seal',
-      'Multiple grinding zone systems',
-      'Closed and sealed system',
-      'Precise temperature control'
-    ],
-    applications: [
-      'Coating industry',
-      'Cosmetic manufacturing',
-      'Fine chemical processing',
-      'Pharmaceutical production'
-    ]
-  },
-
-  {
-    id: 'vertical-bead-mill-008',
-    name: 'Vertical Bead Mill Model 8',
-    category: 'vertical-bead-mills',
-    slug: 'vertical-bead-mill-model-8',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
-    fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
-    image: '/images/products/vertical-bead-mill-8.jpg',
-    specifications: {
-      'Speed Range': '',
-      'Grinding Media': '',
-      'Separation System': '',
-      'Seal Type': '',
-      'Chamber Material': '',
-      'Drive System': ''
     },
     features: [
       'Super high speed: 0-8000rpm',
@@ -731,14 +691,35 @@ export function getCategoryBySlug(slug: string): ProductCategory | undefined {
   return productCategories.find(cat => cat.slug === slug);
 }
 
+// Get subcategories for a parent category
+export function getSubcategories(parentCategorySlug: string): ProductCategory[] {
+  return productCategories.filter(cat => cat.parentCategory === parentCategorySlug);
+}
+
+// Get main categories (non-subcategories)
+export function getMainCategories(): ProductCategory[] {
+  return productCategories.filter(cat => !cat.isSubcategory);
+}
+
 // Get main product categories with their products count
 export function getMainCategoriesWithCount() {
-  return productCategories.map(category => {
+  return getMainCategories().map(category => {
     const categoryProducts = getProductsByCategory(category.slug);
+    const subcategories = getSubcategories(category.slug);
+    
+    // Count products in subcategories too
+    let totalProducts = categoryProducts.length;
+    subcategories.forEach(subcat => {
+      totalProducts += getProductsByCategory(subcat.slug).length;
+    });
+    
     return {
       ...category,
-      productCount: categoryProducts.length,
-      isMultiProduct: categoryProducts.length > 1,
+      productCount: totalProducts,
+      directProductCount: categoryProducts.length,
+      subcategoryCount: subcategories.length,
+      hasSubcategories: subcategories.length > 0,
+      isMultiProduct: totalProducts > 1,
       thumbnailImage: categoryProducts[0]?.image || '/images/products/placeholder.jpg'
     };
   });
@@ -747,9 +728,4 @@ export function getMainCategoriesWithCount() {
 // Check if category has multiple products
 export function hasMultipleProducts(categorySlug: string): boolean {
   return getProductsByCategory(categorySlug).length > 1;
-}
-
-// Get main categories only (for the main page)
-export function getMainCategories() {
-  return productCategories;
 }
