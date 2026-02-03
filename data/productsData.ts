@@ -495,12 +495,12 @@ export const products: Product[] = [
     fullDescription: 'Combines grinding, dispersing, emulsifying, and mixing functions for materials of different viscosities.',
     image: '/images/products/fdz-disperser.jpg',
     specifications: {
-      'Motor Power': '25kW - 75kW',
-      'Speed Range': '0-1400 rpm',
-      'Volume Capacity': '200L - 1500L',
+      'Capacity': '1500 (LTR)',
+      'Motor Power': '45kW approx',
+      'Speed Range': 'Variable',
       'Vacuum Level': '≤-0.07 MPa',
-      'Disc Diameter': '200mm - 400mm',
-      'Available Models': 'FDZ200, FDZ400, FDZ600, FDZ1000'
+      'Disc Diameter': '38cm approx',
+      'Available ': ' With and with out colling jacket abd lid',
     },
     features: [
       'Stable and reliable hydraulic lift',
@@ -511,33 +511,62 @@ export const products: Product[] = [
       'Multi-functional processing'
     ],
     applications: [
-      'Coating manufacturing',
-      'Ink production',
-      'High viscosity putty',
+      'Coating industry',
+      'Ink industry',
       'Pharmaceutical industry',
-      'Cosmetics production'
+      'Cosmetics industry'
     ]
   },
 
   {
     id: 'lab-disperser-sdf400',
-    name: 'Lab Dispersing Machine',
+    name: 'Lab Dispersing Machine M1',
     category: 'dispersers',
     slug: 'lab-dispersing-machine',
     shortDescription: 'Multi-functional laboratory disperser for R&D and testing',
     fullDescription: 'Integrates mixing, sanding and dispersing functions into one unit. Ideal experimental equipment for laboratory personnel.',
     image: '/images/products/lab-disperser.jpg',
     specifications: {
-      'Tank Size': '1L standard (2L, 5L available)',
-      'Motor Type': 'Carbon brush motors standard',
-      'Temperature Control': 'Optional jacket for heating/cooling',
-      'Functions': 'Mixing, sanding, dispersing'
+      'Capacity': '0.5 to 5 (LTR)',
+      'Motor power': '2.2kw approx',
+      'Functions': 'Mixing,dispersing',
+      'Frame': 'Adjustable',
+      'Speed': 'Variable',
     },
     features: [
-      'Multi-functional: mixing, sanding, dispersing',
+      'Multi-functional: mixing, dispersing',
       'Compact laboratory design',
       'Multiple tank size options',
-      'Temperature control capability',
+      'Easy to operate and clean',
+      'Ideal for pre-production experiments'
+    ],
+    applications: [
+      'Paint pre-production testing',
+      'Pigment development',
+      'Food slurry experiments',
+      'R&D laboratory work',
+      'Small batch testing'
+    ]
+  },
+   {
+    id: 'lab-disperser-sdf400',
+    name: 'Lab Dispersing Machine M2',
+    category: 'dispersers',
+    slug: 'lab-dispersing-machine',
+    shortDescription: 'Multi-functional laboratory disperser for R&D and testing',
+    fullDescription: 'Integrates mixing, sanding and dispersing functions into one unit. Ideal experimental equipment for laboratory personnel.',
+    image: '/images/products/lab-disperser.jpg',
+    specifications: {
+      'Capacity': '15 to 25 (LTR)',
+      'Motor power': '4kw approx',
+      'Functions': 'Mixing,dispersing',
+      'Frame': 'Adjustable',
+      'Speed': 'Variable',
+    },
+    features: [
+      'Multi-functional: mixing, dispersing',
+      'Compact laboratory design',
+      'Multiple tank size options',
       'Easy to operate and clean',
       'Ideal for pre-production experiments'
     ],
@@ -551,61 +580,32 @@ export const products: Product[] = [
   },
 
   // ==================== MIXERS ====================
-  {
-    id: 'mixer-wall-mounted',
-    name: 'Wall Mounted High-Speed Mixer',
-    category: 'mixers',
-    slug: 'wall-mounted-high-speed-mixer',
-    shortDescription: 'Space-saving wall-mounted mixer for small-batch production',
-    fullDescription: 'Wall-mounted high-speed mixer widely used in coating industry. Saves production room significantly and especially suitable for small-batch production of products with many varieties.',
-    image: '/images/products/wall-mounted-mixer.jpg',
-    specifications: {
-      'Materials Viscosity': '≤100,000 cps',
-      'Production Capacity': '50L - 700L',
-      'Max Rotation Speed': '0 to 2800 rpm',
-      'Contact Material': 'SS',
-      'Available Models': 'SFSW-4, SFSW-7.5, SFSF-11, SFSF-15, SFSF-18.5, SFSF-22, SFSF-30'
-    },
-    features: [
-      'Wall-mounted design saves significant production space',
-      'High rotation speed up to 2800rpm for rapid mixing',
-      'Strong shearing force creates good suspension effect',
-      'Manual rotation device for disc height adjustment',
-      'Compact footprint ideal for limited spaces',
-      'Quick dispersion of powder in liquid',
-      'Different motor explosion-proof classes available'
-    ],
-    applications: [
-      'Paint and ink manufacturing',
-      'Adhesive production',
-      'Small-batch multi-variety production'
-    ],
-    workingPrinciple: 'Through high-speed rotation of the mixing disc, materials become annular flow, resulting in strong vortex flow that descends to the vortex bottom in spiral state. During this process, materials are dispersed, dissolved, mixed and emulsified efficiently due to strong shearing, crash and friction among particles.'
-  },
+ 
 
   {
     id: 'mixer-floor-standing',
-    name: 'Heavy Duty Floor Standing Mixer',
+    name: 'Floor Standing Mixer',
     category: 'mixers',
     slug: 'floor-standing-planetary-mixer',
     shortDescription: 'Floor standing planetary mixer suitable for multiple industrial production',
     fullDescription: 'Floor standing planetary mixer suitable for multiple industrial production.',
     image: '/images/products/wall-mounted-mixer.jpg',
     specifications: {
-      'Capacity': 'As required',
-      'Motor Power': 'As required',
-      'Speed Range': '0 to 2800 rpm',
-      'Frame Material': 'Heavy-duty iron/steel',
+      'Capacity': '200 to 1000 LTR',
+      'Motor Power': 'As per capacity',
+      'Speed Range': 'Variable',
+      'Material': 'Frame (iron,shatft and impeller(ss))',
       'Safety Features': 'Emergency stop',
       'Lift System': 'Manual lift',
-      'Material': 'SS bowl and attachments'
+      'Frame Fitting': 'Floor Bolted',
+      
     },
     features: [
       'Heavy-duty mixer',
       'Small to large batches'
     ],
     applications: [
-      'Large scale mixing'
+      'Small to Large scale mixing'
     ]
   },
 
