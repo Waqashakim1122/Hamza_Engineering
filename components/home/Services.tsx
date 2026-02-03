@@ -5,7 +5,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { getProductsByCategory } from '@/data/productsData';
+import { getProductsByCategory, getSubcategories } from '@/data/productsData';
 
 const coreProducts = [
   { 
@@ -65,11 +65,19 @@ export default function CoreProducts() {
             // Get products in this category
             const categoryProducts = getProductsByCategory(product.categorySlug);
             
-            // If category has multiple products, link to category page
-            // If only one product, link directly to that product detail
-            const productLink = categoryProducts.length > 1 
-              ? `/products/category/${product.categorySlug}`
-              : `/products/${categoryProducts[0]?.slug}`;
+            // Check if category has subcategories (like bead-mills)
+            const subcategories = getSubcategories(product.categorySlug);
+            
+            // Determine the link:
+            // 1. If category has subcategories (e.g., bead-mills) -> link to category page
+            // 2. If category has multiple direct products -> link to category page
+            // 3. If category has only one product -> link directly to that product
+            let productLink = `/products/category/${product.categorySlug}`;
+            
+            if (subcategories.length === 0 && categoryProducts.length === 1) {
+              // Only one product and no subcategories - link directly to product
+              productLink = `/products/${categoryProducts[0]?.slug}`;
+            }
             
             return (
               <motion.article
