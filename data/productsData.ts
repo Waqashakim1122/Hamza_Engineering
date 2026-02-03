@@ -492,7 +492,7 @@ export const products: Product[] = [
     category: 'dispersers',
     slug: 'vacuum-dispersing-machine',
     shortDescription: 'Multi-functional vacuum disperser for high-viscosity materials',
-    fullDescription: 'Combines grinding, dispersing, emulsifying, and mixing functions for materials of different viscosities.',
+    fullDescription: 'Dispersing, emulsifying, and mixing functions for materials of different viscosities.',
     image: '/images/products/fdz-disperser.jpg',
     specifications: {
       'Capacity': '1500 (LTR)',
