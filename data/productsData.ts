@@ -496,11 +496,11 @@ export const products: Product[] = [
     image: '/images/products/fdz-disperser.jpg',
     specifications: {
       'Capacity': '1500 (LTR)',
-      'Motor Power': '45kW approx',
+      'Motor Power': '45 kw Approx',
       'Speed Range': 'Variable',
       'Vacuum Level': '≤-0.07 MPa',
-      'Disc Diameter': '38cm approx',
-      'Available ': ' With and with out colling jacket abd lid',
+      'Disc Diameter': '38 cm Approx',
+      'Available ': ' With and without colling jacket and lid',
     },
     features: [
       'Stable and reliable hydraulic lift',
