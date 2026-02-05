@@ -27,6 +27,7 @@ export interface ProductCategory {
 }
 
 export const productCategories: ProductCategory[] = [
+  // MAIN RESIN PLANT CATEGORY
   {
     id: 'resin-plant',
     name: 'Resin Plant',
@@ -34,12 +35,52 @@ export const productCategories: ProductCategory[] = [
     description: 'Complete resin synthesis and processing systems with oil heating',
     icon: ''
   },
+  // RESIN PLANT SUBCATEGORIES
+  {
+    id: 'resin-plant-lab',
+    name: 'Lab & Research',
+    slug: 'resin-plant-lab',
+    description: 'Laboratory-scale resin plants for R&D and testing (5kg - 200kg)',
+    icon: '',
+    parentCategory: 'resin-plant',
+    isSubcategory: true
+  },
+  {
+    id: 'resin-plant-production',
+    name: 'Large Scale Production',
+    slug: 'resin-plant-production',
+    description: 'Industrial-scale resin production systems (3 Ton - 6 Ton)',
+    icon: '',
+    parentCategory: 'resin-plant',
+    isSubcategory: true
+  },
+  
+  // MAIN POLYMER PLANT CATEGORY
   {
     id: 'polymer-plant',
     name: 'Polymer Processing Plant',
     slug: 'polymer-plant',
     description: 'Advanced polymer manufacturing systems',
     icon: ''
+  },
+  // POLYMER PLANT SUBCATEGORIES
+  {
+    id: 'polymer-plant-lab',
+    name: 'Lab & Research',
+    slug: 'polymer-plant-lab',
+    description: 'Laboratory-scale polymer plants for R&D (5 LTR - 200 LTR)',
+    icon: '',
+    parentCategory: 'polymer-plant',
+    isSubcategory: true
+  },
+  {
+    id: 'polymer-plant-production',
+    name: 'Large Scale Production',
+    slug: 'polymer-plant-production',
+    description: 'Industrial-scale polymer production systems (2500 LTR - 5000 LTR)',
+    icon: '',
+    parentCategory: 'polymer-plant',
+    isSubcategory: true
   },
   // MAIN BEAD MILLS CATEGORY (Parent)
   {
@@ -100,69 +141,371 @@ export const productCategories: ProductCategory[] = [
 ];
 
 export const products: Product[] = [
-  // ==================== RESIN PLANT ====================
+  // ==================== RESIN PLANT - LAB & RESEARCH ====================
   {
-    id: 'resin-plant-001',
-    name: 'Resin Plant Complete System',
-    category: 'resin-plant',
-    slug: 'resin-plant-complete-system',
-    shortDescription: 'Complete resin synthesis and processing system with oil heating technology',
-    fullDescription: 'Specialized equipment for resin synthesis, processing, and handling. Designed for epoxy, polyester, phenolic, or alkyd resins manufacturing.',
+    id: 'resin-plant-lab-5kg',
+    name: 'Resin Plant - Lab Scale 5 kg',
+    category: 'resin-plant-lab',
+    slug: 'resin-plant-lab-5kg',
+    shortDescription: 'Laboratory-scale resin synthesis system with 5 kg loading capacity',
+    fullDescription: 'Compact resin plant designed for R&D, testing, and small-batch production. Ideal for formula development and quality control testing.',
+    image: '/images/products/resin-plant-lab.jpg',
+    specifications: {
+      'Loading Capacity': '5 kg',
+      'Scale': 'Laboratory',
+      'Heating System': 'Oil heating (thermic fluid)',
+      'Product Contact Material': 'SS',
+      'Control System': 'Manual + Auto control panel',
+      'Filtration System': 'Included',
+      'Safety Features': 'Safety valves, temperature/pressure sensors'
+    },
+    features: [
+      'Compact laboratory design',
+      'Oil heating system for precise temperature control',
+      'SS construction for product contact surfaces',
+      'Manual + Auto control panel',
+      'Complete filtration system',
+      'Thinning vessel with variable capacity',
+      'Ideal for R&D and formula development'
+    ],
+    applications: [
+      'Research & Development',
+      'Formula testing',
+      'Quality control',
+      'Small batch production',
+      'Educational purposes'
+    ]
+  },
+
+  {
+    id: 'resin-plant-lab-20kg',
+    name: 'Resin Plant - Lab Scale 20 kg',
+    category: 'resin-plant-lab',
+    slug: 'resin-plant-lab-20kg',
+    shortDescription: 'Laboratory-scale resin synthesis system with 20 kg loading capacity',
+    fullDescription: 'Mid-size laboratory resin plant for pilot production and extensive testing applications.',
+    image: '/images/products/resin-plant-lab.jpg',
+    specifications: {
+      'Loading Capacity': '20 kg',
+      'Scale': 'Laboratory',
+      'Heating System': 'Oil heating (thermic fluid)',
+      'Product Contact Material': 'SS',
+      'Control System': 'Manual + Auto control panel',
+      'Filtration System': 'Included',
+      'Safety Features': 'Safety valves, temperature/pressure sensors'
+    },
+    features: [
+      'Pilot-scale laboratory system',
+      'Oil heating for precise temperature control',
+      'All product-contact equipment in SS',
+      'Manual + Auto control panel',
+      'Filtration system included',
+      'Thinning vessel with variable capacity',
+      'Suitable for pilot production'
+    ],
+    applications: [
+      'Pilot plant production',
+      'Formula development',
+      'Process optimization',
+      'Pre-production testing',
+      'Quality assurance'
+    ]
+  },
+
+  {
+    id: 'resin-plant-lab-200kg',
+    name: 'Resin Plant - Lab Scale 200 kg',
+    category: 'resin-plant-lab',
+    slug: 'resin-plant-lab-200kg',
+    shortDescription: 'Large laboratory-scale resin synthesis system with 200 kg loading capacity',
+    fullDescription: 'Large-scale laboratory resin plant bridging the gap between R&D and commercial production.',
+    image: '/images/products/resin-plant-lab.jpg',
+    specifications: {
+      'Loading Capacity': '200 kg',
+      'Scale': 'Large Laboratory',
+      'Heating System': 'Oil heating (thermic fluid)',
+      'Product Contact Material': 'SS',
+      'Control System': 'Manual + Auto control panel',
+      'Filtration System': 'Included',
+      'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors'
+    },
+    features: [
+      'Large laboratory capacity',
+      'Oil heating system for precise control',
+      'SS product-contact surfaces',
+      'Advanced control panel (Manual + Auto)',
+      'Complete filtration system',
+      'Thinning vessel with variable capacity',
+      'Scale-up ready design'
+    ],
+    applications: [
+      'Large-scale testing',
+      'Pre-commercial production',
+      'Process validation',
+      'Scale-up studies',
+      'Medium batch production'
+    ]
+  },
+
+  // ==================== RESIN PLANT - LARGE SCALE PRODUCTION ====================
+  {
+    id: 'resin-plant-3ton',
+    name: 'Resin Plant - 3 Ton Production',
+    category: 'resin-plant-production',
+    slug: 'resin-plant-3ton',
+    shortDescription: 'Industrial-scale resin production plant with 3 ton capacity',
+    fullDescription: 'Complete industrial resin synthesis and processing system designed for commercial-scale production of epoxy, polyester, phenolic, or alkyd resins.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
+      'Production Capacity': '3 Ton',
+      'Scale': 'Large Scale Production',
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
       'Non-Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
-      'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors'
+      'Filtration System': 'Industrial grade',
+      'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors, emergency shutdown'
     },
     features: [
+      'Industrial-scale production capacity',
       'Oil heating (thermic fluid) system for precise temperature control',
       'All product-contact equipment in SS',
       'Non-product-contact vessels in SS',
       'Advanced safety systems with manual + auto control panel',
       'Condensers and distillation units for solvent recovery',
-      'Complete filtration system for product quality'
+      'Complete industrial filtration system',
+      'Thinning vessels with variable capacity'
     ],
     applications: [
       'Epoxy resin manufacturing',
       'Polyester resin production',
       'Phenolic resin synthesis',
       'Alkyd resin processing',
-      'Industrial resin manufacturing'
+      'Industrial resin manufacturing',
+      'Commercial paint production'
     ]
   },
 
-  // ==================== POLYMER PLANT ====================
   {
-    id: 'polymer-plant-001',
-    name: 'Polymer Processing Plant',
-    category: 'polymer-plant',
-    slug: 'polymer-processing-plant',
-    shortDescription: 'Complete batch-operated polymer manufacturing system',
-    fullDescription: 'Advanced polymer processing plant with jacketed reactors and steam heating for controlled polymerization.',
-    image: '/images/products/polymer-plant.jpg',
+    id: 'resin-plant-6ton',
+    name: 'Resin Plant - 6 Ton Production',
+    category: 'resin-plant-production',
+    slug: 'resin-plant-6ton',
+    shortDescription: 'Large industrial-scale resin production plant with 6 ton capacity',
+    fullDescription: 'High-capacity industrial resin synthesis system for large-scale commercial production with enhanced automation and safety features.',
+    image: '/images/products/resin-plant.jpg',
     specifications: {
+      'Production Capacity': '6 Ton',
+      'Scale': 'Large Scale Production',
+      'Heating System': 'Oil heating (thermic fluid)',
+      'Product Contact Material': 'SS',
+      'Non-Contact Material': 'SS',
+      'Control System': 'Manual + Auto control panel',
+      'Filtration System': 'Industrial grade',
+      'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors, emergency shutdown'
+    },
+    features: [
+      'High-capacity industrial production',
+      'Advanced oil heating (thermic fluid) system',
+      'All product-contact equipment in SS',
+      'Non-product-contact vessels in SS',
+      'Comprehensive safety systems with manual + auto control',
+      'Multiple condensers and distillation units',
+      'Complete industrial filtration system',
+      'Multiple thinning vessels with variable capacity',
+      'Enhanced automation capabilities'
+    ],
+    applications: [
+      'Large-scale epoxy resin manufacturing',
+      'High-volume polyester resin production',
+      'Commercial phenolic resin synthesis',
+      'Industrial alkyd resin processing',
+      'Mass production of industrial resins',
+      'Large paint manufacturing facilities'
+    ]
+  },
+
+  // ==================== POLYMER PLANT - LAB & RESEARCH ====================
+  {
+    id: 'polymer-plant-lab-5ltr',
+    name: 'Polymer Plant - Lab Scale 5 LTR',
+    category: 'polymer-plant-lab',
+    slug: 'polymer-plant-lab-5ltr',
+    shortDescription: 'Laboratory polymer processing plant with 5 liter capacity',
+    fullDescription: 'Compact polymer processing system designed for research, development, and small-scale testing applications.',
+    image: '/images/products/polymer-plant-lab.jpg',
+    specifications: {
+      'Loading Capacity': '5 LTR',
+      'Scale': 'Lab & Research',
       'Process Type': 'Batch-operated',
       'Heating Method': 'Steam heating system',
-      'Control System': 'PLC-based with safety features',
+      'Control System': 'Manual control with safety features',
+      'Material': 'SS (product contact)',
+      'Safety Features': 'Temperature alarms, pressure relief valves'
+    },
+    features: [
+      'Compact laboratory design',
+      'Controlled polymerization process',
+      'Steam heating for temperature regulation',
+      'High-quality filtration system',
+      'Real-time monitoring',
+      'Safety systems included',
+      'Ideal for R&D purposes'
+    ],
+    applications: [
+      'Research & Development',
+      'Formula development',
+      'Polymer testing',
+      'Educational applications',
+      'Small batch trials'
+    ]
+  },
+
+  {
+    id: 'polymer-plant-lab-30ltr',
+    name: 'Polymer Plant - Lab Scale 30 LTR',
+    category: 'polymer-plant-lab',
+    slug: 'polymer-plant-lab-30ltr',
+    shortDescription: 'Laboratory polymer processing plant with 30 liter capacity',
+    fullDescription: 'Mid-size laboratory polymer plant for pilot production and process development applications.',
+    image: '/images/products/polymer-plant-lab.jpg',
+    specifications: {
+      'Loading Capacity': '30 LTR',
+      'Scale': 'Lab & Research',
+      'Process Type': 'Batch-operated',
+      'Heating Method': 'Steam heating system',
+      'Control System': 'Manual + Auto control',
+      'Material': 'SS (product contact)',
+      'Safety Features': 'Temperature alarms, pressure relief valves, emergency shutdown'
+    },
+    features: [
+      'Pilot-scale laboratory system',
+      'Controlled polymerization process',
+      'Steam heating for precise temperature control',
+      'High-quality filtration system',
+      'Real-time process monitoring',
+      'Advanced safety features',
+      'Manual + Auto control capabilities'
+    ],
+    applications: [
+      'Pilot plant production',
+      'Process development',
+      'Scale-up studies',
+      'Quality testing',
+      'Pre-production trials'
+    ]
+  },
+
+  {
+    id: 'polymer-plant-lab-200ltr',
+    name: 'Polymer Plant - Lab Scale 200 LTR',
+    category: 'polymer-plant-lab',
+    slug: 'polymer-plant-lab-200ltr',
+    shortDescription: 'Large laboratory polymer processing plant with 200 liter capacity',
+    fullDescription: 'Large-scale laboratory polymer plant for extensive testing and pre-commercial production.',
+    image: '/images/products/polymer-plant-lab.jpg',
+    specifications: {
+      'Loading Capacity': '200 LTR',
+      'Scale': 'Lab & Research',
+      'Process Type': 'Batch-operated',
+      'Heating Method': 'Steam heating system',
+      'Control System': 'PLC-based with advanced safety features',
       'Material': 'SS (product contact)',
       'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown'
     },
     features: [
+      'Large laboratory capacity',
       'Controlled polymerization process',
       'Steam heating for precise temperature regulation',
       'High-quality filtration system',
-      'Real-time process monitoring',
-      'Safety systems with emergency shutdown',
-      'Complete automation with PLC control'
+      'Real-time process monitoring with PLC',
+      'Comprehensive safety systems',
+      'Complete automation capability',
+      'Scale-up ready'
     ],
     applications: [
-      'Polymer synthesis',
-      'Resin manufacturing',
-      'Chemical processing',
+      'Large-scale testing',
+      'Pre-commercial production',
+      'Process validation',
+      'Scale-up studies',
+      'Medium batch manufacturing'
+    ]
+  },
+
+  // ==================== POLYMER PLANT - LARGE SCALE PRODUCTION ====================
+  {
+    id: 'polymer-plant-2500ltr',
+    name: 'Polymer Plant - 2500 LTR Production',
+    category: 'polymer-plant-production',
+    slug: 'polymer-plant-2500ltr',
+    shortDescription: 'Industrial polymer processing plant with 2500 liter capacity',
+    fullDescription: 'Complete industrial-scale polymer processing system for commercial production with advanced automation and control.',
+    image: '/images/products/polymer-plant.jpg',
+    specifications: {
+      'Production Capacity': '2500 LTR (Ton)',
+      'Scale': 'Large Scale Production',
+      'Process Type': 'Batch-operated',
+      'Heating Method': 'Steam heating system',
+      'Control System': 'PLC-based with full automation',
+      'Material': 'SS (product contact)',
+      'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown, automated safety systems'
+    },
+    features: [
+      'Industrial-scale production capacity',
+      'Controlled polymerization process',
+      'Steam heating for precise temperature regulation',
+      'High-quality industrial filtration system',
+      'Real-time process monitoring',
+      'Advanced PLC control and automation',
+      'Comprehensive safety systems with emergency shutdown',
+      'Complete production line integration capability'
+    ],
+    applications: [
+      'Commercial polymer synthesis',
+      'Industrial resin manufacturing',
+      'Large-scale chemical processing',
       'Pharmaceutical production',
-      'Industrial polymer production'
+      'Industrial polymer production',
+      'Mass production facilities'
+    ]
+  },
+
+  {
+    id: 'polymer-plant-5000ltr',
+    name: 'Polymer Plant - 5000 LTR Production',
+    category: 'polymer-plant-production',
+    slug: 'polymer-plant-5000ltr',
+    shortDescription: 'Large industrial polymer processing plant with 5000 liter capacity',
+    fullDescription: 'High-capacity industrial polymer processing system for large-scale commercial production with state-of-the-art automation and safety.',
+    image: '/images/products/polymer-plant.jpg',
+    specifications: {
+      'Production Capacity': '5000 LTR (Ton)',
+      'Scale': 'Large Scale Production',
+      'Process Type': 'Batch-operated',
+      'Heating Method': 'Steam heating system',
+      'Control System': 'Advanced PLC-based with full automation',
+      'Material': 'SS (product contact)',
+      'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown, automated safety systems, redundant safety controls'
+    },
+    features: [
+      'High-capacity industrial production',
+      'Advanced controlled polymerization process',
+      'Precision steam heating system for temperature regulation',
+      'High-quality industrial filtration system',
+      'Real-time process monitoring and data logging',
+      'State-of-the-art PLC control and complete automation',
+      'Comprehensive safety systems with emergency shutdown',
+      'Complete production line integration',
+      'Enhanced automation capabilities',
+      'Redundant safety controls'
+    ],
+    applications: [
+      'Large-scale polymer synthesis',
+      'High-volume industrial resin manufacturing',
+      'Commercial chemical processing',
+      'Large pharmaceutical production',
+      'Mass polymer production',
+      'High-capacity manufacturing facilities'
     ]
   },
 
