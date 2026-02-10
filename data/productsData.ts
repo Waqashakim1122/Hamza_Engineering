@@ -6,7 +6,6 @@ export interface Product {
   name: string;
   category: string;
   slug: string;
-  shortDescription: string;
   fullDescription: string;
   image: string;
   gallery?: string[];
