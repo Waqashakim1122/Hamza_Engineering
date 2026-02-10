@@ -77,7 +77,7 @@ export const productCategories: ProductCategory[] = [
     id: 'polymer-plant-production',
     name: 'Large Scale Production',
     slug: 'polymer-plant-production',
-    description: 'Industrial scale polymer production platn (2.5 TON and 5 TON)',
+    description: 'Industrial scale polymer production plant (2.5 TON and 5 TON)',
     icon: '',
     parentCategory: 'polymer-plant',
     isSubcategory: true
@@ -467,7 +467,7 @@ export const products: Product[] = [
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/centex-bead-mill.jpg',
     specifications: {
-      'chembar Size ': '01 LTR',
+      'Chamber Size ': '01 LTR',
       'Motor Capacity': '1.1 KW',
       'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '900',
@@ -485,7 +485,7 @@ export const products: Product[] = [
       'Paints and coatings',
       'Wet grinding and dispersing'
     ],
-    workingPrinciple: 'The unique EcoMizer agitator disks with reverse feeding create a homogenous bead distribution throughout the grinding chamber. The smart design ensures no beads are near the screen, enabling smaller bead usage for more efficient grinding. The large screen surface maintains lower pressure inside the chamber, reducing temperature issues and enabling higher throughput.'
+    workingPrinciple: 'The unique EcoMizer agitator disks with reverse feeding create a homogeneous bead distribution throughout the grinding chamber. The smart design ensures no beads are near the screen, enabling smaller bead usage for more efficient grinding. The large screen surface maintains lower pressure inside the chamber, reducing temperature issues and enabling higher throughput.'
   },
 
   {
@@ -497,7 +497,7 @@ export const products: Product[] = [
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-2.jpg',
     specifications: {
-      'chembar Size ': '02 LTR',
+      'Chamber Size ': '02 LTR',
       'Motor Capacity': '2.2 KW',
       'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '950',
@@ -526,7 +526,7 @@ export const products: Product[] = [
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-3.jpg',
    specifications: {
-      'chembar Size ': '05 LTR',
+      'Chamber Size ': '05 LTR',
       'Motor Capacity': '5.5 KW',
       'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '1400',
@@ -555,7 +555,7 @@ export const products: Product[] = [
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-4.jpg',
    specifications: {
-      'chembar Size ': '15 LTR',
+      'Chamber Size ': '15 LTR',
       'Motor Capacity': '15 KW',
       'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '1460',
@@ -584,7 +584,7 @@ export const products: Product[] = [
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-5.jpg',
   specifications: {
-      'chembar Size ': '30 LTR',
+      'Chamber Size ': '30 LTR',
       'Motor Capacity': '22 KW',
       'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '1460',
@@ -613,7 +613,7 @@ export const products: Product[] = [
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-6.jpg',
     specifications: {
-      'Chembar Size ': '60 LTR',
+      'Chamber Size ': '60 LTR',
       'Motor Capacity': '45 KW',
       'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '1465',
@@ -642,7 +642,7 @@ export const products: Product[] = [
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-7.jpg',
     specifications: {
-      'Chembar Size ': '150 LTR',
+      'Chamber Size ': '150 LTR',
       'Motor Capacity': '55 KW',
       'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '990',
@@ -704,13 +704,13 @@ export const products: Product[] = [
     category: 'attritor-mill',
     slug: 'attritor-stirred-ball-mill',
     shortDescription: 'Versatile stirred ball mill for fine grinding and dispersion',
-    fullDescription: 'Simple and effective method of grinding and dispersing fine and homogenous material.',
+    fullDescription: 'Simple and effective method of grinding and dispersing fine and homogeneous material.',
     image: '/images/products/attritor-mill.jpg',
     specifications: {
       'Operation Mode': 'Wet',
       'Speed Range': '0 to 100 RPM',
       'Media Size': '6mm',
-      'Granding Media Type': 'Ceramic ball',
+      'Grinding Media Type': 'Ceramic ball',
       'Temperature Control': 'Controlled temperature operation'
     },
     features: [
@@ -738,7 +738,7 @@ export const products: Product[] = [
     specifications: {
       'Motor Power': '25kW - 45kW',
       'Speed Range': 'Variable',
-      'Lift Up': 'hydrulic',
+      'Lift Up': 'Hydraulic',
       'Tank Capacity': '300-1500 (LTR)',
     },
     features: [
@@ -769,7 +769,7 @@ export const products: Product[] = [
       'Speed Range': 'Variable',
       'Vacuum Level': '≤-0.07 MPa',
       'Disc Diameter': '38 cm Approx',
-      'Available ': ' With and without colling jacket and lid',
+      'Available ': ' With and without cooling jacket and lid',
     },
     features: [
       'Stable and reliable hydraulic lift',
@@ -863,7 +863,7 @@ export const products: Product[] = [
       'Capacity': '200 to 1000 LTR',
       'Motor Power': 'As per capacity',
       'Speed Range': 'Variable',
-      'Material': 'Frame (iron,shatft and impeller(ss))',
+      'Material': 'Frame (iron, shaft and impeller (SS))',
       'Safety Features': 'Emergency stop',
       'Lift System': 'Manual lift',
       'Frame Fitting': 'Floor Bolted',
@@ -893,7 +893,7 @@ export const products: Product[] = [
       'Surface Finish': 'Mirror polished inside and outside',
       'Bottom Design': 'Inclined bottom for complete discharge',
       'Mobility': 'Equipped with brake wheels',
-      'Discharge System': 'Bottom/Side  discharge valve(as per requirment)'
+      'Discharge System': 'Bottom/Side discharge valve (as per requirement)'
     },
     features: [
       'High-quality stainless steel construction',
@@ -902,7 +902,7 @@ export const products: Product[] = [
       'Mobile design with brake wheels for easy positioning',
       'Durable argon-arc welding',
       'Optional cover available',
-       'Optional double jacket water cooling tanks avilable',
+       'Optional double jacket water cooling tanks available',
       'Suitable for wide range of viscosities'
     ],
     applications: [
@@ -930,7 +930,7 @@ export const products: Product[] = [
       'Large capacity storage',
       'Stainless steel and mild steel options',
       'Heavy-duty stationary design',
-      'Options avilabe with or with out aggitator'
+      'Options available with or without agitator'
     ],
     applications: [
       'Large-scale chemical storage',
