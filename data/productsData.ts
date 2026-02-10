@@ -68,7 +68,7 @@ export const productCategories: ProductCategory[] = [
     id: 'polymer-plant-lab',
     name: 'Lab & Research',
     slug: 'polymer-plant-lab',
-    description: 'Laboratory-scale polymer plants for R&D (5 LTR,30 LTR 200 LTR)',
+    description: 'Laboratory scale polymer plants for R&D (5 LTR,30 LTR,200 LTR)',
     icon: '',
     parentCategory: 'polymer-plant',
     isSubcategory: true
@@ -77,7 +77,7 @@ export const productCategories: ProductCategory[] = [
     id: 'polymer-plant-production',
     name: 'Large Scale Production',
     slug: 'polymer-plant-production',
-    description: 'Industrial-scale polymer production systems (2500 LTR ,5000 LTR)',
+    description: 'Industrial scale polymer production systems (2500 LTR,5000 LTR)',
     icon: '',
     parentCategory: 'polymer-plant',
     isSubcategory: true
