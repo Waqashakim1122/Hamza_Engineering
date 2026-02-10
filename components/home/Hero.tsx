@@ -18,8 +18,7 @@ export default function Hero() {
 
           <div className="hero__description">
             <p className="hero__description-text">
-              High-tolerance machined components and turnkey solutions for
-              global industries.
+             High-tolerance machined components and turnkey solutions for industrial manufacturers worldwide.
             </p>
           </div>
 
