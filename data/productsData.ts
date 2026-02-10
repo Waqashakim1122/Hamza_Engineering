@@ -179,23 +179,17 @@ export const products: Product[] = [
     specifications: {
       'Loading Capacity': '20 kg',
       'Scale': 'Laboratory',
-      'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
-      'Filtration System': 'Included',
       'Safety Features': 'Safety valves, temperature/pressure sensors'
     },
     features: [
       'Pilot-scale laboratory system',
-      'Oil heating for precise temperature control',
       'All product-contact equipment in SS',
       'Manual + Auto control panel',
-      'Filtration system included',
-      'Thinning vessel with variable capacity',
       'Suitable for pilot production'
     ],
     applications: [
-      'Pilot plant production',
       'Formula development',
       'Process optimization',
       'Pre-production testing',
@@ -205,9 +199,9 @@ export const products: Product[] = [
 
   {
     id: 'resin-plant-lab-200kg',
-    name: 'Resin Plant - Small Batch Testing 200 kg',
+    name: 'Resin Plant - Small Batch Testing 200kg',
     category: 'resin-plant-lab',
-    slug: 'resin-plant-lab-200kg',
+    slug: 'resin-plant-Small Batch Testing 200kg',
     fullDescription: 'Large-scale laboratory resin plant bridging the gap between R&D and commercial production.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
@@ -216,7 +210,7 @@ export const products: Product[] = [
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
-      'Filtration System': 'Included',
+      'Filtration System': 'ON Demand ',
       'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors'
     },
     features: [
@@ -224,15 +218,12 @@ export const products: Product[] = [
       'Oil heating system for precise control',
       'SS product-contact surfaces',
       'Advanced control panel (Manual + Auto)',
-      'Complete filtration system',
-      'Thinning vessel with variable capacity',
-      'Scale-up ready design'
+      'Complete filtration system on demand',
+      'Thinning vessel with variable capacity on demand ',
     ],
     applications: [
-      'Large-scale testing',
       'Pre-commercial production',
       'Process validation',
-      'Scale-up studies',
       'Medium batch production'
     ]
   },
