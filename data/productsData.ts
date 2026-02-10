@@ -152,26 +152,20 @@ export const products: Product[] = [
     specifications: {
       'Loading Capacity': '5 kg',
       'Scale': 'Laboratory',
-      'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
-      'Filtration System': 'Included',
       'Safety Features': 'Safety valves, temperature/pressure sensors'
     },
     features: [
       'Compact laboratory design',
-      'Oil heating system for precise temperature control',
-      'SS construction for product contact surfaces',
+      'SS Fabrication',
       'Manual + Auto control panel',
-      'Complete filtration system',
-      'Thinning vessel with variable capacity',
       'Ideal for R&D and formula development'
     ],
     applications: [
       'Research & Development',
       'Formula testing',
       'Quality control',
-      'Small batch production',
       'Educational purposes'
     ]
   },
