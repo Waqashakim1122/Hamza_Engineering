@@ -907,24 +907,22 @@ export const products: Product[] = [
       'Surface Finish': 'Mirror polished inside and outside',
       'Bottom Design': 'Inclined bottom for complete discharge',
       'Mobility': 'Equipped with brake wheels',
-      'Discharge System': 'Bottom discharge valve'
+      'Discharge System': 'Bottom/Side  discharge valve(as per requirment)'
     },
     features: [
       'High-quality stainless steel construction',
       'Mirror polished surfaces for easy cleaning',
       'Inclined bottom ensures no residue',
       'Mobile design with brake wheels for easy positioning',
-      'Bottom discharge valve compatible with pipelines',
       'Durable argon-arc welding',
       'Optional cover available',
+       'Optional double jacket water cooling tanks avilable',
       'Suitable for wide range of viscosities'
     ],
     applications: [
       'Chemical storage and transfer',
       'Paint and coating production',
-      'Food and beverage processing',
       'Pharmaceutical materials',
-      'Adhesives and resins',
       'General industrial storage'
     ]
   },
@@ -935,24 +933,22 @@ export const products: Product[] = [
     category: 'vessels-tanks',
     slug: 'storage-tank',
     shortDescription: 'Heavy-duty stationary storage tank for large-scale industrial storage',
-    fullDescription: 'Heavy-duty stationary storage tank designed for large-scale industrial storage applications. Available in stainless steel and mild steel construction.',
+    fullDescription: 'Heavy-duty stationary storage tank designed for large-scale industrial storage applications. Available in stainless steel and mild steel.',
     image: '/images/products/storage-tank.jpg',
     specifications: {
       'Capacity Range': '10,000L to 50,000L',
       'Material Options': 'SS and MS (Mild Steel)',
       'Type': 'Stationary (Non-movable)',
-      'Construction': 'Heavy-duty industrial grade'
     },
     features: [
       'Large capacity storage',
       'Stainless steel and mild steel options',
       'Heavy-duty stationary design',
-      'Industrial grade construction'
+      'Options avilabe with or with out aggitator'
     ],
     applications: [
       'Large-scale chemical storage',
       'Industrial material storage',
-      'Bulk storage applications'
     ]
   }
 ];
