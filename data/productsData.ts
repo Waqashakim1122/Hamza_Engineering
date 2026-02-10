@@ -383,7 +383,7 @@ export const products: Product[] = [
       'Safety Features': 'Temperature alarms, pressure relief valves'
     },
     features: [
-      'Compact laboratory design',
+      'State of the art design',
       'Controlled polymerization process',
       'Electric heating for temperature regulation',
       'Safety systems included',
