@@ -376,7 +376,7 @@ export const products: Product[] = [
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
       'Material Loading Capacity': '200 LTR',
-      'Scale': 'Lab & Research',
+      'Scale': 'Pre commercial production',
       'Heating Method': 'Electric heating',
       'Material': 'SS (product contact)',
       'Control System': 'Manua + Auto control with safety features',
