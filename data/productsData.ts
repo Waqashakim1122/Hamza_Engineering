@@ -318,7 +318,7 @@ export const products: Product[] = [
     specifications: {
       'Material Loading Capacity': '5 LTR',
       'Scale': 'Lab & Research',
-      'Heating Method': 'Water heated ',
+      'Heating Method': 'Electric heating',
       'Material': 'SS (product contact)',
       'Control System': 'Manua + Auto control with safety features',
       'Safety Features': 'Temperature alarms, pressure relief valves'
@@ -326,7 +326,7 @@ export const products: Product[] = [
     features: [
       'Compact laboratory design',
       'Controlled polymerization process',
-      'Water heating for temperature regulation',
+      'Electric heating for temperature regulation',
       'Safety systems included',
       'Ideal for R&D purposes'
     ],
@@ -348,7 +348,7 @@ export const products: Product[] = [
      specifications: {
       'Material Loading Capacity': '30 LTR',
       'Scale': 'Lab & Research',
-      'Heating Method': 'Water heated ',
+      'Heating Method': 'Electric heating',
       'Material': 'SS (product contact)',
       'Control System': 'Manua + Auto control with safety features',
       'Safety Features': 'Temperature alarms, pressure relief valves'
@@ -356,7 +356,7 @@ export const products: Product[] = [
     features: [
       'Compact laboratory design',
       'Controlled polymerization process',
-      'Water heating for temperature regulation',
+      'Electric heating for temperature regulation',
       'Safety systems included',
       'Ideal for R&D purposes'
     ],
@@ -377,7 +377,7 @@ export const products: Product[] = [
     specifications: {
       'Material Loading Capacity': '200 LTR',
       'Scale': 'Lab & Research',
-      'Heating Method': 'Water heated ',
+      'Heating Method': 'Electric heating',
       'Material': 'SS (product contact)',
       'Control System': 'Manua + Auto control with safety features',
       'Safety Features': 'Temperature alarms, pressure relief valves'
@@ -385,7 +385,7 @@ export const products: Product[] = [
     features: [
       'Compact laboratory design',
       'Controlled polymerization process',
-      'Water heating for temperature regulation',
+      'Electric heating for temperature regulation',
       'Safety systems included',
       'Ideal for R&D purposes'
     ],
