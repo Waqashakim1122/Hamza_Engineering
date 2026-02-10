@@ -49,7 +49,7 @@ export const productCategories: ProductCategory[] = [
     id: 'resin-plant-production',
     name: 'Large Scale Production',
     slug: 'resin-plant-production',
-    description: 'Industrial-scale resin production systems (3 Ton,6 Ton)',
+    description: 'Industrial-scale resin production plants for commercial manufacturing (3 Ton and 6 Ton)',
     icon: '',
     parentCategory: 'resin-plant',
     isSubcategory: true
