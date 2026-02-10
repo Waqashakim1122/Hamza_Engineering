@@ -8,11 +8,11 @@ export default function CtaContact() {
         <span className="cta-contact__eyebrow">Get Started</span>
         
         {/* Title - NO BLUE BAR/LINE like Industries section */}
-        <h2 className="cta-contact__title">Ready for Industrial Solutions?</h2>
+        <h2 className="cta-contact__title">Ready for Your Industrial Solutions?</h2>
         
         {/* Subtitle - matches Industries section */}
         <p className="cta-contact__subtitle">
-          Our engineering team delivers custom solutions that meet the toughest industrial standards.
+          Our engineering team delivers custom solutions that meet the highest industrial standards.
         </p>
         
         {/* Action Buttons */}
