@@ -63,7 +63,7 @@ export default function OurCustomers() {
           <span className="our-customers__eyebrow">Trusted Partners</span>
           <h2 className="our-customers__title">Our Customers</h2>
           <p className="our-customers__subtitle">
-            We proudly partner with leading paint and coatings manufacturers. Click any logo to learn more about our partnership.
+            We proudly serve leading paint and coatings manufacturers. Click any logo to learn more about our partnership.
           </p>
         </div>
 
