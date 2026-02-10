@@ -21,8 +21,8 @@ export interface ProductCategory {
   slug: string;
   description: string;
   icon: string;
-  parentCategory?: string; // Added for subcategories
-  isSubcategory?: boolean; // Added to identify subcategories
+  parentCategory?: string;
+  isSubcategory?: boolean;
 }
 
 export const productCategories: ProductCategory[] = [
@@ -201,7 +201,7 @@ export const products: Product[] = [
     id: 'resin-plant-lab-200kg',
     name: 'Resin Plant - Small Batch Testing 200kg',
     category: 'resin-plant-lab',
-    slug: 'resin-plant-Small Batch Testing 200kg',
+    slug: 'resin-plant-small-batch-testing-200kg',
     fullDescription: 'Large-scale laboratory resin plant bridging the gap between R&D and commercial production.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
@@ -210,7 +210,7 @@ export const products: Product[] = [
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
-      'Filtration System': 'ON Demand ',
+      'Filtration System': 'ON Demand',
       'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors'
     },
     features: [
@@ -219,7 +219,7 @@ export const products: Product[] = [
       'SS product-contact surfaces',
       'Advanced control panel (Manual + Auto)',
       'Complete filtration system on demand',
-      'Thinning vessel with variable capacity on demand ',
+      'Thinning vessel with variable capacity on demand'
     ],
     applications: [
       'Pre-commercial production',
@@ -234,7 +234,6 @@ export const products: Product[] = [
     name: 'Resin Plant - 3 Ton Production',
     category: 'resin-plant-production',
     slug: 'resin-plant-3ton',
-    shortDescription: 'Industrial-scale resin production plant with 3 ton capacity',
     fullDescription: 'Complete industrial resin synthesis and processing system designed for commercial-scale production of epoxy, polyester, phenolic, or alkyd resins.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
@@ -272,7 +271,6 @@ export const products: Product[] = [
     name: 'Resin Plant - 6 Ton Production',
     category: 'resin-plant-production',
     slug: 'resin-plant-6ton',
-    shortDescription: 'Large industrial-scale resin production plant with 6 ton capacity',
     fullDescription: 'High-capacity industrial resin synthesis system for large-scale commercial production with enhanced automation and safety features.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
@@ -312,7 +310,6 @@ export const products: Product[] = [
     name: 'Polymer Plant - Lab Scale 5 LTR',
     category: 'polymer-plant-lab',
     slug: 'polymer-plant-lab-5ltr',
-    shortDescription: 'Laboratory polymer processing plant with 5 liter capacity',
     fullDescription: 'Compact polymer processing system designed for research, development, and small-scale testing applications.',
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
@@ -347,7 +344,6 @@ export const products: Product[] = [
     name: 'Polymer Plant - Lab Scale 30 LTR',
     category: 'polymer-plant-lab',
     slug: 'polymer-plant-lab-30ltr',
-    shortDescription: 'Laboratory polymer processing plant with 30 liter capacity',
     fullDescription: 'Mid-size laboratory polymer plant for pilot production and process development applications.',
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
@@ -382,7 +378,6 @@ export const products: Product[] = [
     name: 'Polymer Plant - Lab Scale 200 LTR',
     category: 'polymer-plant-lab',
     slug: 'polymer-plant-lab-200ltr',
-    shortDescription: 'Large laboratory polymer processing plant with 200 liter capacity',
     fullDescription: 'Large-scale laboratory polymer plant for extensive testing and pre-commercial production.',
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
@@ -419,7 +414,6 @@ export const products: Product[] = [
     name: 'Polymer Plant - 2500 LTR Production',
     category: 'polymer-plant-production',
     slug: 'polymer-plant-2500ltr',
-    shortDescription: 'Industrial polymer processing plant with 2500 liter capacity',
     fullDescription: 'Complete industrial-scale polymer processing system for commercial production with advanced automation and control.',
     image: '/images/products/polymer-plant.jpg',
     specifications: {
@@ -456,7 +450,6 @@ export const products: Product[] = [
     name: 'Polymer Plant - 5000 LTR Production',
     category: 'polymer-plant-production',
     slug: 'polymer-plant-5000ltr',
-    shortDescription: 'Large industrial polymer processing plant with 5000 liter capacity',
     fullDescription: 'High-capacity industrial polymer processing system for large-scale commercial production with state-of-the-art automation and safety.',
     image: '/images/products/polymer-plant.jpg',
     specifications: {
@@ -496,7 +489,6 @@ export const products: Product[] = [
     name: 'Horizontal Bead Mill Model 1',
     category: 'horizontal-bead-mills',
     slug: 'horizontal-bead-mill-model-1',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/centex-bead-mill.jpg',
     specifications: {
@@ -528,7 +520,6 @@ export const products: Product[] = [
     name: 'Horizontal Bead Mill Model 2',
     category: 'horizontal-bead-mills',
     slug: 'horizontal-bead-mill-model-2',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-2.jpg',
     specifications: {
@@ -559,7 +550,6 @@ export const products: Product[] = [
     name: 'Horizontal Bead Mill Model 3',
     category: 'horizontal-bead-mills',
     slug: 'horizontal-bead-mill-model-3',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-3.jpg',
     specifications: {
@@ -590,7 +580,6 @@ export const products: Product[] = [
     name: 'Horizontal Bead Mill Model 4',
     category: 'horizontal-bead-mills',
     slug: 'horizontal-bead-mill-model-4',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-4.jpg',
     specifications: {
@@ -621,7 +610,6 @@ export const products: Product[] = [
     name: 'Horizontal Bead Mill Model 5',
     category: 'horizontal-bead-mills',
     slug: 'horizontal-bead-mill-model-5',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-5.jpg',
     specifications: {
@@ -652,7 +640,6 @@ export const products: Product[] = [
     name: 'Horizontal Bead Mill Model 6',
     category: 'horizontal-bead-mills',
     slug: 'horizontal-bead-mill-model-6',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-6.jpg',
     specifications: {
@@ -683,7 +670,6 @@ export const products: Product[] = [
     name: 'Horizontal Bead Mill Model 7',
     category: 'horizontal-bead-mills',
     slug: 'horizontal-bead-mill-model-7',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-7.jpg',
     specifications: {
@@ -715,7 +701,6 @@ export const products: Product[] = [
     name: 'Vertical Bead Mill',
     category: 'vertical-bead-mills',
     slug: 'vertical-bead-mill',
-    shortDescription: 'High-efficiency vertical bead mill with super high speed capability',
     fullDescription: 'Simple operation with easy maintenance. All maintenance can be completed quickly. Very easy to add grinding media from feeding hole.',
     image: '/images/products/vertical-bead-mill.jpg',
     specifications: {
@@ -750,7 +735,6 @@ export const products: Product[] = [
     name: 'Attritor Stirred Ball Mill',
     category: 'attritor-mill',
     slug: 'attritor-stirred-ball-mill',
-    shortDescription: 'Versatile stirred ball mill for fine grinding and dispersion',
     fullDescription: 'Simple and effective method of grinding and dispersing fine and homogenous material. Ideal for pilot plant and scale up with repeatable results.',
     image: '/images/products/attritor-mill.jpg',
     specifications: {
@@ -783,7 +767,6 @@ export const products: Product[] = [
     name: 'High Speed Disperser',
     category: 'dispersers',
     slug: 'fdh-high-speed-disperser',
-    shortDescription: 'High-speed disperser for chemical and coating industries',
     fullDescription: 'Sawtooth-shaped dispersing impeller intensely stirs paste at high speed for thorough material processing.',
     image: '/images/products/fdh-disperser.jpg',
     specifications: {
@@ -815,7 +798,6 @@ export const products: Product[] = [
     name: 'Vacuum Dispersing Machine',
     category: 'dispersers',
     slug: 'vacuum-dispersing-machine',
-    shortDescription: 'Multi-functional vacuum disperser for high-viscosity materials',
     fullDescription: 'Dispersing, emulsifying, and mixing functions for materials of different viscosities.',
     image: '/images/products/fdz-disperser.jpg',
     specifications: {
@@ -824,7 +806,7 @@ export const products: Product[] = [
       'Speed Range': 'Variable',
       'Vacuum Level': '≤-0.07 MPa',
       'Disc Diameter': '38 cm Approx',
-      'Available ': ' With and without colling jacket and lid',
+      'Available': 'With and without cooling jacket and lid'
     },
     features: [
       'Stable and reliable hydraulic lift',
@@ -843,11 +825,10 @@ export const products: Product[] = [
   },
 
   {
-    id: 'lab-disperser-sdf400',
+    id: 'lab-disperser-sdf400-m1',
     name: 'Lab Dispersing Machine M1',
     category: 'dispersers',
-    slug: 'lab-dispersing-machine',
-    shortDescription: 'Multi-functional laboratory disperser for R&D and testing',
+    slug: 'lab-dispersing-machine-m1',
     fullDescription: 'Integrates mixing, sanding and dispersing functions into one unit. Ideal experimental equipment for laboratory personnel.',
     image: '/images/products/lab-disperser.jpg',
     specifications: {
@@ -855,7 +836,7 @@ export const products: Product[] = [
       'Motor power': '2.2kw approx',
       'Functions': 'Mixing,dispersing',
       'Frame': 'Adjustable',
-      'Speed': 'Variable',
+      'Speed': 'Variable'
     },
     features: [
       'Multi-functional: mixing, dispersing',
@@ -872,12 +853,12 @@ export const products: Product[] = [
       'Small batch testing'
     ]
   },
-   {
-    id: 'lab-disperser-sdf400',
+
+  {
+    id: 'lab-disperser-sdf400-m2',
     name: 'Lab Dispersing Machine M2',
     category: 'dispersers',
-    slug: 'lab-dispersing-machine',
-    shortDescription: 'Multi-functional laboratory disperser for R&D and testing',
+    slug: 'lab-dispersing-machine-m2',
     fullDescription: 'Integrates mixing, sanding and dispersing functions into one unit. Ideal experimental equipment for laboratory personnel.',
     image: '/images/products/lab-disperser.jpg',
     specifications: {
@@ -885,7 +866,7 @@ export const products: Product[] = [
       'Motor power': '4kw approx',
       'Functions': 'Mixing,dispersing',
       'Frame': 'Adjustable',
-      'Speed': 'Variable',
+      'Speed': 'Variable'
     },
     features: [
       'Multi-functional: mixing, dispersing',
@@ -904,14 +885,11 @@ export const products: Product[] = [
   },
 
   // ==================== MIXERS ====================
- 
-
   {
     id: 'mixer-floor-standing',
     name: 'Floor Standing Mixer',
     category: 'mixers',
     slug: 'floor-standing-planetary-mixer',
-    shortDescription: 'Floor standing planetary mixer suitable for multiple industrial production',
     fullDescription: 'Floor standing planetary mixer suitable for multiple industrial production.',
     image: '/images/products/wall-mounted-mixer.jpg',
     specifications: {
@@ -921,8 +899,7 @@ export const products: Product[] = [
       'Material': 'Frame (iron,shatft and impeller(ss))',
       'Safety Features': 'Emergency stop',
       'Lift System': 'Manual lift',
-      'Frame Fitting': 'Floor Bolted',
-      
+      'Frame Fitting': 'Floor Bolted'
     },
     features: [
       'Heavy-duty mixer',
@@ -939,7 +916,6 @@ export const products: Product[] = [
     name: 'Movable Tank',
     category: 'vessels-tanks',
     slug: 'movable-tank',
-    shortDescription: 'Versatile stainless steel movable tank for storage, mixing, and transfer',
     fullDescription: 'High-quality movable tank designed for storage, temporary holding, and material transfer in industrial production. Features robust construction with mobility and easy cleaning.',
     image: '/images/products/single-layer-tank.jpg',
     specifications: {
@@ -975,7 +951,6 @@ export const products: Product[] = [
     name: 'Storage Tank',
     category: 'vessels-tanks',
     slug: 'storage-tank',
-    shortDescription: 'Heavy-duty stationary storage tank for large-scale industrial storage',
     fullDescription: 'Heavy-duty stationary storage tank designed for large-scale industrial storage applications. Available in stainless steel and mild steel construction.',
     image: '/images/products/storage-tank.jpg',
     specifications: {
