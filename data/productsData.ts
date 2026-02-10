@@ -77,7 +77,7 @@ export const productCategories: ProductCategory[] = [
     id: 'polymer-plant-production',
     name: 'Large Scale Production',
     slug: 'polymer-plant-production',
-    description: 'Industrial scale polymer production systems (2500 LTR,5000 LTR)',
+    description: 'Industrial scale polymer production platn (2.5 TON and 5 TON)',
     icon: '',
     parentCategory: 'polymer-plant',
     isSubcategory: true
