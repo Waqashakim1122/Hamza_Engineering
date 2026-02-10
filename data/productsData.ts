@@ -237,14 +237,14 @@ export const products: Product[] = [
   // ==================== RESIN PLANT - LARGE SCALE PRODUCTION ====================
   {
     id: 'resin-plant-3ton',
-    name: 'Resin Plant - 3 Ton Production',
+    name: 'Resin Plant - 3 TON Production',
     category: 'resin-plant-production',
     slug: 'resin-plant-3ton',
     shortDescription: '',
     fullDescription: 'Complete industrial resin synthesis and processing system designed for commercial-scale production of epoxy, polyester, phenolic, and alkyd resins.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
-      'Material Loading Capacity': '3 Ton',
+      'Material Loading Capacity': '3 TON',
       'Scale': 'Large Scale Production',
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
@@ -272,14 +272,14 @@ export const products: Product[] = [
 
   {
     id: 'resin-plant-6ton',
-    name: 'Resin Plant - 6 Ton Production',
+    name: 'Resin Plant - 6 TON Production',
     category: 'resin-plant-production',
     slug: 'resin-plant-6ton',
     shortDescription: '',
     fullDescription: 'High-capacity industrial resin synthesis system for large-scale commercial production with enhanced automation and safety features.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
-      'Material Loading Capacity': '6 Ton',
+      'Material Loading Capacity': '6 TON',
       'Scale': 'Large Scale Production',
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
@@ -407,7 +407,7 @@ export const products: Product[] = [
     fullDescription: 'Complete industrial-scale polymer processing system for commercial production with advanced automation and control.',
     image: '/images/products/polymer-plant.jpg',
     specifications: {
-      'Material Loading Capacity': '2.5 Ton',
+      'Material Loading Capacity': '2.5 TON',
       'Scale': 'Large Scale Production',
       'Heating Method': 'Water heating system',
       'Material': 'SS (product contact)',
