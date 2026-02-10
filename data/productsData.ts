@@ -312,24 +312,21 @@ export const products: Product[] = [
     name: 'Polymer Plant - Lab Scale 5 LTR',
     category: 'polymer-plant-lab',
     slug: 'polymer-plant-lab-5ltr',
-    shortDescription: 'Laboratory polymer processing plant with 5 liter capacity',
-    fullDescription: 'Compact polymer processing system designed for research, development, and small-scale testing applications.',
+    shortDescription: '',
+    fullDescription: 'Compact polymer processing system designed for research, development, and small scale testing.',
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
       'Loading Capacity': '5 LTR',
       'Scale': 'Lab & Research',
-      'Process Type': 'Batch-operated',
-      'Heating Method': 'Steam heating system',
-      'Control System': 'Manual control with safety features',
+      'Heating Method': 'Water heated ',
       'Material': 'SS (product contact)',
+      'Control System': 'Manua + Auto control with safety features',
       'Safety Features': 'Temperature alarms, pressure relief valves'
     },
     features: [
       'Compact laboratory design',
       'Controlled polymerization process',
-      'Steam heating for temperature regulation',
-      'High-quality filtration system',
-      'Real-time monitoring',
+      'Water heating for temperature regulation',
       'Safety systems included',
       'Ideal for R&D purposes'
     ],
@@ -337,8 +334,6 @@ export const products: Product[] = [
       'Research & Development',
       'Formula development',
       'Polymer testing',
-      'Educational applications',
-      'Small batch trials'
     ]
   },
 
@@ -347,65 +342,54 @@ export const products: Product[] = [
     name: 'Polymer Plant - Lab Scale 30 LTR',
     category: 'polymer-plant-lab',
     slug: 'polymer-plant-lab-30ltr',
-    shortDescription: 'Laboratory polymer processing plant with 30 liter capacity',
+    shortDescription: '',
     fullDescription: 'Mid-size laboratory polymer plant for pilot production and process development applications.',
     image: '/images/products/polymer-plant-lab.jpg',
-    specifications: {
+     specifications: {
       'Loading Capacity': '30 LTR',
       'Scale': 'Lab & Research',
-      'Process Type': 'Batch-operated',
-      'Heating Method': 'Steam heating system',
-      'Control System': 'Manual + Auto control',
+      'Heating Method': 'Water heated ',
       'Material': 'SS (product contact)',
-      'Safety Features': 'Temperature alarms, pressure relief valves, emergency shutdown'
+      'Control System': 'Manua + Auto control with safety features',
+      'Safety Features': 'Temperature alarms, pressure relief valves'
     },
     features: [
-      'Pilot-scale laboratory system',
+      'Compact laboratory design',
       'Controlled polymerization process',
-      'Steam heating for precise temperature control',
-      'High-quality filtration system',
-      'Real-time process monitoring',
-      'Advanced safety features',
-      'Manual + Auto control capabilities'
+      'Water heating for temperature regulation',
+      'Safety systems included',
+      'Ideal for R&D purposes'
     ],
     applications: [
-      'Pilot plant production',
-      'Process development',
-      'Scale-up studies',
-      'Quality testing',
-      'Pre-production trials'
+      'Research & Development',
+      'Formula development',
+      'Polymer testing',
     ]
   },
-
   {
     id: 'polymer-plant-lab-200ltr',
     name: 'Polymer Plant - Lab Scale 200 LTR',
     category: 'polymer-plant-lab',
     slug: 'polymer-plant-lab-200ltr',
-    shortDescription: 'Large laboratory polymer processing plant with 200 liter capacity',
+    shortDescription: '',
     fullDescription: 'Large-scale laboratory polymer plant for extensive testing and pre-commercial production.',
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
       'Loading Capacity': '200 LTR',
       'Scale': 'Lab & Research',
-      'Process Type': 'Batch-operated',
-      'Heating Method': 'Steam heating system',
-      'Control System': 'PLC-based with advanced safety features',
+      'Heating Method': 'Water heated ',
       'Material': 'SS (product contact)',
-      'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown'
+      'Control System': 'Manua + Auto control with safety features',
+      'Safety Features': 'Temperature alarms, pressure relief valves'
     },
     features: [
-      'Large laboratory capacity',
+      'Compact laboratory design',
       'Controlled polymerization process',
-      'Steam heating for precise temperature regulation',
-      'High-quality filtration system',
-      'Real-time process monitoring with PLC',
-      'Comprehensive safety systems',
-      'Complete automation capability',
-      'Scale-up ready'
+      'Water heating for temperature regulation',
+      'Safety systems included',
+      'Ideal for R&D purposes'
     ],
     applications: [
-      'Large-scale testing',
       'Pre-commercial production',
       'Process validation',
       'Scale-up studies',
