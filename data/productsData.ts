@@ -460,19 +460,17 @@ export const products: Product[] = [
   // ==================== HORIZONTAL BEAD MILLS (Subcategory) - NOW 7 MODELS ====================
   {
     id: 'horizontal-bead-mill-001',
-    name: 'Horizontal Bead Mill Model 1',
+    name: 'Bead Mill 1LTR',
     category: 'horizontal-bead-mills',
-    slug: 'horizontal-bead-mill-model-1',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    slug: 'horizontal-bead-mill-1LTR',
+    shortDescription: '',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/centex-bead-mill.jpg',
     specifications: {
-      'Technology': '',
-      'Bead Distribution': '',
-      'Screen Surface': '',
-      'Energy Efficiency': '',
-      'Temperature Control': '',
-      'Automation': ''
+      'chembar Size ': '01 LTR',
+      'Motor Capacity': '1.1 KW',
+      'Bead Size': '1.0 to 1.2 mm',
+      'Motor R.P.M': '900',
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
@@ -492,19 +490,17 @@ export const products: Product[] = [
 
   {
     id: 'horizontal-bead-mill-002',
-    name: 'Horizontal Bead Mill Model 2',
+    name: 'Bead Mill 2LTR',
     category: 'horizontal-bead-mills',
-    slug: 'horizontal-bead-mill-model-2',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    slug: 'horizontal-bead-mill-2LTR',
+    shortDescription: '',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-2.jpg',
     specifications: {
-      'Technology': '',
-      'Bead Distribution': '',
-      'Screen Surface': '',
-      'Energy Efficiency': '',
-      'Temperature Control': '',
-      'Automation': ''
+      'chembar Size ': '02 LTR',
+      'Motor Capacity': '2.2 KW',
+      'Bead Size': '1.0 to 1.2 mm',
+      'Motor R.P.M': '950',
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
@@ -523,19 +519,17 @@ export const products: Product[] = [
 
   {
     id: 'horizontal-bead-mill-003',
-    name: 'Horizontal Bead Mill Model 3',
+    name: 'Bead Mill 5LTR',
     category: 'horizontal-bead-mills',
-    slug: 'horizontal-bead-mill-model-3',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    slug: 'horizontal-bead-mill-5LTR',
+    shortDescription: '',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-3.jpg',
-    specifications: {
-      'Technology': '',
-      'Bead Distribution': '',
-      'Screen Surface': '',
-      'Energy Efficiency': '',
-      'Temperature Control': '',
-      'Automation': ''
+   specifications: {
+      'chembar Size ': '05 LTR',
+      'Motor Capacity': '5.5 KW',
+      'Bead Size': '1.0 and 1.2 mm',
+      'Motor R.P.M': '1400',
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
@@ -554,19 +548,17 @@ export const products: Product[] = [
 
   {
     id: 'horizontal-bead-mill-004',
-    name: 'Horizontal Bead Mill Model 4',
+    name: 'Bead Mill 15LTR',
     category: 'horizontal-bead-mills',
-    slug: 'horizontal-bead-mill-model-4',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    slug: 'horizontal-bead-mill-15LTR',
+    shortDescription: '',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-4.jpg',
-    specifications: {
-      'Technology': '',
-      'Bead Distribution': '',
-      'Screen Surface': '',
-      'Energy Efficiency': '',
-      'Temperature Control': '',
-      'Automation': ''
+   specifications: {
+      'chembar Size ': '15 LTR',
+      'Motor Capacity': '15 KW',
+      'Bead Size': '1.0 and 1.2 mm',
+      'Motor R.P.M': '1460',
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
@@ -585,19 +577,17 @@ export const products: Product[] = [
 
   {
     id: 'horizontal-bead-mill-005',
-    name: 'Horizontal Bead Mill Model 5',
+    name: 'Bead Mill 30LTR',
     category: 'horizontal-bead-mills',
-    slug: 'horizontal-bead-mill-model-5',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    slug: 'horizontal-bead-mill-30LTR',
+    shortDescription: '',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-5.jpg',
-    specifications: {
-      'Technology': '',
-      'Bead Distribution': '',
-      'Screen Surface': '',
-      'Energy Efficiency': '',
-      'Temperature Control': '',
-      'Automation': ''
+  specifications: {
+      'chembar Size ': '30 LTR',
+      'Motor Capacity': '22 KW',
+      'Bead Size': '1.0 and 1.2 mm',
+      'Motor R.P.M': '1460',
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
@@ -616,19 +606,17 @@ export const products: Product[] = [
 
   {
     id: 'horizontal-bead-mill-006',
-    name: 'Horizontal Bead Mill Model 6',
+    name: 'Bead Mill 60LTR',
     category: 'horizontal-bead-mills',
-    slug: 'horizontal-bead-mill-model-6',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    slug: 'horizontal-bead-mill-60LTR',
+    shortDescription: '',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-6.jpg',
     specifications: {
-      'Technology': '',
-      'Bead Distribution': '',
-      'Screen Surface': '',
-      'Energy Efficiency': '',
-      'Temperature Control': '',
-      'Automation': ''
+      'Chembar Size ': '60 LTR',
+      'Motor Capacity': '45 KW',
+      'Bead Size': '1.0 and 1.2 mm',
+      'Motor R.P.M': '1465',
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
@@ -647,19 +635,17 @@ export const products: Product[] = [
 
   {
     id: 'horizontal-bead-mill-007',
-    name: 'Horizontal Bead Mill Model 7',
+    name: 'Bead Mill 150LTR',
     category: 'horizontal-bead-mills',
-    slug: 'horizontal-bead-mill-model-7',
-    shortDescription: 'Maximum efficiency bead mill with EcoMizer technology for superior wet grinding',
+    slug: 'horizontal-bead-mill-150LTR',
+    shortDescription: '',
     fullDescription: 'The full-volume bead mill provides the highest levels of productivity for wet-grinding applications, achieving higher product quality with lower specific energy requirement while reducing grinding costs.',
     image: '/images/products/horizontal-bead-mill-7.jpg',
     specifications: {
-      'Technology': '',
-      'Bead Distribution': '',
-      'Screen Surface': '',
-      'Energy Efficiency': '',
-      'Temperature Control': '',
-      'Automation': ''
+      'Chembar Size ': '150 LTR',
+      'Motor Capacity': '55 KW',
+      'Bead Size': '1.0 and 1.2 mm',
+      'Motor R.P.M': '990',
     },
     features: [
       'EcoMizer agitator disks for maximum energy efficiency',
