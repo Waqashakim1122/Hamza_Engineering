@@ -718,29 +718,25 @@ export const products: Product[] = [
     category: 'attritor-mill',
     slug: 'attritor-stirred-ball-mill',
     shortDescription: 'Versatile stirred ball mill for fine grinding and dispersion',
-    fullDescription: 'Simple and effective method of grinding and dispersing fine and homogenous material. Ideal for pilot plant and scale up with repeatable results.',
+    fullDescription: 'Simple and effective method of grinding and dispersing fine and homogenous material.',
     image: '/images/products/attritor-mill.jpg',
     specifications: {
-      'Operation Mode': 'Wet or dry',
+      'Operation Mode': 'Wet',
       'Speed Range': '0 to 100 RPM',
-      'Media Size': '1/8" to 3/8"',
-      'Atmosphere Control': 'Can introduce inert atmospheres',
+      'Media Size': '6mm',
+      'Granding Media Type': 'Ceramic ball',
       'Temperature Control': 'Controlled temperature operation'
     },
     features: [
-      'Much faster than conventional mills',
-      'Wet or dry operation capability',
-      'Controlled temperature and atmosphere',
+      'Wet grinding',
+      'Controlled temperature through water',
       'Variable grinding speed',
+     'Fine material dispersion',
       'No premixing necessary',
       'Ingredients can be added during grinding',
-      'Stainless steel construction'
     ],
     applications: [
-      'Fine grinding',
-      'Pilot plant testing',
-      'Fine material dispersion',
-      'Paint, coating and ink industry'
+      'Paint and ink industry'
     ]
   },
 
