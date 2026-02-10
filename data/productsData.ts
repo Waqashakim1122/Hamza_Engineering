@@ -250,13 +250,13 @@ export const products: Product[] = [
       'Product Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
       'Filtration System': 'Industrial grade',
+      'Thinning Vessel ': 'On demand and capacity as required',
       'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors, emergency shutdown'
     },
     features: [
-      'Industrial-scale production capacity',
+      'Industrial scale production',
       'Oil heating (thermic fluid) system for precise temperature control',
-      'All product-contact equipment in SS',
-      'Non-product-contact vessels in SS',
+      'All product-contact merial in SS',
       'Advanced safety systems with manual + auto control panel',
       'Condensers and distillation units for solvent recovery',
       'Complete industrial filtration system',
@@ -264,11 +264,9 @@ export const products: Product[] = [
     ],
     applications: [
       'Epoxy resin manufacturing',
-      'Polyester resin production',
-      'Phenolic resin synthesis',
-      'Alkyd resin processing',
-      'Industrial resin manufacturing',
-      'Commercial paint production'
+      'Polyester resin manufacturing',
+      'Phenolic resin manufacturing',
+      'Alkyd resin manufacturing',
     ]
   },
 
