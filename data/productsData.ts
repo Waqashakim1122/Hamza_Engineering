@@ -469,7 +469,7 @@ export const products: Product[] = [
     specifications: {
       'chembar Size ': '01 LTR',
       'Motor Capacity': '1.1 KW',
-      'Bead Size': '1.0 to 1.2 mm',
+      'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '900',
     },
     features: [
@@ -499,7 +499,7 @@ export const products: Product[] = [
     specifications: {
       'chembar Size ': '02 LTR',
       'Motor Capacity': '2.2 KW',
-      'Bead Size': '1.0 to 1.2 mm',
+      'Bead Size': '1.0 and 1.2 mm',
       'Motor R.P.M': '950',
     },
     features: [
