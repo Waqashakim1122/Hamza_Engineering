@@ -151,7 +151,7 @@ export const products: Product[] = [
     fullDescription: 'Compact resin plant designed for R&D, testing, and small-batch production. Ideal for formula development and quality control testing.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
-      'Loading Capacity': '5 kg',
+      'Material Loading Capacity': '5 kg',
       'Scale': 'Laboratory',
       'Product Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
@@ -181,7 +181,7 @@ export const products: Product[] = [
     fullDescription: 'Mid-size laboratory resin plant for pilot production and extensive testing applications.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
-      'Loading Capacity': '20 kg',
+      'Material Loading Capacity': '20 kg',
       'Scale': 'Laboratory',
       'Product Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
@@ -210,7 +210,7 @@ export const products: Product[] = [
     fullDescription: 'Large-scale laboratory resin plant bridging the gap between R&D and commercial production.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
-      'Loading Capacity': '200 kg',
+      'Material Loading Capacity': '200 kg',
       'Scale': 'Large Laboratory',
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
@@ -316,7 +316,7 @@ export const products: Product[] = [
     fullDescription: 'Compact polymer processing system designed for research, development, and small scale testing.',
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
-      'Loading Capacity': '5 LTR',
+      'Material Loading Capacity': '5 LTR',
       'Scale': 'Lab & Research',
       'Heating Method': 'Water heated ',
       'Material': 'SS (product contact)',
@@ -346,7 +346,7 @@ export const products: Product[] = [
     fullDescription: 'Mid-size laboratory polymer plant for pilot production and process development applications.',
     image: '/images/products/polymer-plant-lab.jpg',
      specifications: {
-      'Loading Capacity': '30 LTR',
+      'Material Loading Capacity': '30 LTR',
       'Scale': 'Lab & Research',
       'Heating Method': 'Water heated ',
       'Material': 'SS (product contact)',
@@ -375,7 +375,7 @@ export const products: Product[] = [
     fullDescription: 'Large-scale laboratory polymer plant for extensive testing and pre-commercial production.',
     image: '/images/products/polymer-plant-lab.jpg',
     specifications: {
-      'Loading Capacity': '200 LTR',
+      'Material Loading Capacity': '200 LTR',
       'Scale': 'Lab & Research',
       'Heating Method': 'Water heated ',
       'Material': 'SS (product contact)',
