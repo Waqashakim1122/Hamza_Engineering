@@ -256,7 +256,7 @@ export const products: Product[] = [
     features: [
       'Industrial scale production',
       'Oil heating (thermic fluid) system for precise temperature control',
-      'All product-contact merial in SS',
+      'All product-contact material in SS',
       'Advanced safety systems with manual + auto control panel',
       'Condensers and distillation units for solvent recovery',
       'Complete industrial filtration system',
@@ -291,7 +291,7 @@ export const products: Product[] = [
     features: [
       'Industrial scale production',
       'Oil heating (thermic fluid) system for precise temperature control',
-      'All product-contact merial in SS',
+      'All product-contact material in SS',
       'Advanced safety systems with manual + auto control panel',
       'Condensers and distillation units for solvent recovery',
       'Complete industrial filtration system',
