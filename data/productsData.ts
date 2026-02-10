@@ -40,7 +40,7 @@ export const productCategories: ProductCategory[] = [
     id: 'resin-plant-lab',
     name: 'Lab & Research',
     slug: 'resin-plant-lab',
-    description: 'Laboratory-scale resin plants for R&D and testing (5kg - 200kg)',
+    description: 'Laboratory-scale resin plants for R&D and testing (5kg,20kg,200kg)',
     icon: '',
     parentCategory: 'resin-plant',
     isSubcategory: true
@@ -147,7 +147,6 @@ export const products: Product[] = [
     name: 'Resin Plant - Lab Scale 5 kg',
     category: 'resin-plant-lab',
     slug: 'resin-plant-lab-5kg',
-    shortDescription: 'Laboratory-scale resin synthesis system with 5 kg loading capacity',
     fullDescription: 'Compact resin plant designed for R&D, testing, and small-batch production. Ideal for formula development and quality control testing.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
@@ -182,7 +181,6 @@ export const products: Product[] = [
     name: 'Resin Plant - Lab Scale 20 kg',
     category: 'resin-plant-lab',
     slug: 'resin-plant-lab-20kg',
-    shortDescription: 'Laboratory-scale resin synthesis system with 20 kg loading capacity',
     fullDescription: 'Mid-size laboratory resin plant for pilot production and extensive testing applications.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
@@ -214,10 +212,9 @@ export const products: Product[] = [
 
   {
     id: 'resin-plant-lab-200kg',
-    name: 'Resin Plant - Lab Scale 200 kg',
+    name: 'Resin Plant - Small Batch Testing 200 kg',
     category: 'resin-plant-lab',
     slug: 'resin-plant-lab-200kg',
-    shortDescription: 'Large laboratory-scale resin synthesis system with 200 kg loading capacity',
     fullDescription: 'Large-scale laboratory resin plant bridging the gap between R&D and commercial production.',
     image: '/images/products/resin-plant-lab.jpg',
     specifications: {
