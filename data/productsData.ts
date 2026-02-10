@@ -203,7 +203,7 @@ export const products: Product[] = [
 
   {
     id: 'resin-plant-lab-200kg',
-    name: 'Resin Plant -Small Batch Testing 200kg',
+    name: 'Resin Plant Small Batch Testing 200kg',
     category: 'resin-plant-lab',
     slug: 'resin-plant-small-batch-testing-200kg',
     shortDescription: '',
