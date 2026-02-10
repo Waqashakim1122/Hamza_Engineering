@@ -750,26 +750,22 @@ export const products: Product[] = [
     fullDescription: 'Sawtooth-shaped dispersing impeller intensely stirs paste at high speed for thorough material processing.',
     image: '/images/products/fdh-disperser.jpg',
     specifications: {
-      'Motor Power': '25kW - 100kW',
-      'Speed Range': '0-1400 rpm',
-      'Lift Height': '900mm - 1600mm',
-      'Tank Capacity': '500L - 3000L',
-      'Available Models': 'FDH11, FDH30, FDH45, FDH75'
+      'Motor Power': '25kW - 45kW',
+      'Speed Range': 'Variable',
+      'Lift Up': 'hydrulic',
+      'Tank Capacity': '300-1500 (LTR)',
     },
     features: [
       'More sufficient processing of materials',
       'Hydraulic lift ensures stability',
       'Large power with stronger processing ability',
-      'Double shaft design for enhanced mixing',
       'Adjustable speed control',
-      'Heavy-duty construction'
+      'High quality material',
     ],
     applications: [
-      'Chemical industry',
-      'Printing ink manufacturing',
-      'Paint production',
-      'Coating materials',
-      'Adhesives manufacturing'
+      'General industry',
+      'Paint and coating industry',
+      'Pharmaceutical industry ',
     ]
   },
 
