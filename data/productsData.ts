@@ -320,7 +320,7 @@ export const products: Product[] = [
       'Scale': 'Lab & Research',
       'Heating Method': 'Electric heating',
       'Material': 'SS (product contact)',
-      'Control System': 'Manua + Auto control with safety features',
+      'Control System': 'Manual + Auto control with safety features',
       'Safety Features': 'Temperature alarms, pressure relief valves'
     },
     features: [
@@ -350,7 +350,7 @@ export const products: Product[] = [
       'Scale': 'Lab & Research',
       'Heating Method': 'Electric heating',
       'Material': 'SS (product contact)',
-      'Control System': 'Manua + Auto control with safety features',
+      'Control System': 'Manual + Auto control with safety features',
       'Safety Features': 'Temperature alarms, pressure relief valves'
     },
     features: [
@@ -379,7 +379,7 @@ export const products: Product[] = [
       'Scale': 'Pre commercial production',
       'Heating Method': 'Electric heating',
       'Material': 'SS (product contact)',
-      'Control System': 'Manua + Auto control with safety features',
+      'Control System': 'Manual + Auto control with safety features',
       'Safety Features': 'Temperature alarms, pressure relief valves'
     },
     features: [
@@ -399,78 +399,61 @@ export const products: Product[] = [
 
   // ==================== POLYMER PLANT - LARGE SCALE PRODUCTION ====================
   {
-    id: 'polymer-plant-2500ltr',
-    name: 'Polymer Plant - 2500 LTR Production',
+    id: 'polymer-plant-2.5ton',
+    name: 'Polymer Plant 2.5 TON',
     category: 'polymer-plant-production',
-    slug: 'polymer-plant-2500ltr',
-    shortDescription: 'Industrial polymer processing plant with 2500 liter capacity',
+    slug: 'polymer-plant-2.5ton',
+    shortDescription: '',
     fullDescription: 'Complete industrial-scale polymer processing system for commercial production with advanced automation and control.',
     image: '/images/products/polymer-plant.jpg',
     specifications: {
-      'Production Capacity': '2500 LTR (Ton)',
+      'Material Loading Capacity': '2.5 Ton',
       'Scale': 'Large Scale Production',
-      'Process Type': 'Batch-operated',
-      'Heating Method': 'Steam heating system',
-      'Control System': 'PLC-based with full automation',
+      'Heating Method': 'Water heating system',
       'Material': 'SS (product contact)',
+      'Control System':'Manual + Auto control with safety features',
       'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown, automated safety systems'
     },
     features: [
-      'Industrial-scale production capacity',
+      'Industrial scale production ',
       'Controlled polymerization process',
-      'Steam heating for precise temperature regulation',
+      'Water heating for precise temperature regulation',
       'High-quality industrial filtration system',
-      'Real-time process monitoring',
-      'Advanced PLC control and automation',
+      'Manual + Auto control with safety features',
       'Comprehensive safety systems with emergency shutdown',
-      'Complete production line integration capability'
     ],
-    applications: [
-      'Commercial polymer synthesis',
-      'Industrial resin manufacturing',
-      'Large-scale chemical processing',
-      'Pharmaceutical production',
+    applications: [     
       'Industrial polymer production',
-      'Mass production facilities'
+
     ]
   },
 
   {
-    id: 'polymer-plant-5000ltr',
-    name: 'Polymer Plant - 5000 LTR Production',
+    id: 'polymer-plant-5Ton',
+    name: 'Polymer Plant 5 TON',
     category: 'polymer-plant-production',
-    slug: 'polymer-plant-5000ltr',
-    shortDescription: 'Large industrial polymer processing plant with 5000 liter capacity',
+    slug: 'polymer-plant-5Ton',
+    shortDescription: '',
     fullDescription: 'High-capacity industrial polymer processing system for large-scale commercial production with state-of-the-art automation and safety.',
     image: '/images/products/polymer-plant.jpg',
-    specifications: {
-      'Production Capacity': '5000 LTR (Ton)',
+      specifications: {
+      'Material Loading Capacity': '5 Ton',
       'Scale': 'Large Scale Production',
-      'Process Type': 'Batch-operated',
-      'Heating Method': 'Steam heating system',
-      'Control System': 'Advanced PLC-based with full automation',
+      'Heating Method': 'Water heating system',
       'Material': 'SS (product contact)',
-      'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown, automated safety systems, redundant safety controls'
+      'Control System':'Manual + Auto control with safety features',
+      'Safety Features': 'High temperature alarms, pressure relief valves, emergency shutdown, automated safety systems'
     },
     features: [
-      'High-capacity industrial production',
-      'Advanced controlled polymerization process',
-      'Precision steam heating system for temperature regulation',
+      'Industrial scale production ',
+      'Controlled polymerization process',
+      'Water heating for precise temperature regulation',
       'High-quality industrial filtration system',
-      'Real-time process monitoring and data logging',
-      'State-of-the-art PLC control and complete automation',
+      'Manual + Auto control with safety features',
       'Comprehensive safety systems with emergency shutdown',
-      'Complete production line integration',
-      'Enhanced automation capabilities',
-      'Redundant safety controls'
     ],
-    applications: [
-      'Large-scale polymer synthesis',
-      'High-volume industrial resin manufacturing',
-      'Commercial chemical processing',
-      'Large pharmaceutical production',
-      'Mass polymer production',
-      'High-capacity manufacturing facilities'
+    applications: [     
+      'Industrial polymer production',
     ]
   },
 
