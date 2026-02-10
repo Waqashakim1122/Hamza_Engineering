@@ -241,14 +241,13 @@ export const products: Product[] = [
     category: 'resin-plant-production',
     slug: 'resin-plant-3ton',
     shortDescription: '',
-    fullDescription: 'Complete industrial resin synthesis and processing system designed for commercial-scale production of epoxy, polyester, phenolic, or alkyd resins.',
+    fullDescription: 'Complete industrial resin synthesis and processing system designed for commercial-scale production of epoxy, polyester, phenolic, and alkyd resins.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
       'Production Capacity': '3 Ton',
       'Scale': 'Large Scale Production',
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
-      'Non-Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
       'Filtration System': 'Industrial grade',
       'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors, emergency shutdown'
