@@ -244,7 +244,7 @@ export const products: Product[] = [
     fullDescription: 'Complete industrial resin synthesis and processing system designed for commercial-scale production of epoxy, polyester, phenolic, and alkyd resins.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
-      'Loading Capacity': '3 Ton',
+      'Material Loading Capacity': '3 Ton',
       'Scale': 'Large Scale Production',
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
@@ -279,35 +279,32 @@ export const products: Product[] = [
     fullDescription: 'High-capacity industrial resin synthesis system for large-scale commercial production with enhanced automation and safety features.',
     image: '/images/products/resin-plant.jpg',
     specifications: {
-      'Production Capacity': '6 Ton',
+      'Material Loading Capacity': '6 Ton',
       'Scale': 'Large Scale Production',
       'Heating System': 'Oil heating (thermic fluid)',
       'Product Contact Material': 'SS',
-      'Non-Contact Material': 'SS',
       'Control System': 'Manual + Auto control panel',
       'Filtration System': 'Industrial grade',
+      'Thinning Vessel ': 'On demand and capacity as required',
       'Safety Features': 'Safety valves, rupture discs, temperature/pressure sensors, emergency shutdown'
     },
     features: [
-      'High-capacity industrial production',
-      'Advanced oil heating (thermic fluid) system',
-      'All product-contact equipment in SS',
-      'Non-product-contact vessels in SS',
-      'Comprehensive safety systems with manual + auto control',
-      'Multiple condensers and distillation units',
+      'Industrial scale production',
+      'Oil heating (thermic fluid) system for precise temperature control',
+      'All product-contact merial in SS',
+      'Advanced safety systems with manual + auto control panel',
+      'Condensers and distillation units for solvent recovery',
       'Complete industrial filtration system',
-      'Multiple thinning vessels with variable capacity',
-      'Enhanced automation capabilities'
+      'Thinning vessels with variable capacity'
     ],
     applications: [
-      'Large-scale epoxy resin manufacturing',
-      'High-volume polyester resin production',
-      'Commercial phenolic resin synthesis',
-      'Industrial alkyd resin processing',
-      'Mass production of industrial resins',
-      'Large paint manufacturing facilities'
+      'Epoxy resin manufacturing',
+      'Polyester resin manufacturing',
+      'Phenolic resin manufacturing',
+      'Alkyd resin manufacturing',
     ]
   },
+
 
   // ==================== POLYMER PLANT - LAB & RESEARCH ====================
   {
