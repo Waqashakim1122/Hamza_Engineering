@@ -62,6 +62,139 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.hamzaeng.com/#organization",
+          "name": "Hamza Engineering",
+          "url": "https://www.hamzaeng.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.hamzaeng.com/images/logo.png"
+          },
+          "description": "Hamza Engineering manufactures industrial paint & chemical machinery — resin plants, bead mills, dispersers, mixers and polymer processing plants for manufacturers in Pakistan.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "PK",
+            "addressRegion": "Punjab"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+92-300-1234567",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Urdu"]
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/hamzaengineering",
+            "https://www.facebook.com/hamzaengineering"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.hamzaeng.com/#website",
+          "url": "https://www.hamzaeng.com",
+          "name": "Hamza Engineering",
+          "description": "Industrial Paint & Chemical Machinery Manufacturer in Pakistan",
+          "publisher": {
+            "@id": "https://www.hamzaeng.com/#organization"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.hamzaeng.com/#localbusiness",
+          "name": "Hamza Engineering",
+          "image": "https://www.hamzaeng.com/images/logo.png",
+          "url": "https://www.hamzaeng.com",
+          "telephone": "+92-300-1234567",
+          "email": "info@hamzaengineering.com",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "PK",
+            "addressRegion": "Punjab"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "31.5204",
+            "longitude": "74.3587"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Industrial Machinery Products",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Resin Plants",
+                  "description": "Complete resin synthesis and processing systems with oil heating"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Bead Mills",
+                  "description": "High-efficiency grinding and dispersion equipment"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Polymer Processing Plants",
+                  "description": "Advanced polymer manufacturing systems"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "High Speed Dispersers",
+                  "description": "High-speed mixing and dispersing machines"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Industrial Mixers",
+                  "description": "Heavy-duty mixing equipment for industrial applications"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Vessels & Mixing Tanks",
+                  "description": "Storage and movable tank solutions"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    })
+  }}
+/>
   {/* Favicon */}
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
