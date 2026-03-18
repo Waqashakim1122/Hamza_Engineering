@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary pages from indexing
+Disallow: /api/
+Disallow: /_next/
+Disallow: /privacy
+Disallow: /terms
+
+# Sitemap location
+Sitemap: https://www.hamzaeng.com/sitemap.xml
+```
+
+---
+
+### 💡 What Each Line Means
+
+| Line | Meaning |
+|------|---------|
+| `User-agent: *` | Apply rules to all search engines |
+| `Allow: /` | Let Google crawl everything |
+| `Disallow: /api/` | Block API routes (not useful for Google) |
+| `Disallow: /_next/` | Block Next.js internal files |
+| `Sitemap:` | Tell Google where your sitemap is |
+
+---
+
+### ✅ How To Verify It's Working
+
+After saving, visit:
+```
+https://www.hamzaeng.com/robots.txt
