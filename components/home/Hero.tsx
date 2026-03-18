@@ -10,15 +10,15 @@ export default function Hero() {
           <span className="hero__eyebrow">Engineering Excellence</span>
 
           <h1 className="hero__heading">
-            <span className="hero__heading-line">Precision</span>
-            <span className="hero__heading-line">Engineering</span>
-          </h1>
+  <span className="hero__heading-line">Industrial Paint &amp;</span>
+  <span className="hero__heading-line">Chemical Machinery</span>
+</h1>
 
-          <p className="hero__subheading">Industrial Excellence</p>
+        <p className="hero__subheading">Precision Engineering for Manufacturers</p>
 
           <div className="hero__description">
             <p className="hero__description-text">
-             High-tolerance machined components and turnkey solutions for industrial manufacturers worldwide.
+            Hamza Engineering manufactures resin plants, bead mills, dispersers, and industrial mixers for paint, chemical, and polymer manufacturers in Pakistan.
             </p>
           </div>
 
