@@ -17,7 +17,7 @@ export default function Footer() {
                 className="footer__logo-img"
               />
               <div className="footer__brand-text">
-                <h2 className="footer__brand-name">HAMZA ENGINEERING</h2>
+                <p className="footer__brand-name">HAMZA ENGINEERING</p>
                 <span className="footer__brand-tagline">Industrial Machinery Solutions</span>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="footer__column">
-            <h3 className="footer__col-title">QUICK LINKS</h3>
+           <p className="footer__col-title">QUICK LINKS</p>
             <ul className="footer__nav-list">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/about">About Us</Link></li>
@@ -53,7 +53,7 @@ export default function Footer() {
 
           {/* Services/Products */}
           <div className="footer__column">
-            <h3 className="footer__col-title">OUR SERVICES</h3>
+           <p className="footer__col-title">OUR SERVICES</p>
             <ul className="footer__nav-list">
               <li><Link href="/products/category/resin-plant">Resin Plants</Link></li>
               <li><Link href="/products/category/polymer-plant">Polymer Plants</Link></li>
@@ -67,7 +67,7 @@ export default function Footer() {
 
           {/* Industries Served */}
           <div className="footer__column">
-            <h3 className="footer__col-title">INDUSTRIES SERVED</h3>
+           <p className="footer__col-title">INDUSTRIES SERVED</p>
             <ul className="footer__nav-list">
               <li><Link href="/industries/paint-manufacturing">Paint Manufacturing</Link></li>
               <li><Link href="/industries/powder-coating">Powder Coating</Link></li>
