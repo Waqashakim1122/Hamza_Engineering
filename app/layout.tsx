@@ -51,7 +51,7 @@ import '@/styles/components/cards.css';
 
 export const metadata: Metadata = {
   title: 'Hamza Engineering | Paint & Chemical Machinery',
-  description: 'Excellence in Industrial Solutions',
+  description: 'Hamza Engineering manufactures industrial paint & chemical machinery — resin plants, bead mills, dispersers, mixers and polymer processing plants for manufacturers in Pakistan.',
 };
 
 export default function RootLayout({
