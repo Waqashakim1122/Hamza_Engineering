@@ -62,14 +62,32 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="msapplication-TileColor" content="#1e5a8e" />
-        <meta name="theme-color" content="#1e5a8e" />
-      </head>
+  {/* Favicon */}
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#1e5a8e" />
+  <meta name="theme-color" content="#1e5a8e" />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.hamzaeng.com/" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.hamzaeng.com/" />
+  <meta property="og:title" content="Hamza Engineering | Paint & Chemical Machinery" />
+  <meta property="og:description" content="Hamza Engineering manufactures industrial paint & chemical machinery — resin plants, bead mills, dispersers, mixers and polymer processing plants for manufacturers in Pakistan." />
+  <meta property="og:image" content="https://www.hamzaeng.com/images/logo.png" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.hamzaeng.com/" />
+  <meta name="twitter:title" content="Hamza Engineering | Paint & Chemical Machinery" />
+  <meta name="twitter:description" content="Hamza Engineering manufactures industrial paint & chemical machinery — resin plants, bead mills, dispersers, mixers and polymer processing plants for manufacturers in Pakistan." />
+  <meta name="twitter:image" content="https://www.hamzaeng.com/images/logo.png" />
+</head>
       <body>
         <Header />
         <main 
