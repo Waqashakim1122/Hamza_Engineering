@@ -52,7 +52,7 @@ export default function Header() {
               />
             </div>
             <div className="header__text">
-              <h1 className="header__title">HAMZA ENGINEERING</h1>
+              <p className="header__title">HAMZA ENGINEERING</p>
               <p className="header__subtitle">Industrial Machinery Solutions</p>
             </div>
           </Link>
